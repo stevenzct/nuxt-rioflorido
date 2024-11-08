@@ -5,7 +5,7 @@
       <div class="h-full w-full flex flex-col items-end justify-end" id="container-text">
         <div class="w-full">
           <div class="max-w-screen-2xl mx-auto px-4 py-8 sm:py-3">
-            <h1 class="text-white text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal" id="h1-headline">
+            <h1 class="text-white text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold leading-[94%]" id="h1-headline">
               Design, Build, Construct
             </h1>
           </div>
@@ -486,11 +486,11 @@ export default {
 }
 
 #h1-headline {
-  font-family: "Neue Montreal";
+  /* font-family: "Neue Montreal";
   font-style: normal;
   font-weight: 500;
   line-height: 109%;
-  text-transform: capitalize;
+  text-transform: capitalize; */
 }
 
 
