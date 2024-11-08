@@ -5,7 +5,7 @@
       <div class="h-full w-full flex flex-col items-end justify-end" id="container-text">
         <div class="w-full">
           <div class="max-w-screen-2xl mx-auto px-4 py-8 sm:py-3">
-            <h1 class="text-white text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px]" id="h1-headline">
+            <h1 class="text-white text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal" id="h1-headline">
               Design, Build, Construct
             </h1>
           </div>
