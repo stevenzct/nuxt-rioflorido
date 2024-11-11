@@ -17,13 +17,13 @@
   
         <div class="w-full">
           <div class="max-w-screen-2xl mx-auto px-4 py-8 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between">
-            <p class="text-white pb-2 w-auto md:w-[706px] text-[20px] md:text-[24px] " id="primary-subheadline">
+            <p class="font-neue-montreal font-normal text-white pb-2 w-auto md:w-[706px] text-[20px] md:text-[24px] ">
               Your Dream Home Starts Here: Comprehensive Construction Solutions
               by Expert Civil Engineers.
             </p>
   
-            <button type="button" id="explore-projects"
-              class="text-gray-900 text-[16px] bg-white border border-gray-400 px-8 py-3.5 my-4 md:w-[200px] transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+            <button type="button"
+              class="font-neue-montreal font-bold h-[55px] rounded-[4px] text-gray-900 text-[16px] bg-white border border-gray-400 px-8 py-3.5 my-4 md:w-[200px] transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
               Explore Projects
             </button>
           </div>
@@ -35,7 +35,7 @@
     <section id="intro-section" class="h-96 md:h-screen">
       <div class="h-96 md:h-full w-full flex items-center justify-center" id="container-intro">
         <div class="max-w-screen-2xl mx-auto px-4">
-          <h1 class="text-gray-900 text-start text-[24px] md:text-[48px]" id="intro-text">
+          <h1 class="font-neue-montreal font-bold leading-[137%] indent-0 md:indent-[200px]  text-gray-900 text-start text-[24px] md:text-[48px]" id="intro-text">
             RV Rioflorido Construction is an all-in-one contractor for general
             construction, dedicated to providing quality, safe, and reliable
             services as quickly as possible. Construction is more than just our
@@ -51,12 +51,13 @@
       <div class="h-full w-full">
         <div
           class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between">
-          <h1 class="text-4xl md:text-7xl text-gray-900" id="h1-our-projects">
+          <h1 class="font-neue-montreal font-bold leading-[137%] text-4xl md:text-7xl text-gray-900">
             Our Projects
           </h1>
   
           <button type="button" id="explore-projects"
-            class="text-gray-900  text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+          
+            class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
             View All
           </button>
         </div>
@@ -89,16 +90,16 @@
                     </h5>
                   </div>
   
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
                     Two (2) Storey Residential Building with 408 sqm floor area and 5-bedrooms.
                   </p>
   
                   <div class="flex items-start">
-                    <p class="my-auto ">
+                    <p class="my-auto font-neue-montreal font-normal ">
                       Rances Residence
                     </p>
-                    <button type="button" id="view-project"
-                      class="ms-auto text-gray-900 bg-white rounded border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white  ">
+                    <button type="button" 
+                      class=" font-neue-montreal font-bold rounded-[4px]  ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white  ">
                       View Project
                     </button>
                   </div>
@@ -126,16 +127,16 @@
                     </h5>
                   </div>
   
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
                     Five (5) Units, Two (2) Storey Commercial Building with 187 sqm total floor area.
                   </p>
   
                   <div class="flex items-start">
-                    <p class="my-auto">
+                    <p class="my-auto font-neue-montreal font-normal">
                       Commercial Building
                     </p>
-                    <button type="button" id="view-project"
-                      class="ms-auto text-gray-900  font-medium  bg-white border border-gray-400 px-8 py-3.5 rounded transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                    <button type="button"
+                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900   bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
                       View Project
                     </button>
                   </div>
@@ -163,16 +164,16 @@
                     </h5>
                   </div>
   
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
                     Two (2) Storey Residential/Apartment Building with 95 sqm floor area and 4-bedrooms.
                   </p>
   
                   <div class="flex items-start">
-                    <p class="my-auto">
+                    <p class="my-auto font-neue-montreal font-normal">
                       Manny Apartment
                     </p>
-                    <button type="button" id="view-project"
-                      class="ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 rounded transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                    <button type="button"
+                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
                       View Project
                     </button>
                   </div>
@@ -201,16 +202,16 @@
                     </h5>
                   </div>
   
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
                     Two (2) Storey Residential/Apartment Building with 170 sqm floor area and 4-units.
                   </p>
   
                   <div class="flex items-start">
-                    <p class="my-auto">
+                    <p class="my-auto font-neue-montreal font-normal">
                       Joel Residence
                     </p>
-                    <button type="button" id="view-project"
-                      class="ms-auto text-gray-900 bg-white rounded border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                    <button type="button"
+                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white  border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
                       View Project
                     </button>
                   </div>
@@ -238,16 +239,16 @@
                     </h5>
                   </div>
   
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <p class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400">
                     Two (2) Storey Residential Building with 128 sqm floor area and 3-bedrooms.
                   </p>
   
                   <div class="flex items-start">
-                    <p class="my-auto">
+                    <p class="my-auto font-neue-montreal font-normal">
                       Sadia Residence
                     </p>
-                    <button type="button" id="view-project"
-                      class="ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 rounded transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                    <button type="button"
+                      class="font-neue-montreal font-bold rounded-[4px]  ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
                       View Project
                     </button>
                   </div>
@@ -269,21 +270,21 @@
                       <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
                     </div>
                     <h5
-                      class=" ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                      class="font-neue-montreal ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
                       Quezon City
                     </h5>
                   </div>
   
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <p class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400">
                     Two (2) Storey Residential/Apartment Building with 95 sqm floor area and 4-bedrooms.
                   </p>
   
                   <div class="flex items-start">
-                    <p class="my-auto">
+                    <p class="my-auto font-neue-montreal font-normal">
                       Rances Residence
                     </p>
-                    <button type="button" id="view-project"
-                      class="ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 rounded transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                    <button type="button" 
+                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
                       View Project
                     </button>
                   </div>
@@ -324,7 +325,7 @@
     <section id="about-us" class="">
       <div class="h-full w-full">
         <div class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16">
-          <h1 class="text-4xl md:text-7xl py-4 lg:py-16 text-gray-900 " id="h1-our-experts">
+          <h1 class="font-neue-montreal font-bold text-4xl md:text-7xl py-4 lg:py-16 text-gray-900 leading-[150%] tracking-wide ">
             Our Experts
           </h1>
   
@@ -335,12 +336,12 @@
             </div>
   
             <div>
-              <h3 class="text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0" id="h3-our-team">
+              <h3 class="font-neue-montreal font-bold text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]">
                 Our team led by seasoned civil engineers, excels in planning, design, construction and more. We
                 specialized in crafting homes with enduring quality and personalized excellence.
               </h3>
-              <button type="button" id="explore-projects"
-                class="text-gray-900  text-[16px] md:w-[200px] bg-white border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+              <button type="button"
+                class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
                 More about us
               </button>
             </div>
@@ -359,18 +360,18 @@
   
         <div class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16 pb-8">
   
-          <h1 class="text-4xl md:text-7xl text-start  py-4 text-gray-900" id="h1-our-expertise">
+          <h1 class="font-neue-montreal font-bold text-4xl md:text-7xl text-start  py-4 text-gray-900 leading-[94%] tracking-wide" >
             Your Home, Our Expertise
           </h1>
   
-          <h3 class="text-gray-900 text-start text-[24px]  md:text-[40px] xs:w-auto lg:w-4/5 py-4 md:py-0"
+          <h3 class="font-neue-montreal font-[600] leading-[137%] text-gray-900 text-start text-[24px]  md:text-[40px] xs:w-auto lg:w-4/5 py-4 md:py-0"
             id="h3-subheadline-years">
             Elevate Your Projects with Precision, Reliability, and a Proven Track Record of Seven Years in Construction
             Excellence.
           </h3>
   
-          <button type="button" id="explore-projects"
-            class="text-gray-900  text-[16px] md:w-[200px] bg-white border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+          <button type="button"
+            class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
             Get in touch
           </button>
   
@@ -482,7 +483,7 @@
         <div class="block lg:flex justify-start items-end flex-col px-4 py-4 lg:py-0 bg-[#252324]">
   
           <div class="pb-4 lg:pb-0">
-            <button type="button" id="explore-projects"
+            <button type="button"
               class="text-white font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-black border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-white hover:text-gray-900">
               Get in touch
             </button>
@@ -562,19 +563,8 @@ export default {
   border-color: rgb(243 244 246 / 33%);
 }
 
-#explore-projects {
-  /* height: 55px;
-  border-radius: 4px; */
-  /* font-family: "Neue Montreal";
-  font-style: normal;
-  font-weight: 500; */
-}
 
-#view-project {
-  font-style: normal;
-  font-family: "Neue Montreal";
-  font-weight: 500;
-}
+
 
 .swiper-slide {
   display: flex;
@@ -582,25 +572,13 @@ export default {
   justify-content: center;
 }
 
-#h1-our-experts {
-  font-style: normal;
-  font-family: "Neue Montreal";
-  font-weight: 500;
-  line-height: 137%;
-}
 
-#h1-our-expertise {
-  font-family: "Neue Montreal";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 94%;
-}
 
 #h3-subheadline-years {
-  font-family: "Neue Montreal";
+  /* font-family: "Neue Montreal";
   font-style: normal;
   font-weight: 400;
-  line-height: 138%;
+  line-height: 138%; */
   /* 40.02px */
 
 }
@@ -646,20 +624,9 @@ export default {
   background-position: 50%;
 }
 
-#intro-text {
-  font-family: "Neue Montreal";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 137%;
-  text-indent: 200px;
-}
 
-#h1-our-projects {
-  font-family: "Neue Montreal";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 137%;
-}
+
+
 
 
 #projects-section {
@@ -667,10 +634,10 @@ export default {
 }
 
 #h3-our-team {
-  font-family: "Neue Montreal";
+  /* font-family: "Neue Montreal";
   font-style: normal;
   font-weight: 500;
-  line-height: 137%;
+  line-height: 137%; */
 }
 
 

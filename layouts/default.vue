@@ -20,7 +20,7 @@
             <button
               type="button"
               id="get-in-touch"
-              class="px-8 py-3.5 transition ease-out duration-300"
+              class=" font-neue-montreal font-bold px-8 py-3.5 transition ease-out duration-300"
               :class="[
                 isScrolled
                   ? 'text-gray-900 bg-white border border-gray-400 hover:bg-gray-900 hover:text-white'
@@ -126,10 +126,10 @@
   height: 55px;
   border-radius: 4px;
   /* border: 1px solid #FFF; */
-  font-family: "Neue Montreal";
+  /* font-family: "Neue Montreal"; */
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
+  /* font-style: normal;
+  font-weight: 500; */
 }
 
 nav {
