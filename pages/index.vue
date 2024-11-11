@@ -65,11 +65,11 @@
   
         <div class="max-w-screen-2xl px-4 2xl:px-0 mx-auto  flex justify-between">
           <swiper :slidesPerView="1" :spaceBetween="20" :navigation="{
-                                                nextEl: '.next-test',
-                                                prevEl: '.prev-test',
-                                                }" :pagination="{
-                                                            clickable: true,
-                                                            }" :breakpoints="breakpoints" :modules="modules"
+                                                  nextEl: '.next-test',
+                                                  prevEl: '.prev-test',
+                                                  }" :pagination="{
+                                                              clickable: true,
+                                                              }" :breakpoints="breakpoints" :modules="modules"
             class="mySwiper">
             <!-- swiper slide 1 -->
             <swiper-slide class="">
@@ -483,7 +483,7 @@
   
           <div class="pb-4 lg:pb-0">
             <button type="button" id="explore-projects"
-              class="text-white  text-[16px] md:w-[200px] bg-black border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-white hover:text-gray-900">
+              class="text-white font-neue-montreal font-bold  text-[16px] md:w-[200px] bg-black border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-white hover:text-gray-900">
               Get in touch
             </button>
           </div>
