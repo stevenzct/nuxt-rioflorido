@@ -391,7 +391,7 @@
           <!-- socials links -->
   
           <button
-            class="mr-4 group bg-black hover:bg-white border border-gray-9d rounded-full  p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out">
+            class="mr-4 group bg-[#252324] hover:bg-white border border-gray-9d rounded-full  p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out">
             <!-- SVG Icon -->
             <a href="#"
               class="inline-flex items-center justify-center group-hover:text-black text-white transition-colors duration-300 ease-in-out">
@@ -405,7 +405,7 @@
           </button>
   
           <button
-            class="mr-4 group bg-black hover:bg-white border border-gray-9d rounded-full p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out">
+            class="mr-4 group bg-[#252324] hover:bg-white border border-gray-9d rounded-full p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out">
             <!-- SVG Icon (Instagram-like) -->
             <a href="#"
               class="inline-flex items-center justify-center group-hover:text-black text-white transition-colors duration-300 ease-in-out">
@@ -419,7 +419,7 @@
           </button>
   
           <button
-            class="mr-4 group bg-black hover:bg-white border border-gray-9d rounded-full p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out">
+            class="mr-4 group bg-[#252324] hover:bg-white border border-gray-9d rounded-full p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out">
             <!-- SVG Icon (Email) -->
             <a href="#"
               class="inline-flex items-center justify-center group-hover:text-black text-white transition-colors duration-300 ease-in-out">
@@ -433,7 +433,7 @@
           </button>
   
           <button
-            class="mr-4 group bg-black hover:bg-white border border-gray-9d rounded-full p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out">
+            class="mr-4 group bg-[#252324] hover:bg-white border border-gray-9d rounded-full p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out">
             <!-- SVG Icon (Phone Contact) -->
             <a href="#"
               class="inline-flex items-center justify-center group-hover:text-black text-white transition-colors duration-300 ease-in-out">
@@ -483,7 +483,7 @@
   
           <div class="pb-4 lg:pb-0">
             <button type="button" id="explore-projects"
-              class="text-white font-neue-montreal font-bold  text-[16px] md:w-[200px] bg-black border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-white hover:text-gray-900">
+              class="text-white font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-black border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-white hover:text-gray-900">
               Get in touch
             </button>
           </div>
@@ -563,11 +563,11 @@ export default {
 }
 
 #explore-projects {
-  height: 55px;
-  border-radius: 4px;
-  font-family: "Neue Montreal";
+  /* height: 55px;
+  border-radius: 4px; */
+  /* font-family: "Neue Montreal";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 500; */
 }
 
 #view-project {
