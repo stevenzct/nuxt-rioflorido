@@ -35,7 +35,9 @@
     <section id="intro-section" class="h-96 md:h-screen">
       <div class="h-96 md:h-full w-full flex items-center justify-center" id="container-intro">
         <div class="max-w-screen-2xl mx-auto px-4">
-          <h1 class="font-neue-montreal font-bold leading-[137%] indent-0 md:indent-[200px]  text-gray-900 text-start text-[24px] md:text-[48px]" id="intro-text">
+          <h1
+            class="font-neue-montreal font-bold leading-[137%] indent-0 md:indent-[200px]  text-gray-900 text-start text-[24px] md:text-[48px]"
+            id="intro-text">
             RV Rioflorido Construction is an all-in-one contractor for general
             construction, dedicated to providing quality, safe, and reliable
             services as quickly as possible. Construction is more than just our
@@ -56,7 +58,6 @@
           </h1>
   
           <button type="button" id="explore-projects"
-          
             class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
             View All
           </button>
@@ -66,11 +67,11 @@
   
         <div class="max-w-screen-2xl px-4 2xl:px-0 mx-auto  flex justify-between">
           <swiper :slidesPerView="1" :spaceBetween="20" :navigation="{
-                                                  nextEl: '.next-test',
-                                                  prevEl: '.prev-test',
-                                                  }" :pagination="{
-                                                              clickable: true,
-                                                              }" :breakpoints="breakpoints" :modules="modules"
+                                                      nextEl: '.next-test',
+                                                      prevEl: '.prev-test',
+                                                      }" :pagination="{
+                                                                  clickable: true,
+                                                                  }" :breakpoints="breakpoints" :modules="modules"
             class="mySwiper">
             <!-- swiper slide 1 -->
             <swiper-slide class="">
@@ -98,7 +99,7 @@
                     <p class="my-auto font-neue-montreal font-normal ">
                       Rances Residence
                     </p>
-                    <button type="button" 
+                    <button type="button"
                       class=" font-neue-montreal font-bold rounded-[4px]  ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white  ">
                       View Project
                     </button>
@@ -283,7 +284,7 @@
                     <p class="my-auto font-neue-montreal font-normal">
                       Rances Residence
                     </p>
-                    <button type="button" 
+                    <button type="button"
                       class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
                       View Project
                     </button>
@@ -325,18 +326,20 @@
     <section id="about-us" class="">
       <div class="h-full w-full">
         <div class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16">
-          <h1 class="font-neue-montreal font-bold text-4xl md:text-7xl py-4 lg:py-16 text-gray-900 leading-[150%] tracking-wide ">
+          <h1
+            class="font-neue-montreal font-bold text-4xl md:text-7xl py-4 lg:py-16 text-gray-900 leading-[150%] tracking-wide ">
             Our Experts
           </h1>
   
-          <div class="grid grid-cols-1 md:grid-cols-2 max-w-screen-2xl gap-x-20 mx-auto pb-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 max-w-screen-2xl gap-x-20 mx-auto pb-0 lg:pb-8">
             <div class="">
               <img src="../assets/images/all-images/buildings/About Us/Group 463.webp" class="object-fill rounded-md"
                 alt="about-us-img">
             </div>
   
             <div>
-              <h3 class="font-neue-montreal font-bold text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]">
+              <h3
+                class="font-neue-montreal font-bold text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]">
                 Our team led by seasoned civil engineers, excels in planning, design, construction and more. We
                 specialized in crafting homes with enduring quality and personalized excellence.
               </h3>
@@ -344,6 +347,38 @@
                 class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
                 More about us
               </button>
+  
+              <div class="py-8 lg:py-20">
+                <div class="flex justify-start gap-4 lg:gap-x-32 items-center">
+                  <h1
+                    class="text-gray-900 text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold  leading-[94%]">
+                    12+
+                  </h1>
+  
+                  <h3
+                    class="font-neue-montreal font-normal text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]">
+                    Successful Projects
+                  </h3>
+                </div>
+  
+                <hr class="w-100 h-[2px] my-2  lg:my-8 bg-[#0000001E] border-0  ">
+  
+                <div class="flex justify-start gap-4 lg:gap-x-20 items-center">
+                  <h1
+                    class="text-gray-900 text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold  leading-[94%]">
+                    98%
+                  </h1>
+  
+                  <h3
+                    class="font-neue-montreal font-normal text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]">
+                    Clients Satisfaction
+                  </h3>
+                </div>
+
+                
+  
+  
+              </div>
             </div>
   
             <div>
@@ -360,11 +395,13 @@
   
         <div class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16 pb-8">
   
-          <h1 class="font-neue-montreal font-bold text-4xl md:text-7xl text-start  py-4 text-gray-900 leading-[94%] tracking-wide" >
+          <h1
+            class="font-neue-montreal font-bold text-4xl md:text-7xl text-start  py-4 text-gray-900 leading-[94%] tracking-wide">
             Your Home, Our Expertise
           </h1>
   
-          <h3 class="font-neue-montreal font-[600] leading-[137%] text-gray-900 text-start text-[24px]  md:text-[40px] xs:w-auto lg:w-4/5 py-4 md:py-0"
+          <h3
+            class="font-neue-montreal font-[600] leading-[137%] text-gray-900 text-start text-[24px]  md:text-[40px] xs:w-auto lg:w-4/5 py-4 md:py-0"
             id="h3-subheadline-years">
             Elevate Your Projects with Precision, Reliability, and a Proven Track Record of Seven Years in Construction
             Excellence.
@@ -598,6 +635,7 @@ export default {
   background-size: cover;
   background-position: 50%;
 }
+
 #get-in-touch {
   background-image: url("../assets/images/home/abstract-get-in-touch.webp");
   background-repeat: no-repeat;
