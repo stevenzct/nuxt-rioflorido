@@ -10,17 +10,17 @@
               Design, Build, Construct
             </h1>
           </div>
-  
+
           <div class="w-auto border-b border-[#F3F4F654]"></div>
         </div>
-  
+
         <div class="w-full">
           <div class="max-w-screen-2xl mx-auto px-4 py-8 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between">
             <p class="font-neue-montreal font-normal text-white pb-2 w-auto md:w-[706px] text-[20px] md:text-[24px] ">
               Your Dream Home Starts Here: Comprehensive Construction Solutions
               by Expert Civil Engineers.
             </p>
-  
+
             <button type="button"
               class="font-neue-montreal font-bold h-[55px] rounded-[4px] text-gray-900 text-[16px] bg-white border border-gray-400 px-8 py-3.5 my-4 md:w-[200px] transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
               Explore Projects
@@ -29,7 +29,7 @@
         </div>
       </div>
     </section>
-  
+
     <!-- intro section  -->
     <section id="intro-section" class="h-96 md:h-screen">
       <div class="h-96 md:h-full w-full flex items-center justify-center" id="container-intro">
@@ -45,32 +45,32 @@
         </div>
       </div>
     </section>
-  
+
     <!-- projects section -->
     <section id="projects-section" class=" ">
-  
+
       <div class="h-full w-full">
         <div
           class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between">
           <h1 class="font-neue-montreal font-bold leading-[137%] text-4xl md:text-7xl text-gray-900">
             Our Projects
           </h1>
-  
+
           <button type="button" id="explore-projects"
             class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
             View All
           </button>
         </div>
-  
-  
-  
+
+
+
         <div class="max-w-screen-2xl px-4 2xl:px-0 mx-auto  flex justify-between">
           <swiper :slidesPerView="1" :spaceBetween="20" :navigation="{
-                                                      nextEl: '.next-test',
-                                                      prevEl: '.prev-test',
-                                                      }" :pagination="{
-                                                                  clickable: true,
-                                                                  }" :breakpoints="breakpoints" :modules="modules"
+            nextEl: '.next-test',
+            prevEl: '.prev-test',
+          }" :pagination="{
+                                                        clickable: true,
+                                                      }" :breakpoints="breakpoints" :modules="modules"
             class="mySwiper">
             <!-- swiper slide 1 -->
             <swiper-slide class="">
@@ -89,11 +89,11 @@
                       Lucena City
                     </h5>
                   </div>
-  
+
                   <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
                     Two (2) Storey Residential Building with 408 sqm floor area and 5-bedrooms.
                   </p>
-  
+
                   <div class="flex items-start">
                     <p class="my-auto font-neue-montreal font-normal ">
                       Rances Residence
@@ -103,11 +103,11 @@
                       View Project
                     </button>
                   </div>
-  
+
                 </div>
               </div>
             </swiper-slide>
-  
+
             <!-- swiper slide 2 -->
             <swiper-slide class="">
               <div class="max-w-md bg-white rounded-lg">
@@ -126,11 +126,11 @@
                       Nueva Vizcaya
                     </h5>
                   </div>
-  
+
                   <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
                     Five (5) Units, Two (2) Storey Commercial Building with 187 sqm total floor area.
                   </p>
-  
+
                   <div class="flex items-start">
                     <p class="my-auto font-neue-montreal font-normal">
                       Commercial Building
@@ -140,11 +140,11 @@
                       View Project
                     </button>
                   </div>
-  
+
                 </div>
               </div>
             </swiper-slide>
-  
+
             <!-- swiper slide 3 -->
             <swiper-slide class="">
               <div class=" max-w-md bg-white rounded-lg">
@@ -163,11 +163,11 @@
                       Quezon City
                     </h5>
                   </div>
-  
+
                   <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
                     Two (2) Storey Residential/Apartment Building with 95 sqm floor area and 4-bedrooms.
                   </p>
-  
+
                   <div class="flex items-start">
                     <p class="my-auto font-neue-montreal font-normal">
                       Manny Apartment
@@ -177,11 +177,11 @@
                       View Project
                     </button>
                   </div>
-  
+
                 </div>
               </div>
             </swiper-slide>
-  
+
             <!-- ----------------------------------- -->
             <!-- swiper slide 4 -->
             <swiper-slide class="">
@@ -201,11 +201,11 @@
                       Lucena City
                     </h5>
                   </div>
-  
+
                   <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
                     Two (2) Storey Residential/Apartment Building with 170 sqm floor area and 4-units.
                   </p>
-  
+
                   <div class="flex items-start">
                     <p class="my-auto font-neue-montreal font-normal">
                       Joel Residence
@@ -215,11 +215,11 @@
                       View Project
                     </button>
                   </div>
-  
+
                 </div>
               </div>
             </swiper-slide>
-  
+
             <!-- swiper slide 5 -->
             <swiper-slide class="">
               <div class="max-w-md bg-white rounded-lg">
@@ -238,11 +238,11 @@
                       Lucena City
                     </h5>
                   </div>
-  
+
                   <p class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400">
                     Two (2) Storey Residential Building with 128 sqm floor area and 3-bedrooms.
                   </p>
-  
+
                   <div class="flex items-start">
                     <p class="my-auto font-neue-montreal font-normal">
                       Sadia Residence
@@ -252,11 +252,11 @@
                       View Project
                     </button>
                   </div>
-  
+
                 </div>
               </div>
             </swiper-slide>
-  
+
             <!-- swiper slide 6 -->
             <swiper-slide class="">
               <div class=" max-w-md bg-white rounded-lg">
@@ -274,11 +274,11 @@
                       Quezon City
                     </h5>
                   </div>
-  
+
                   <p class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400">
                     Two (2) Storey Residential/Apartment Building with 95 sqm floor area and 4-bedrooms.
                   </p>
-  
+
                   <div class="flex items-start">
                     <p class="my-auto font-neue-montreal font-normal">
                       Rances Residence
@@ -288,7 +288,7 @@
                       View Project
                     </button>
                   </div>
-  
+
                 </div>
               </div>
             </swiper-slide>
@@ -299,17 +299,19 @@
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center prev-test">
               <!-- SVG Icon -->
-              <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
                   d="M13 5H1m0 0L5 1m-4 4L5 9" />
               </svg>
               <span class="sr-only">Icon description</span>
             </button>
-  
+
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center  next-test">
               <!-- SVG Icon -->
-              <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
                   d="M1 5h12m0 0L9 1m4 4L9 9" />
               </svg>
@@ -317,10 +319,10 @@
             </button>
           </div>
         </div>
-  
+
       </div>
     </section>
-  
+
     <!-- about us -->
     <section id="about-us" class="">
       <div class="h-full w-full">
@@ -329,13 +331,13 @@
             class="font-neue-montreal font-bold text-4xl md:text-7xl py-4 lg:py-16 text-gray-900 leading-[150%] tracking-wide ">
             Our Experts
           </h1>
-  
+
           <div class="grid grid-cols-1 md:grid-cols-2 max-w-screen-2xl gap-x-20 mx-auto pb-0 lg:pb-8">
             <div class="">
               <img src="../assets/images/all-images/buildings/About Us/Group 463.webp" class="object-fill rounded-md"
                 alt="about-us-img">
             </div>
-  
+
             <div>
               <h3
                 class="font-neue-montreal font-bold text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]">
@@ -346,87 +348,87 @@
                 class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
                 More about us
               </button>
-  
+
               <div class="py-8 lg:py-20">
                 <div class="flex justify-start gap-4 lg:gap-x-32 items-center">
                   <h1
                     class="text-gray-900 text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold  leading-[94%]">
                     12+
                   </h1>
-  
+
                   <h3
                     class="font-neue-montreal font-normal text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]">
                     Successful Projects
                   </h3>
                 </div>
-  
+
                 <hr class="w-100 h-[2px] my-2  lg:my-8 bg-[#0000001E] border-0  ">
-  
+
                 <div class="flex justify-start gap-4 lg:gap-x-20 items-center">
                   <h1
                     class="text-gray-900 text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold  leading-[94%]">
                     98%
                   </h1>
-  
+
                   <h3
                     class="font-neue-montreal font-normal text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]">
                     Clients Satisfaction
                   </h3>
                 </div>
 
-                
-  
-  
+
+
+
               </div>
             </div>
-  
+
             <div>
-  
+
             </div>
           </div>
         </div>
       </div>
     </section>
-  
+
     <!-- get in touch -->
     <section id="get-in-touch" class="h-96 md:h-screen">
       <div class="h-96 md:h-full w-full flex flex-col justify-center items-start">
-  
+
         <div class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16 pb-8">
-  
+
           <h1
             class="font-neue-montreal font-bold text-4xl md:text-7xl text-start  py-4 text-gray-900 leading-[94%] tracking-wide">
             Your Home, Our Expertise
           </h1>
-  
+
           <h3
             class="font-neue-montreal font-[600] leading-[137%] text-gray-900 text-start text-[24px]  md:text-[40px] xs:w-auto lg:w-4/5 py-4 md:py-0"
             id="h3-subheadline-years">
             Elevate Your Projects with Precision, Reliability, and a Proven Track Record of Seven Years in Construction
             Excellence.
           </h3>
-  
+
           <button type="button"
             class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
             Get in touch
           </button>
-  
+
         </div>
       </div>
     </section>
-  
+
     <!-- footer -->
     <footer id="footer" class="h-full md:h-96 bg-[#252324]">
       <div class="grid lg:grid-cols-3 grid-cols-1 justify-between max-w-screen-2xl mx-auto py-8 ">
         <div class=" px-4  bg-[#252324] w-auto py-4 ">
-  
+
           <!-- image logo -->
           <NuxtLink to="/" class="flex items-center space-x-3 py-4 rtl:space-x-reverse">
             <img src="/assets/images/logo/RV.png" class="logo" alt="RV Logo" />
           </NuxtLink>
-  
+
           <!-- socials links -->
-  
+
           <button
             class="mr-4 group bg-[#252324] hover:bg-white border border-gray-9d rounded-full  p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out">
             <!-- SVG Icon -->
@@ -440,7 +442,7 @@
             </a>
             <span class="sr-only">Facebook Icon</span>
           </button>
-  
+
           <button
             class="mr-4 group bg-[#252324] hover:bg-white border border-gray-9d rounded-full p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out">
             <!-- SVG Icon (Instagram-like) -->
@@ -454,7 +456,7 @@
             </a>
             <span class="sr-only">Instagram Icon</span>
           </button>
-  
+
           <button
             class="mr-4 group bg-[#252324] hover:bg-white border border-gray-9d rounded-full p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out">
             <!-- SVG Icon (Email) -->
@@ -468,7 +470,7 @@
             </a>
             <span class="sr-only">Email Icon</span>
           </button>
-  
+
           <button
             class="mr-4 group bg-[#252324] hover:bg-white border border-gray-9d rounded-full p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out">
             <!-- SVG Icon (Phone Contact) -->
@@ -482,68 +484,106 @@
             </a>
             <span class="sr-only">Phone Icon</span>
           </button>
-  
+
           <!-- subheadline -->
           <h6 class="text-white font-neue-montreal text-[18px] font-normal leading-[138%] w-auto lg:w-96 py-4">
             Committed to Your Success, We Strive to Engineer Solutions Tailored Exclusively for You
           </h6>
-  
-  
+
+
         </div>
-  
-  
+
+
         <div class="block lg:flex flex-col  justify-center items-center px-4 py-auto lg:py-4  bg-[#252324]">
-  
+
           <div class="text-start ">
-            <h3 class="text-white font-neue-montreal font-normal text-[29px]  md:text-[40px] leading-[150%]">
-              Home
+            <h3>
+              <NuxtLink to="/"
+                class="relative group text-white font-neue-montreal font-normal text-[29px] md:text-[40px] leading-[150%] "
+                aria-current="page">
+                Home
+                <span :class="[
+                  'bg-white',
+                  'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left'
+                ]">
+                </span>
+
+              </NuxtLink>
+
             </h3>
-  
-            <h3 class="text-white font-neue-montreal font-normal text-[29px]  md:text-[40px] leading-[150%]">
-              Projects
+
+            <h3>
+              <NuxtLink to="/"
+                class="relative group text-white font-neue-montreal font-normal text-[29px]  md:text-[40px] leading-[150%]">Projects
+
+                <span :class="[
+                  'bg-white',
+                  'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left'
+                ]">
+                </span>
+
+              </NuxtLink>
             </h3>
-  
-            <h3 class="text-white font-neue-montreal font-normal  text-[29px]  md:text-[40px] leading-[150%]">
-              Services
+
+            <h3>
+              <NuxtLink to="/"
+                class="relative group text-white font-neue-montreal font-normal text-[29px]  md:text-[40px] leading-[150%]">Services
+
+                <span :class="[
+                  'bg-white',
+                  'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left'
+                ]">
+                </span>
+
+              </NuxtLink>
             </h3>
-  
-            <h3 class="text-white font-neue-montreal font-normal text-[29px]  md:text-[40px] leading-[150%] ">
-              About
+
+            <h3>
+              <NuxtLink to="/"
+                class="relative group text-white font-neue-montreal font-normal text-[29px]  md:text-[40px] leading-[150%]"> About
+
+                <span :class="[
+                  'bg-white',
+                  'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left'
+                ]">
+                </span>
+              </NuxtLink>
             </h3>
+
           </div>
-  
-  
+
+
         </div>
-  
-  
+
+
         <div class="block lg:flex justify-start items-end flex-col px-4 py-4 lg:py-0 bg-[#252324]">
-  
+
           <div class="pb-4 lg:pb-0">
             <button type="button"
               class="text-white font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-[#252324] border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-white hover:text-gray-900">
               Get in touch
             </button>
           </div>
-  
+
           <p class="text-[#8B8B8B] font-neue-montreal font-normal text-[14px] ">
             2024 Rioflorido. All rights reserved.
           </p>
-  
+
           <p class="text-[#8B8B8B] font-neue-montreal font-normal text-[14px]">
             Privacy Policy
           </p>
         </div>
-  
-  
-  
-  
-  
+
+
+
+
+
       </div>
-  
-  
+
+
     </footer>
-  
-  
+
+
   </div>
 </template>
 
