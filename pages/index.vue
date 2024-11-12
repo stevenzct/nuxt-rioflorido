@@ -4,15 +4,14 @@
     <section id="hero-section" class="h-screen">
       <div class="h-full w-full flex flex-col items-end justify-end" id="container-text">
         <div class="w-full">
-          <div class="max-w-screen-2xl mx-auto px-4 py-8 sm:py-3">
+          <div class="max-w-screen-2xl mx-auto px-4 py-8 ">
             <h1
-              class="text-white text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold  leading-[94%]"
-              id="h1-headline">
+              class="text-white text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold  leading-[94%]">
               Design, Build, Construct
             </h1>
           </div>
   
-          <div class="w-auto border-b border-gray-100" id="line-hero"></div>
+          <div class="w-auto border-b border-[#F3F4F654]"></div>
         </div>
   
         <div class="w-full">
@@ -596,13 +595,6 @@ export default {
 </script>
 
 <style scoped>
-#line-hero {
-  border-color: rgb(243 244 246 / 33%);
-}
-
-
-
-
 .swiper-slide {
   display: flex;
   align-items: center;
