@@ -484,7 +484,7 @@
   
           <div class="pb-4 lg:pb-0">
             <button type="button"
-              class="text-white font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-black border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-white hover:text-gray-900">
+              class="text-white font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-[#252324] border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-white hover:text-gray-900">
               Get in touch
             </button>
           </div>
@@ -574,15 +574,6 @@ export default {
 
 
 
-#h3-subheadline-years {
-  /* font-family: "Neue Montreal";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 138%; */
-  /* 40.02px */
-
-}
-
 #hero-section {
   /* background-image: url("../assets/images/home/1-landing.webp"); */
   background: linear-gradient(180deg,
@@ -594,21 +585,12 @@ export default {
     linear-gradient(0deg,
       var(--gradient-home2, rgba(0, 0, 0, 0)) 0%,
       var(--gradient-home2, rgba(0, 0, 0, 0)) 100%),
-    url("../assets/images/home/1-landing.webp") lightgray -0.587px -555.735px / 100% 210.526% no-repeat;
+    url("../assets/images/home/watermark-landing.webp") lightgray -0.587px -555.735px / 100% 210.526% no-repeat;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
 }
-
-#h1-headline {
-  /* font-family: "Neue Montreal";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 109%;
-  text-transform: capitalize; */
-}
-
 
 #intro-section {
   background-image: url("../assets/images/home/abstract-intro.webp");
@@ -616,7 +598,6 @@ export default {
   background-size: cover;
   background-position: 50%;
 }
-
 #get-in-touch {
   background-image: url("../assets/images/home/abstract-get-in-touch.webp");
   background-repeat: no-repeat;
@@ -624,27 +605,11 @@ export default {
   background-position: 50%;
 }
 
-
-
-
-
-
 #projects-section {
   background-color: #F5F9FC;
 }
 
-#h3-our-team {
-  /* font-family: "Neue Montreal";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 137%; */
-}
-
-
-
 @media screen and (max-width: 556px) {
-
-
   #intro-text {
     text-indent: 0;
     text-align: justify;
