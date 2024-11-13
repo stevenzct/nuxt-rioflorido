@@ -94,11 +94,72 @@
       </div>
     </section>
 
-
     <!-- contacts section -->
-     <section id="contacts-section" class="h-auto">
+    <section id="contacts-section" class="h-auto bg-[#F5F9FC]">
+      <div class="h-full w-full">
+        <div class="max-w-screen-2xl mx-auto px-5 py-16 w-full grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- phone contacts -->
+          <div>
+            <p
+              class="font-neue-montreal font-normal text-[18px] text-[#494949] "
+            >
+              Call us
+            </p>
 
-     </section>
+            <hr />
+            <h4 class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
+              042 710 8762 Telephone
+            </h4>
+
+            <h4 class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
+              0917-144-1538 Globe
+            </h4>
+
+            <h4 class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
+              0969-601-2447 Smart
+            </h4>
+
+            <p class="font-neue-montreal font-normal text-[16px] text-[#696969]">
+              If you prefer to talk in person
+            </p>
+          </div>
+
+          <!-- email -->
+          <div>
+            <p
+              class="font-neue-montreal font-normal text-[18px] text-[#494949]"
+            >
+              Send a text
+            </p>
+
+            <hr />
+            <h4 class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
+              rv.riocon@gmail.com
+            </h4>
+
+            <p class="font-neue-montreal font-normal text-[16px] text-[#696969]">
+              Tell us all about the project
+            </p>
+          </div>
+
+          <!-- social  -->
+          <div>
+            <p
+              class="font-neue-montreal font-normal text-[18px] text-[#494949]"
+            >
+              Follow us on social media
+            </p>
+
+            <hr />
+            <h4 class="font-neue-montreal font-bold text-[24px] md:text-[32px]">Facebook</h4>
+
+            <p class="font-neue-montreal font-normal text-[16px] text-[#696969]">
+              If you want to keep updated
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
