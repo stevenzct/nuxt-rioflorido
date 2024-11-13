@@ -2,7 +2,7 @@
     <div>
          <!-- footer -->
     <footer class="h-full md:h-96 bg-[#252324]">
-      <div class="grid lg:grid-cols-3 grid-cols-1 justify-between max-w-screen-2xl mx-auto py-8 ">
+      <div class="grid lg:grid-cols-3 grid-cols-1 justify-between max-w-screen-2xl mx-auto py-8 md:py-0 lg:py-8 ">
         <div class=" px-4  bg-[#252324] w-auto py-4 ">
 
           <!-- image logo -->

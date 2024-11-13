@@ -1,16 +1,375 @@
 <template>
-    <div class="my-8">
-        <h2>Projects</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut nostrum quibusdam temporibus nemo cumque vero amet quasi voluptatibus a laborum officiis magnam eveniet, aliquam quae dolores atque perspiciatis illum deserunt earum vel provident? Minus impedit porro, est voluptatem cumque at quibusdam nostrum quam architecto tenetur placeat ducimus ea expedita molestias numquam quae error facilis saepe. Nam dolor porro atque veniam doloribus blanditiis dolores, fuga expedita ex excepturi nihil nostrum itaque quos officia autem amet deleniti suscipit libero. Magnam doloribus harum minima voluptatibus deleniti sapiente fugit quibusdam voluptates, sint laboriosam. Neque molestiae corporis doloremque quia fugit, ducimus, iure libero vero, inventore delectus cupiditate ut commodi architecto! Magni, nesciunt porro fugit debitis itaque doloremque quos recusandae aliquid provident alias nam aut ratione nihil cum eaque? Ipsum autem explicabo possimus deserunt eos vel obcaecati sit labore nemo asperiores harum rem eum reprehenderit nam beatae et consequatur at ducimus ea repudiandae, sunt sequi! At mollitia, cum necessitatibus, dolorum molestiae sed ducimus, porro aspernatur sint dolore enim amet? Dolor impedit quidem laboriosam ratione voluptas, magni quod. Voluptatum excepturi maxime illum sint optio atque consequatur quia nesciunt molestiae quidem natus corporis ad dolorem, modi quisquam corrupti veritatis, laboriosam dolor soluta doloribus maiores, omnis impedit. Quo quos dicta dignissimos architecto, numquam harum molestias doloremque error ex minus eveniet commodi ut dolorum assumenda saepe veniam necessitatibus recusandae consectetur aspernatur! Ullam facere fugiat sapiente aliquid voluptatem voluptas et, perferendis itaque deleniti ipsa perspiciatis eius dicta quidem harum. Nulla provident amet inventore itaque voluptatibus optio. Inventore eaque, corrupti tempore suscipit accusamus error repellendus eius molestiae hic obcaecati asperiores est minus in ducimus quas tenetur expedita. Nobis reiciendis est minima explicabo quam blanditiis obcaecati a, nisi maiores omnis ipsum enim impedit reprehenderit voluptatem quo perferendis illo repellat modi fuga atque similique facilis. Temporibus laboriosam omnis, illum quibusdam tenetur laborum eos autem aut minus vel voluptas doloribus amet minima animi nemo veritatis. Veritatis, nisi iusto praesentium adipisci reiciendis libero modi fuga dolores, officiis consequatur eos dolorum impedit facere voluptate in eius. Vitae enim eaque blanditiis atque aperiam, eveniet iure itaque explicabo. Expedita, quos quidem. Culpa, eum a? Ratione ducimus perferendis, libero omnis voluptatibus earum. Reiciendis et facere recusandae fugit repellat optio a, ab tempore repellendus, exercitationem quas voluptatem nobis! Ad, maxime est accusantium aperiam dolor nihil. Officia quod, dolorum animi laboriosam, blanditiis fugiat, fuga aut mollitia saepe maxime ab consequuntur eaque accusamus. Assumenda distinctio totam quo voluptates quibusdam? Itaque accusantium, optio voluptatem iusto est consequuntur quisquam distinctio reprehenderit incidunt dolores ad atque reiciendis accusamus quasi necessitatibus. Voluptatibus assumenda, praesentium suscipit alias expedita, ullam rem pariatur aspernatur eaque officiis tempora unde facere quibusdam? Perferendis pariatur minus quis illo totam dolorem corrupti ab fugiat quos obcaecati neque autem quibusdam et dolores, repellat cupiditate corporis rem blanditiis. Exercitationem, soluta odit excepturi expedita similique cumque, beatae culpa adipisci fuga molestias cupiditate voluptatem sapiente dolores recusandae delectus, fugit modi at iure. Animi incidunt mollitia id modi recusandae blanditiis nulla atque neque eaque nobis dignissimos dolor impedit, quos provident dicta magni cupiditate sint voluptas! Repellat, voluptatibus iure?
-        </p>
+    <div class="">
+        <!-- Hero Section -->
+        <section id="projects-hero" class="h-[300px] lg:h-[494px] ">
+            <div class="h-full w-full flex flex-col justify-end">
+                <div class="max-w-screen-2xl mx-auto px-4 py-8 w-full">
+                    <div class="text-left">
+                        <h1
+                            class="lg:py-8 text-black text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold leading-[94%]">
+                            Our Projects
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- All projects section -->
+        <section id="projects-section" class="h-auto">
+            <div class="h-full w-full">
+                <div
+                    class="max-w-screen-2xl px-4 mx-auto grid md:grid-cols-2 lg:grid-cols-3 py-10 lg:py-32 gap-8 lg:gap-20 gap-y-10 lg:gap-y-32 justify-center">
+                    <div class="max-w-md bg-white rounded-lg">
+                        <a href="#">
+                            <img class="rounded-t-lg"
+                                src="../assets/images/all-images/buildings/Lucena, Rances Residence/IMG_E0210 (1).webp"
+                                alt="" />
+                        </a>
+                        <div class="p-4 md:p-8 pb-12 md:pb-14">
+                            <div class="inline-flex items-center">
+                                <div class="my-auto">
+                                    <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                                </div>
+                                <h5
+                                    class=" ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                                    Lucena City
+                                </h5>
+                            </div>
+
+                            <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
+                                Two (2) Storey Residential Building with 408 sqm floor area and 5-bedrooms.
+                            </p>
+
+                            <div class="flex items-start">
+                                <p class="my-auto font-neue-montreal font-normal ">
+                                    Rances Residence
+                                </p>
+                                <button type="button"
+                                    class=" font-neue-montreal font-bold rounded-[4px]  ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white  ">
+                                    View Project
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="max-w-md bg-white rounded-lg">
+                        <a href="#">
+                            <img class="rounded-t-lg"
+                                src="../assets/images/all-images/buildings/Nueva Vizcaya Project - Commercial Building/1688207351599-01 (2).webp"
+                                alt="" />
+                        </a>
+                        <div class="p-4 md:p-8 pb-12 md:pb-14">
+                            <div class="inline-flex items-center">
+                                <div class="my-auto">
+                                    <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                                </div>
+                                <h5
+                                    class="  ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                                    Nueva Vizcaya
+                                </h5>
+                            </div>
+
+                            <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
+                                Five (5) Units, Two (2) Storey Commercial Building with 187 sqm total floor area.
+                            </p>
+
+                            <div class="flex items-start">
+                                <p class="my-auto font-neue-montreal font-normal">
+                                    Commercial Building
+                                </p>
+                                <button type="button"
+                                    class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900   bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                                    View Project
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class=" max-w-md bg-white rounded-lg">
+                        <a href="#">
+                            <img class="rounded-t-lg"
+                                src="../assets/images/all-images/buildings/Quezon City Project - Sir Manny Apartment/1704532065427.webp"
+                                alt="" />
+                        </a>
+                        <div class="p-4 md:p-8 pb-12 md:pb-14">
+                            <div class="inline-flex items-center">
+                                <div class="my-auto">
+                                    <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                                </div>
+                                <h5
+                                    class=" ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                                    Quezon City
+                                </h5>
+                            </div>
+
+                            <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
+                                Two (2) Storey Residential/Apartment Building with 95 sqm floor area and 4-bedrooms.
+                            </p>
+
+                            <div class="flex items-start">
+                                <p class="my-auto font-neue-montreal font-normal">
+                                    Manny Apartment
+                                </p>
+                                <button type="button"
+                                    class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                                    View Project
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="max-w-md bg-white rounded-lg">
+                        <a href="#">
+                            <img class="rounded-t-lg"
+                                src="../assets/images/all-images/buildings/Lucena City Project - Joel _ Arlyn Residence/IMG_E7836.webp"
+                                alt="" />
+                        </a>
+                        <div class="p-4 md:p-8 pb-12 md:pb-14">
+                            <div class="inline-flex items-center">
+                                <div class="my-auto">
+                                    <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                                </div>
+                                <h5
+                                    class="  ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                                    Lucena City
+                                </h5>
+                            </div>
+
+                            <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
+                                Two (2) Storey Residential/Apartment Building with 170 sqm floor area and 4-units.
+                            </p>
+
+                            <div class="flex items-start">
+                                <p class="my-auto font-neue-montreal font-normal">
+                                    Joel Residence
+                                </p>
+                                <button type="button"
+                                    class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white  border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                                    View Project
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="max-w-md bg-white rounded-lg">
+                        <a href="#">
+                            <img class="rounded-t-lg"
+                                src="../assets/images/all-images/buildings/Lucena City Project - Sadia Residence/IMG_E7855.webp"
+                                alt="" />
+                        </a>
+                        <div class="p-4 md:p-8 pb-12 md:pb-14">
+                            <div class="inline-flex items-center">
+                                <div class="my-auto">
+                                    <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                                </div>
+                                <h5
+                                    class="  ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                                    Lucena City
+                                </h5>
+                            </div>
+
+                            <p class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400">
+                                Two (2) Storey Residential Building with 128 sqm floor area and 3-bedrooms.
+                            </p>
+
+                            <div class="flex items-start">
+                                <p class="my-auto font-neue-montreal font-normal">
+                                    Sadia Residence
+                                </p>
+                                <button type="button"
+                                    class="font-neue-montreal font-bold rounded-[4px]  ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                                    View Project
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class=" max-w-md bg-white rounded-lg">
+                        <a href="#">
+                            <img class="rounded-t-lg"
+                                src="../assets/images/all-images/buildings/Lucena, Tamayo Residence/IMG_E7835.webp"
+                                alt="" />
+                        </a>
+                        <div class="p-4 md:p-8 pb-12 md:pb-14">
+                            <div class="inline-flex items-center">
+                                <div class="my-auto">
+                                    <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                                </div>
+                                <h5
+                                    class="font-neue-montreal ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                                    Quezon City
+                                </h5>
+                            </div>
+
+                            <p class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400">
+                                Two (2) Storey Residential/Apartment Building with 95 sqm floor area and 4-bedrooms.
+                            </p>
+
+                            <div class="flex items-start">
+                                <p class="my-auto font-neue-montreal font-normal">
+                                    Rances Residence
+                                </p>
+                                <button type="button"
+                                    class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                                    View Project
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class=" max-w-md bg-white rounded-lg">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="../assets/images/projects/Labitoria Residence.webp" alt="" />
+                        </a>
+                        <div class="p-4 md:p-8 pb-12 md:pb-14">
+                            <div class="inline-flex items-center">
+                                <div class="my-auto">
+                                    <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                                </div>
+                                <h5
+                                    class="font-neue-montreal ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                                    Nueva Vizcaya
+                                </h5>
+                            </div>
+
+                            <p class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400">
+                                Four (4) Bedroom, Two (2) Storey Residential/Apartment Building with 125 sqm floor area.
+                            </p>
+
+                            <div class="flex items-start">
+                                <p class="my-auto font-neue-montreal font-normal">
+                                    Labitoria Residence
+                                </p>
+                                <button type="button"
+                                    class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                                    View Project
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class=" max-w-md bg-white rounded-lg">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="../assets/images/projects/Ramil and Gina Residence.webp"
+                                alt="" />
+                        </a>
+                        <div class="p-4 md:p-8 pb-12 md:pb-14">
+                            <div class="inline-flex items-center">
+                                <div class="my-auto">
+                                    <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                                </div>
+                                <h5
+                                    class="font-neue-montreal ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                                    Nueva Vizcaya
+                                </h5>
+                            </div>
+
+                            <p class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400">
+                                Four (4) Bedroom, Two (2) Storey Residential Building with 134 sqm floor area.
+                            </p>
+
+                            <div class="flex items-start">
+                                <p class="my-auto font-neue-montreal font-normal">
+                                    Ramil and Gina Residence
+                                </p>
+                                <button type="button"
+                                    class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                                    View Project
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class=" max-w-md bg-white rounded-lg">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="../assets/images/projects/labitoria.webp" alt="" />
+                        </a>
+                        <div class="p-4 md:p-8 pb-12 md:pb-14">
+                            <div class="inline-flex items-center">
+                                <div class="my-auto">
+                                    <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                                </div>
+                                <h5
+                                    class="font-neue-montreal ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                                    Nueva Vizcaya
+                                </h5>
+                            </div>
+
+                            <p class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400">
+                                Four (4) Bedroom, Two (2) Storey Residential Building with 95 sqm floor area.
+                            </p>
+
+                            <div class="flex items-start">
+                                <p class="my-auto font-neue-montreal font-normal">
+                                    Labitoria Residence
+                                </p>
+                                <button type="button"
+                                    class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                                    View Project
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class=" max-w-md bg-white rounded-lg">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="../assets/images/projects/Extension Building.webp" alt="" />
+                        </a>
+                        <div class="p-4 md:p-8 pb-12 md:pb-14">
+                            <div class="inline-flex items-center">
+                                <div class="my-auto">
+                                    <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                                </div>
+                                <h5
+                                    class="font-neue-montreal ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                                    Nueva Vizcaya
+                                </h5>
+                            </div>
+
+                            <p class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400">
+                                Two (2) Bedroom, Bungalow Residential Building (Extension) with 40 sqm floor area.
+                            </p>
+
+                            <div class="flex items-start">
+                                <p class="my-auto font-neue-montreal font-normal">
+                                    Extension Building
+                                </p>
+                                <button type="button"
+                                    class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                                    View Project
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </div>
+
 </template>
 
 <script setup>
 
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+#projects-hero {
+    background: url(../assets/images/projects/abstract-hero.webp) lightgray 0px -50.902px / 100% 437.247% no-repeat;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
 </style>
