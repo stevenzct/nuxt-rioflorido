@@ -1,16 +1,116 @@
 <template>
-    <div class="my-8">
-        <h2>Contact</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi a non enim quo consectetur culpa commodi perferendis veniam. Libero, incidunt sint minus assumenda velit inventore est nobis necessitatibus, similique, ipsum placeat eum? Necessitatibus, recusandae consequatur id fugiat ducimus similique itaque quas hic quasi placeat non modi quam reprehenderit fuga, neque et officia fugit minima repellendus sapiente magnam. Autem blanditiis alias obcaecati assumenda cum quia mollitia! Quos et alias molestiae dicta officia fugiat facere ex voluptate repudiandae? Tempora aspernatur minima ipsam modi labore voluptatibus ab maiores, quibusdam dolorem est nesciunt ullam minus, ipsa vel aperiam, a quasi illo similique! Distinctio nisi cumque eaque hic blanditiis eum harum velit dolorum quam dolore necessitatibus asperiores officia excepturi, ad expedita alias molestias amet debitis vel suscipit corrupti unde officiis illum ut. Eos odio, accusantium sit culpa sed ad, nihil, autem tenetur amet corrupti error quae dolorem accusamus minus? Libero fugit sed repudiandae nemo ipsam neque perspiciatis aperiam officiis, iste voluptate animi delectus fugiat quae, voluptas alias impedit velit, aliquam cum! Numquam non provident esse distinctio commodi dicta dignissimos odit sint dolore officia mollitia, suscipit eos ipsam sapiente itaque quis quaerat exercitationem culpa incidunt deserunt expedita illum! Consequatur esse aperiam unde illo vel, ex sapiente provident porro aliquid ipsa delectus modi eum eius consectetur nulla atque, obcaecati quis minus quod adipisci dolorem, voluptates veritatis suscipit quidem. Cupiditate, voluptatibus, dolore asperiores ratione cum laborum officiis quis eaque voluptate minus maiores quasi totam beatae et illo consectetur. Tempore animi, quisquam quod fugit dolorum reprehenderit, et labore vitae id eligendi assumenda libero qui optio quas velit voluptas quaerat voluptatum? Minus ipsa, velit enim voluptas explicabo earum voluptates. Ex recusandae iure dolorem temporibus beatae eius fugit autem totam facere maiores quae distinctio veritatis, quas aperiam quis repellat, earum excepturi a harum ut libero. Reiciendis, corrupti natus architecto, unde hic voluptatem quas maxime, nemo totam fugit similique perferendis accusamus quod nam. Nisi exercitationem odio debitis quae! Rerum ullam porro ad rem, voluptatibus cupiditate quaerat id fugiat incidunt aspernatur maiores quibusdam at, nisi ipsam reprehenderit eveniet impedit tenetur voluptas ipsum nemo natus iusto harum amet obcaecati? Iure perferendis, sit accusantium, sint harum ab asperiores assumenda sequi soluta enim, maxime omnis dolor. Magnam qui facilis reprehenderit maxime aut dolorem unde officiis eos ipsam velit fugiat possimus soluta, optio autem aliquam neque cumque, consequuntur recusandae. Ipsam tenetur voluptate, mollitia quod maxime explicabo nostrum earum molestiae illum quasi sint ducimus fugiat ut facere veritatis nobis in corporis iste obcaecati, dolorem, ipsum voluptatibus cumque? Necessitatibus maiores ratione neque ipsa cupiditate sunt dicta corporis voluptatum quasi iste numquam, animi ut ullam, provident eos voluptate deserunt tempore iusto quae ducimus, impedit possimus! Exercitationem asperiores dolores dignissimos reprehenderit ducimus sequi earum natus suscipit vitae sunt? Accusantium, nulla. Nemo nisi dolore minus, labore quam corrupti aliquid laudantium sint quia? Consequuntur amet tempora fugiat maiores ab voluptatum modi eos voluptatem ducimus dolorem dignissimos suscipit fuga voluptate exercitationem necessitatibus at, nostrum pariatur praesentium iste placeat inventore qui cumque. Quis eveniet libero culpa dignissimos quos mollitia magni perspiciatis, dolor aliquid quae.
-        </p>
+  <div class="">
+    <!-- Hero Section -->
+    <section id="contact-hero" class="h-[300px] lg:h-[494px]">
+      <div class="h-full w-full flex flex-col justify-end">
+        <div class="max-w-screen-2xl mx-auto px-4 py-8 w-full">
+          <div class="text-left">
+            <h1
+              class="lg:py-8 text-black text-[30px] sm:text-[37px] md:text-[50px] lg:text-[90px] font-neue-montreal font-bold leading-[1.09]"
+            >
+              Here is how to get in touch with us.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- form section -->
+    <section id="forms-section" class="h-auto">
+      <div class="h-full w-full">
+        <div class="max-w-screen-2xl px-4 mx-auto py-10 lg:py-16">
+          <form class="max-w-screen-2xl mx-auto">
+            <!-- name -->
+            <div class="w-full lg:w-10/12">
+              <div class="relative mb-5 group py-3">
+                <input
+                  type="text"
+                  name="floating_first_name"
+                  id="floating_first_name"
+                  class="font-neue-montreal font-normal leading-[94%] text-[24px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  placeholder=" "
+                  required
+                />
+
+                <label
+                  for="floating_first_name"
+                  class="font-neue-montreal font-bold leading-[94%] text-[24px] md:text-[48px] text-black absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Your name
+                </label>
+              </div>
+
+              <!-- email -->
+              <div class="relative mb-5 group py-3">
+                <input
+                  type="email"
+                  name="floating_email"
+                  id="floating_email"
+                  class="font-neue-montreal font-normal leading-[94%] text-[24px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  placeholder=" "
+                  required
+                />
+
+                <label
+                  for="floating_email"
+                  class="font-neue-montreal font-bold leading-[94%] text-[24px] md:text-[48px] text-black absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Your Email
+                </label>
+              </div>
+
+              <!-- Tell us the project -->
+              <div class="">
+                <div class="relative mb-5 group py-3">
+                  <input
+                    type="text"
+                    name="project_name"
+                    id="project_name"
+                    class="font-neue-montreal font-normal leading-[94%] text-[24px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+
+                  <label
+                    for="project_name"
+                    class="font-neue-montreal font-bold leading-[94%] text-[24px] md:text-[48px] text-black absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    Tell us the project
+                  </label>
+                </div>
+              </div>
+
+              <div class="flex justify-end">
+                <button
+                  type="submit"
+                  class="font-neue-montreal font-bold h-[55px] rounded-[4px] text-gray-900 text-[16px] bg-white border border-gray-400 px-8 py-3.5 my-4 md:w-[200px] transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+                >
+                  Send message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- contacts section -->
+     <section id="contacts-section" class="h-auto">
+
+     </section>
+  </div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
+<style scoped>
+#contact-hero {
+  background: url(../assets/images/projects/abstract-hero.webp) lightgray 0px -50.902px /
+    100% 437.247% no-repeat;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
 </style>
