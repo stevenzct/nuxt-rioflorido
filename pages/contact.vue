@@ -27,14 +27,14 @@
                   type="text"
                   name="floating_first_name"
                   id="floating_first_name"
-                  class="font-neue-montreal font-normal leading-[94%] text-[24px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-[3px] md:border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  class="font-neue-montreal font-normal leading-[94%] text-[28px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-[3px] md:border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required
                 />
 
                 <label
                   for="floating_first_name"
-                  class="font-neue-montreal font-bold leading-[94%] text-[24px] md:text-[48px] text-black absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  class="font-neue-montreal font-bold leading-[94%] text-[28px] md:text-[48px] text-black absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Your name
                 </label>
@@ -46,14 +46,14 @@
                   type="email"
                   name="floating_email"
                   id="floating_email"
-                  class="font-neue-montreal font-normal leading-[94%] text-[24px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-[3px] md:border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  class="font-neue-montreal font-normal leading-[94%] text-[28px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-[3px] md:border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required
                 />
 
                 <label
                   for="floating_email"
-                  class="font-neue-montreal font-bold leading-[94%] text-[24px] md:text-[48px] text-black absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  class="font-neue-montreal font-bold leading-[94%] text-[28px] md:text-[48px] text-black absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Your Email
                 </label>
@@ -66,14 +66,14 @@
                     type="text"
                     name="project_name"
                     id="project_name"
-                    class="font-neue-montreal font-normal leading-[94%] text-[24px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-[3px] md:border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    class="font-neue-montreal font-normal leading-[94%] text-[28px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-[3px] md:border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
                     required
                   />
 
                   <label
                     for="project_name"
-                    class="font-neue-montreal font-bold leading-[94%] text-[24px] md:text-[48px] text-black absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    class="font-neue-montreal font-bold leading-[94%] text-[28px] md:text-[48px] text-black absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                   >
                     Tell us the project
                   </label>
