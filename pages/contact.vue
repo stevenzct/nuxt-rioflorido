@@ -27,7 +27,7 @@
                   type="text"
                   name="floating_first_name"
                   id="floating_first_name"
-                  class="font-neue-montreal font-normal leading-[94%] text-[24px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-[3px] md:border-b-4  border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  class="font-neue-montreal font-normal leading-[94%] text-[24px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-[3px] md:border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required
                 />
@@ -110,17 +110,41 @@
             </p>
 
             <hr />
-            <h4 class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
-              042 710 8762 Telephone
-            </h4>
+            <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
+              <a class="relative group" href="tel:+63427108762">042 710 8762 Telephone
+                <span
+                  :class="[
+                    'bg-black',
+                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                  ]"
+                >
+                </span>
+              </a>
+            </p>
 
-            <h4 class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
-              0917-144-1538 Globe
-            </h4>
+            <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
+              <a class="relative group" href="tel:+639171441538">0917-144-1538 Globe
+                <span
+                  :class="[
+                    'bg-black',
+                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                  ]"
+                >
+                </span>
+              </a>
+            </p>
 
-            <h4 class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
-              0969-601-2447 Smart
-            </h4>
+            <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
+              <a class="relative group" href="tel:+639696012447">0969-601-2447 Smart
+                <span
+                  :class="[
+                    'bg-black',
+                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                  ]"
+                >
+                </span>
+              </a>
+            </p>
 
             <p
               class="font-neue-montreal font-normal text-[16px] text-[#696969]"
@@ -138,9 +162,23 @@
             </p>
 
             <hr />
-            <h4 class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
-              rv.riocon@gmail.com
-            </h4>
+            <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
+              <a
+                href="mailto:rv.riocon@gmail.com"
+                class="relative group"
+                aria-label="Email RV Rioflorido Construction"
+              >
+                rv.riocon@gmail.com
+
+                <span
+                  :class="[
+                    'bg-black',
+                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                  ]"
+                >
+                </span>
+              </a>
+            </p>
 
             <p
               class="font-neue-montreal font-normal text-[16px] text-[#696969]"
@@ -158,9 +196,25 @@
             </p>
 
             <hr />
-            <h4 class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
-              Facebook
-            </h4>
+            <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
+              <a
+                class="relative group"
+                href="https://www.facebook.com/profile.php?id=100083308930581"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Facebook page"
+              >
+                Facebook
+
+                <span
+                  :class="[
+                    'bg-black',
+                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                  ]"
+                >
+                </span>
+              </a>
+            </p>
 
             <p
               class="font-neue-montreal font-normal text-[16px] text-[#696969]"
@@ -171,7 +225,9 @@
         </div>
 
         <!-- google maps -->
-        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:py-16 lg:pb-32 w-full">
+        <div
+          class="max-w-screen-2xl mx-auto px-4 py-8 lg:py-16 lg:pb-32 w-full"
+        >
           <h1
             class="py-4 lg:py-8 text-black text-[30px] sm:text-[37px] md:text-[50px] lg:text-[90px] font-neue-montreal font-bold leading-[1.09]"
           >
@@ -184,7 +240,7 @@
             <div class="col-auto lg:col-span-2">
               <!-- lg:w-[800px]  lg:h-[600px]-->
               <div
-                class="rounded-[8px] border border-[#AFAFAF] w-auto  h-auto lg:h-[600px]"
+                class="rounded-[8px] border border-[#AFAFAF] w-auto h-auto lg:h-[600px]"
               >
                 <iframe
                   class="w-full h-full rounded-[8px]"
