@@ -72,13 +72,15 @@
             Our Projects
           </h1>
 
-          <button
-            type="button"
-            id="explore-projects"
-            class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
-          >
-            View All
-          </button>
+          <NuxtLink to="/projects">
+            <button
+              type="button"
+              id="explore-projects"
+              class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+            >
+              View All
+            </button>
+          </NuxtLink>
         </div>
 
         <div
