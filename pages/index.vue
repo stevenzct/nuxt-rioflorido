@@ -31,6 +31,7 @@
 
             <button
               type="button"
+              @click="scrollToProjects"
               class="font-neue-montreal font-bold h-[55px] rounded-[4px] text-gray-900 text-[16px] bg-white border border-gray-400 px-8 py-3.5 my-4 md:w-[200px] transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
             >
               Explore Projects
@@ -61,7 +62,7 @@
     </section>
 
     <!-- projects section -->
-    <section id="projects-section" class=" ">
+    <section id="projects-section" ref="projectsSection"  class="">
       <div class="h-full w-full">
         <div
           class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between"
@@ -533,47 +534,54 @@
   </div>
 </template>
 
+
+
 <script>
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
-
 import { Navigation } from "swiper/modules";
+import { ref } from 'vue';
 
-// Import Swiper styles
-// import "swiper/css/pagination";
-
-// import "./style.css";
-
-// Import required modules
-// import { Pagination } from "swiper/modules";
-
+// Define the component
 export default {
   components: {
     Swiper,
     SwiperSlide,
   },
   setup() {
-    return {
-      modules: [Navigation],
+    // Declare references and methods
+    const projectsSection = ref(null);
+
+    // Scroll to Projects section
+    const scrollToProjects = () => {
+      if (projectsSection.value) {
+        projectsSection.value.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
     };
-  },
-  data() {
-    return {
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          // spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          // spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 3,
-          // spaceBetween: 50,
-        },
+
+    // Swiper breakpoints setup
+    const breakpoints = {
+      640: {
+        slidesPerView: 2,
       },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    };
+
+    // Return the data that needs to be used in the template
+    return {
+      projectsSection,
+      scrollToProjects,
+      breakpoints,
+      modules: [Navigation],
     };
   },
 };
