@@ -115,7 +115,7 @@
                 <span
                   :class="[
                     'bg-black',
-                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                    'absolute bottom-0 left-0 w-full h-[1px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
                 >
                 </span>
@@ -127,7 +127,7 @@
                 <span
                   :class="[
                     'bg-black',
-                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                    'absolute bottom-0 left-0 w-full h-[1px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
                 >
                 </span>
@@ -139,7 +139,7 @@
                 <span
                   :class="[
                     'bg-black',
-                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                    'absolute bottom-0 left-0 w-full h-[1px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
                 >
                 </span>
@@ -173,7 +173,7 @@
                 <span
                   :class="[
                     'bg-black',
-                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                    'absolute bottom-0 left-0 w-full h-[1px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
                 >
                 </span>
@@ -209,7 +209,7 @@
                 <span
                   :class="[
                     'bg-black',
-                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                    'absolute bottom-0 left-0 w-full h-[1px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
                 >
                 </span>
