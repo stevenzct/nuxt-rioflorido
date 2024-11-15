@@ -2,11 +2,15 @@
   <div class="overflow-hidden bg-white">
     <!-- hero section  -->
     <section id="hero-section" class="h-screen">
-      <div class="h-full w-full flex flex-col items-end justify-end" id="container-text">
+      <div
+        class="h-full w-full flex flex-col items-end justify-end"
+        id="container-text"
+      >
         <div class="w-full">
-          <div class="max-w-screen-2xl mx-auto px-4 py-8 ">
+          <div class="max-w-screen-2xl mx-auto px-4 py-8">
             <h1
-              class="text-white text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold  leading-[94%]">
+              class="text-white text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold leading-[94%]"
+            >
               Design, Build, Construct
             </h1>
           </div>
@@ -15,14 +19,20 @@
         </div>
 
         <div class="w-full">
-          <div class="max-w-screen-2xl mx-auto px-4 py-8 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between">
-            <p class="font-neue-montreal font-normal text-white pb-2 w-auto md:w-[706px] text-[20px] md:text-[24px] ">
+          <div
+            class="max-w-screen-2xl mx-auto px-4 py-8 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between"
+          >
+            <p
+              class="font-neue-montreal font-normal text-white pb-2 w-auto md:w-[706px] text-[20px] md:text-[24px]"
+            >
               Your Dream Home Starts Here: Comprehensive Construction Solutions
               by Expert Civil Engineers.
             </p>
 
-            <button type="button"
-              class="font-neue-montreal font-bold h-[55px] rounded-[4px] text-gray-900 text-[16px] bg-white border border-gray-400 px-8 py-3.5 my-4 md:w-[200px] transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+            <button
+              type="button"
+              class="font-neue-montreal font-bold h-[55px] rounded-[4px] text-gray-900 text-[16px] bg-white border border-gray-400 px-8 py-3.5 my-4 md:w-[200px] transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+            >
               Explore Projects
             </button>
           </div>
@@ -32,11 +42,15 @@
 
     <!-- intro section  -->
     <section id="intro-section" class="h-96 md:h-screen">
-      <div class="h-96 md:h-full w-full flex items-center justify-center" id="container-intro">
+      <div
+        class="h-96 md:h-full w-full flex items-center justify-center"
+        id="container-intro"
+      >
         <div class="max-w-screen-2xl mx-auto px-4">
           <h1
-            class="font-neue-montreal font-bold leading-[137%] indent-0 md:indent-[200px]  text-gray-900 text-start text-[24px] md:text-[48px]"
-            id="intro-text">
+            class="font-neue-montreal font-bold leading-[137%] indent-0 md:indent-[200px] text-gray-900 text-start text-[24px] md:text-[48px]"
+            id="intro-text"
+          >
             RV Rioflorido Construction is an all-in-one contractor for general
             construction, dedicated to providing quality, safe, and reliable
             services as quickly as possible. Construction is more than just our
@@ -48,62 +62,83 @@
 
     <!-- projects section -->
     <section id="projects-section" class=" ">
-
       <div class="h-full w-full">
         <div
-          class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between">
-          <h1 class="font-neue-montreal font-bold leading-[137%] text-4xl md:text-7xl text-gray-900">
+          class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between"
+        >
+          <h1
+            class="font-neue-montreal font-bold leading-[137%] text-4xl md:text-7xl text-gray-900"
+          >
             Our Projects
           </h1>
 
-          <button type="button" id="explore-projects"
-            class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+          <button
+            type="button"
+            id="explore-projects"
+            class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+          >
             View All
           </button>
         </div>
 
-
-
-        <div class="max-w-screen-2xl px-4 2xl:px-0 mx-auto  flex justify-between">
-          <swiper :slidesPerView="1" :spaceBetween="20" :navigation="{
-            nextEl: '.next-test',
-            prevEl: '.prev-test',
-          }" :pagination="{
-                                                        clickable: true,
-                                                      }" :breakpoints="breakpoints" :modules="modules"
-            class="mySwiper">
+        <div
+          class="max-w-screen-2xl px-4 2xl:px-0 mx-auto flex justify-between"
+        >
+          <swiper
+            :slidesPerView="1"
+            :spaceBetween="20"
+            :navigation="{
+              nextEl: '.next-test',
+              prevEl: '.prev-test',
+            }"
+            :pagination="{
+              clickable: true,
+            }"
+            :breakpoints="breakpoints"
+            :modules="modules"
+            class="mySwiper"
+          >
             <!-- swiper slide 1 -->
             <swiper-slide class="">
               <div class="max-w-md bg-white rounded-lg">
                 <a href="#">
-                  <img class="rounded-t-lg"
-                    src="../assets/images/all-images/buildings/Lucena, Rances Residence/IMG_E0210 (1).webp" alt="" />
+                  <img
+                    class="rounded-t-lg"
+                    src="../assets/images/all-images/buildings/Lucena, Rances Residence/IMG_E0210 (1).webp"
+                    alt=""
+                  />
                 </a>
                 <div class="p-4 md:p-8 pb-12 md:pb-14">
                   <div class="inline-flex items-center">
                     <div class="my-auto">
-                      <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                      <span class="material-icons">location_on</span>
+                      <!-- Classic Material Icon -->
                     </div>
                     <h5
-                      class=" ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                      class="ms-2 mb-2 text-2xl font-bold text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]"
+                    >
                       Lucena City
                     </h5>
                   </div>
 
-                  <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
-                    Two (2) Storey Residential Building with 408 sqm floor area and 5-bedrooms.
+                  <p
+                    class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400"
+                  >
+                    Two (2) Storey Residential Building with 408 sqm floor area
+                    and 5-bedrooms.
                   </p>
 
                   <div class="flex items-start">
-                    <p class="my-auto font-neue-montreal font-normal ">
+                    <p class="my-auto font-neue-montreal font-normal">
                       Rances Residence
                     </p>
-                    <button type="button"
-                      class=" font-neue-montreal font-bold rounded-[4px]  ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white  ">
+                    <button
+                      type="button"
+                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+                    >
                       View Project
                     </button>
                   </div>
-
                 </div>
               </div>
             </swiper-slide>
@@ -112,72 +147,88 @@
             <swiper-slide class="">
               <div class="max-w-md bg-white rounded-lg">
                 <a href="#">
-                  <img class="rounded-t-lg"
+                  <img
+                    class="rounded-t-lg"
                     src="../assets/images/all-images/buildings/Nueva Vizcaya Project - Commercial Building/1688207351599-01 (2).webp"
-                    alt="" />
+                    alt=""
+                  />
                 </a>
                 <div class="p-4 md:p-8 pb-12 md:pb-14">
                   <div class="inline-flex items-center">
                     <div class="my-auto">
-                      <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                      <span class="material-icons">location_on</span>
+                      <!-- Classic Material Icon -->
                     </div>
                     <h5
-                      class="  ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                      class="ms-2 mb-2 text-2xl font-bold text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]"
+                    >
                       Nueva Vizcaya
                     </h5>
                   </div>
 
-                  <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
-                    Five (5) Units, Two (2) Storey Commercial Building with 187 sqm total floor area.
+                  <p
+                    class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400"
+                  >
+                    Five (5) Units, Two (2) Storey Commercial Building with 187
+                    sqm total floor area.
                   </p>
 
                   <div class="flex items-start">
                     <p class="my-auto font-neue-montreal font-normal">
                       Commercial Building
                     </p>
-                    <button type="button"
-                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900   bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                    <button
+                      type="button"
+                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+                    >
                       View Project
                     </button>
                   </div>
-
                 </div>
               </div>
             </swiper-slide>
 
             <!-- swiper slide 3 -->
             <swiper-slide class="">
-              <div class=" max-w-md bg-white rounded-lg">
+              <div class="max-w-md bg-white rounded-lg">
                 <a href="#">
-                  <img class="rounded-t-lg"
+                  <img
+                    class="rounded-t-lg"
                     src="../assets/images/all-images/buildings/Quezon City Project - Sir Manny Apartment/1704532065427.webp"
-                    alt="" />
+                    alt=""
+                  />
                 </a>
                 <div class="p-4 md:p-8 pb-12 md:pb-14">
                   <div class="inline-flex items-center">
                     <div class="my-auto">
-                      <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                      <span class="material-icons">location_on</span>
+                      <!-- Classic Material Icon -->
                     </div>
                     <h5
-                      class=" ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                      class="ms-2 mb-2 text-2xl font-bold text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]"
+                    >
                       Quezon City
                     </h5>
                   </div>
 
-                  <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
-                    Two (2) Storey Residential/Apartment Building with 95 sqm floor area and 4-bedrooms.
+                  <p
+                    class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400"
+                  >
+                    Two (2) Storey Residential/Apartment Building with 95 sqm
+                    floor area and 4-bedrooms.
                   </p>
 
                   <div class="flex items-start">
                     <p class="my-auto font-neue-montreal font-normal">
                       Manny Apartment
                     </p>
-                    <button type="button"
-                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                    <button
+                      type="button"
+                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+                    >
                       View Project
                     </button>
                   </div>
-
                 </div>
               </div>
             </swiper-slide>
@@ -187,35 +238,43 @@
             <swiper-slide class="">
               <div class="max-w-md bg-white rounded-lg">
                 <a href="#">
-                  <img class="rounded-t-lg"
+                  <img
+                    class="rounded-t-lg"
                     src="../assets/images/all-images/buildings/Lucena City Project - Joel _ Arlyn Residence/IMG_E7836.webp"
-                    alt="" />
+                    alt=""
+                  />
                 </a>
                 <div class="p-4 md:p-8 pb-12 md:pb-14">
                   <div class="inline-flex items-center">
                     <div class="my-auto">
-                      <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                      <span class="material-icons">location_on</span>
+                      <!-- Classic Material Icon -->
                     </div>
                     <h5
-                      class="  ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                      class="ms-2 mb-2 text-2xl font-bold text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]"
+                    >
                       Lucena City
                     </h5>
                   </div>
 
-                  <p class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400">
-                    Two (2) Storey Residential/Apartment Building with 170 sqm floor area and 4-units.
+                  <p
+                    class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400"
+                  >
+                    Two (2) Storey Residential/Apartment Building with 170 sqm
+                    floor area and 4-units.
                   </p>
 
                   <div class="flex items-start">
                     <p class="my-auto font-neue-montreal font-normal">
                       Joel Residence
                     </p>
-                    <button type="button"
-                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white  border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                    <button
+                      type="button"
+                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+                    >
                       View Project
                     </button>
                   </div>
-
                 </div>
               </div>
             </swiper-slide>
@@ -224,102 +283,140 @@
             <swiper-slide class="">
               <div class="max-w-md bg-white rounded-lg">
                 <a href="#">
-                  <img class="rounded-t-lg"
+                  <img
+                    class="rounded-t-lg"
                     src="../assets/images/all-images/buildings/Lucena City Project - Sadia Residence/IMG_E7855.webp"
-                    alt="" />
+                    alt=""
+                  />
                 </a>
                 <div class="p-4 md:p-8 pb-12 md:pb-14">
                   <div class="inline-flex items-center">
                     <div class="my-auto">
-                      <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                      <span class="material-icons">location_on</span>
+                      <!-- Classic Material Icon -->
                     </div>
                     <h5
-                      class="  ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                      class="ms-2 mb-2 text-2xl font-bold text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]"
+                    >
                       Lucena City
                     </h5>
                   </div>
 
-                  <p class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Two (2) Storey Residential Building with 128 sqm floor area and 3-bedrooms.
+                  <p
+                    class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400"
+                  >
+                    Two (2) Storey Residential Building with 128 sqm floor area
+                    and 3-bedrooms.
                   </p>
 
                   <div class="flex items-start">
                     <p class="my-auto font-neue-montreal font-normal">
                       Sadia Residence
                     </p>
-                    <button type="button"
-                      class="font-neue-montreal font-bold rounded-[4px]  ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                    <button
+                      type="button"
+                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+                    >
                       View Project
                     </button>
                   </div>
-
                 </div>
               </div>
             </swiper-slide>
 
             <!-- swiper slide 6 -->
             <swiper-slide class="">
-              <div class=" max-w-md bg-white rounded-lg">
+              <div class="max-w-md bg-white rounded-lg">
                 <a href="#">
-                  <img class="rounded-t-lg"
-                    src="../assets/images/all-images/buildings/Lucena, Tamayo Residence/IMG_E7835.webp" alt="" />
+                  <img
+                    class="rounded-t-lg"
+                    src="../assets/images/all-images/buildings/Lucena, Tamayo Residence/IMG_E7835.webp"
+                    alt=""
+                  />
                 </a>
                 <div class="p-4 md:p-8 pb-12 md:pb-14">
                   <div class="inline-flex items-center">
                     <div class="my-auto">
-                      <span class="material-icons">location_on</span> <!-- Classic Material Icon -->
+                      <span class="material-icons">location_on</span>
+                      <!-- Classic Material Icon -->
                     </div>
                     <h5
-                      class="font-neue-montreal ms-2 mb-2 text-2xl font-bold  text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]">
+                      class="font-neue-montreal ms-2 mb-2 text-2xl font-bold text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]"
+                    >
                       Quezon City
                     </h5>
                   </div>
 
-                  <p class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Two (2) Storey Residential/Apartment Building with 95 sqm floor area and 4-bedrooms.
+                  <p
+                    class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400"
+                  >
+                    Two (2) Storey Residential/Apartment Building with 95 sqm
+                    floor area and 4-bedrooms.
                   </p>
 
                   <div class="flex items-start">
                     <p class="my-auto font-neue-montreal font-normal">
                       Rances Residence
                     </p>
-                    <button type="button"
-                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                    <button
+                      type="button"
+                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+                    >
                       View Project
                     </button>
                   </div>
-
                 </div>
               </div>
             </swiper-slide>
           </swiper>
         </div>
-        <div class="max-w-screen-2xl mx-auto py-4 md:py-12 px-4 ">
+        <div class="max-w-screen-2xl mx-auto py-4 md:py-12 px-4">
           <div class="flex justify-end gap-2">
             <button
-              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center prev-test">
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center prev-test"
+            >
               <!-- SVG Icon -->
-              <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                  d="M13 5H1m0 0L5 1m-4 4L5 9" />
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M13 5H1m0 0L5 1m-4 4L5 9"
+                />
               </svg>
               <span class="sr-only">Icon description</span>
             </button>
 
             <button
-              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center  next-test">
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center next-test"
+            >
               <!-- SVG Icon -->
-              <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                  d="M1 5h12m0 0L9 1m4 4L9 9" />
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
               </svg>
               <span class="sr-only">Icon description</span>
             </button>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -328,63 +425,73 @@
       <div class="h-full w-full">
         <div class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16">
           <h1
-            class="font-neue-montreal font-bold text-4xl md:text-7xl py-4 lg:py-16 text-gray-900 leading-[150%] tracking-wide ">
+            class="font-neue-montreal font-bold text-4xl md:text-7xl py-4 lg:py-16 text-gray-900 leading-[150%] tracking-wide"
+          >
             Our Experts
           </h1>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 max-w-screen-2xl gap-x-20 mx-auto pb-0 lg:pb-8">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 max-w-screen-2xl gap-x-20 mx-auto pb-0 lg:pb-8"
+          >
             <div class="">
-              <img src="../assets/images/all-images/buildings/About Us/Group 463.webp" class="object-fill rounded-md"
-                alt="about-us-img">
+              <img
+                src="../assets/images/all-images/buildings/About Us/Group 463.webp"
+                class="object-fill rounded-md"
+                alt="about-us-img"
+              />
             </div>
 
             <div>
               <h3
-                class="font-neue-montreal font-bold text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]">
-                Our team led by seasoned civil engineers, excels in planning, design, construction and more. We
-                specialized in crafting homes with enduring quality and personalized excellence.
+                class="font-neue-montreal font-bold text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]"
+              >
+                Our team led by seasoned civil engineers, excels in planning,
+                design, construction and more. We specialized in crafting homes
+                with enduring quality and personalized excellence.
               </h3>
-              <button type="button"
-                class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+              <button
+                type="button"
+                class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+              >
                 More about us
               </button>
 
               <div class="py-8 lg:py-20">
                 <div class="flex justify-start gap-4 lg:gap-x-32 items-center">
                   <h1
-                    class="text-gray-900 text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold  leading-[94%]">
+                    class="text-gray-900 text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold leading-[94%]"
+                  >
                     12+
                   </h1>
 
                   <h3
-                    class="font-neue-montreal font-normal text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]">
+                    class="font-neue-montreal font-normal text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]"
+                  >
                     Successful Projects
                   </h3>
                 </div>
 
-                <hr class="w-100 h-[2px] my-2  lg:my-8 bg-[#0000001E] border-0  ">
+                <hr
+                  class="w-100 h-[2px] my-2 lg:my-8 bg-[#0000001E] border-0"
+                />
 
                 <div class="flex justify-start gap-4 lg:gap-x-20 items-center">
                   <h1
-                    class="text-gray-900 text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold  leading-[94%]">
+                    class="text-gray-900 text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold leading-[94%]"
+                  >
                     98%
                   </h1>
 
                   <h3
-                    class="font-neue-montreal font-normal text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]">
+                    class="font-neue-montreal font-normal text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]"
+                  >
                     Clients Satisfaction
                   </h3>
                 </div>
-
-
-
-
               </div>
             </div>
 
-            <div>
-
-            </div>
+            <div></div>
           </div>
         </div>
       </div>
@@ -392,41 +499,44 @@
 
     <!-- get in touch -->
     <section id="get-in-touch" class="h-96 md:h-screen">
-      <div class="h-96 md:h-full w-full flex flex-col justify-center items-start">
-
+      <div
+        class="h-96 md:h-full w-full flex flex-col justify-center items-start"
+      >
         <div class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16 pb-8">
-
           <h1
-            class="font-neue-montreal font-bold text-4xl md:text-7xl text-start  py-4 text-gray-900 leading-[94%] tracking-wide">
+            class="font-neue-montreal font-bold text-4xl md:text-7xl text-start py-4 text-gray-900 leading-[94%] tracking-wide"
+          >
             Your Home, Our Expertise
           </h1>
 
           <h3
-            class="font-neue-montreal font-[600] leading-[137%] text-gray-900 text-start text-[24px]  md:text-[40px] xs:w-auto lg:w-4/5 py-4 md:py-0"
-            id="h3-subheadline-years">
-            Elevate Your Projects with Precision, Reliability, and a Proven Track Record of Seven Years in Construction
-            Excellence.
+            class="font-neue-montreal font-[600] leading-[137%] text-gray-900 text-start text-[24px] md:text-[40px] xs:w-auto lg:w-4/5 py-4 md:py-0"
+            id="h3-subheadline-years"
+          >
+            Elevate Your Projects with Precision, Reliability, and a Proven
+            Track Record of Seven Years in Construction Excellence.
           </h3>
 
-          <button type="button"
-            class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8  md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
-            Get in touch
-          </button>
-
+          <NuxtLink to="/contact" class="w-full">
+            <button
+              type="button"
+              class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+            >
+              Get in touch
+            </button>
+          </NuxtLink>
         </div>
       </div>
     </section>
-
   </div>
 </template>
 
 <script>
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
-import 'swiper/css';
+import "swiper/css";
 
 import { Navigation } from "swiper/modules";
-
 
 // Import Swiper styles
 // import "swiper/css/pagination";
@@ -449,21 +559,21 @@ export default {
   data() {
     return {
       breakpoints: {
-        '640': {
+        640: {
           slidesPerView: 2,
           // spaceBetween: 20,
         },
-        '768': {
+        768: {
           slidesPerView: 2,
           // spaceBetween: 40,
         },
-        '1024': {
+        1024: {
           slidesPerView: 3,
           // spaceBetween: 50,
         },
-      }
-    }
-  }
+      },
+    };
+  },
 };
 </script>
 
@@ -474,20 +584,22 @@ export default {
   justify-content: center;
 }
 
-
-
 #hero-section {
   /* background-image: url("../assets/images/home/1-landing.webp"); */
-  background: linear-gradient(180deg,
-      rgba(0, 0, 0, 0) 49.71%,
-      rgba(0, 0, 0, 0.2) 61.73%),
-    linear-gradient(0deg,
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 49.71%, rgba(0, 0, 0, 0.2) 61.73%),
+    linear-gradient(
+      0deg,
       var(--gradient-home, rgba(0, 0, 0, 0.2)) 0%,
-      var(--gradient-home, rgba(0, 0, 0, 0.2)) 100%),
-    linear-gradient(0deg,
+      var(--gradient-home, rgba(0, 0, 0, 0.2)) 100%
+    ),
+    linear-gradient(
+      0deg,
       var(--gradient-home2, rgba(0, 0, 0, 0)) 0%,
-      var(--gradient-home2, rgba(0, 0, 0, 0)) 100%),
-    url("../assets/images/home/watermark-landing.webp") lightgray -0.587px -555.735px / 100% 210.526% no-repeat;
+      var(--gradient-home2, rgba(0, 0, 0, 0)) 100%
+    ),
+    url("../assets/images/home/watermark-landing.webp") lightgray -0.587px -555.735px /
+      100% 210.526% no-repeat;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -509,7 +621,7 @@ export default {
 }
 
 #projects-section {
-  background-color: #F5F9FC;
+  background-color: #f5f9fc;
 }
 
 @media screen and (max-width: 556px) {
