@@ -426,7 +426,7 @@
     <!-- about us -->
     <section id="about-us" class="">
       <div class="h-full w-full">
-        <div class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16">
+        <div class="max-w-screen-2xl mx-auto px-4  pt-10 py-16">
           <h1
             class="font-neue-montreal font-bold text-4xl md:text-7xl py-4 lg:py-16 text-gray-900 leading-[150%] tracking-wide"
           >
@@ -459,39 +459,7 @@
                 More about us
               </button>
 
-              <div class="py-8 lg:py-20">
-                <div class="flex justify-start gap-4 lg:gap-x-32 items-center">
-                  <h1
-                    class="text-gray-900 text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold leading-[94%]"
-                  >
-                    12+
-                  </h1>
-
-                  <h3
-                    class="font-neue-montreal font-normal text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]"
-                  >
-                    Successful Projects
-                  </h3>
-                </div>
-
-                <hr
-                  class="w-100 h-[2px] my-2 lg:my-8 bg-[#0000001E] border-0"
-                />
-
-                <div class="flex justify-start gap-4 lg:gap-x-20 items-center">
-                  <h1
-                    class="text-gray-900 text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold leading-[94%]"
-                  >
-                    98%
-                  </h1>
-
-                  <h3
-                    class="font-neue-montreal font-normal text-gray-900 text-start text-[24px] lg:text-[40px] py-4 md:py-0 leading-[137%]"
-                  >
-                    Clients Satisfaction
-                  </h3>
-                </div>
-              </div>
+             
             </div>
 
             <div></div>
@@ -505,15 +473,15 @@
       <div
         class="h-96 md:h-full w-full flex flex-col justify-center items-start"
       >
-        <div class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16 pb-8">
+        <div class="max-w-screen-2xl mx-auto px-4  py-16 ">
           <h1
-            class="font-neue-montreal font-bold text-4xl md:text-7xl text-start py-4 text-gray-900 leading-[94%] tracking-wide"
+            class="font-neue-montreal font-bold text-4xl md:text-7xl text-start py-0 md:py-4 text-gray-900 leading-[94%] tracking-wide"
           >
             Your Home, Our Expertise
           </h1>
 
           <h3
-            class="font-neue-montreal font-[600] leading-[137%] text-gray-900 text-start text-[24px] md:text-[40px] xs:w-auto lg:w-4/5 py-4 md:py-0"
+            class="font-neue-montreal font-[600] leading-[137%] text-gray-900 text-start text-[24px] md:text-[40px] xs:w-auto lg:w-4/5 py-4 "
             id="h3-subheadline-years"
           >
             Elevate Your Projects with Precision, Reliability, and a Proven
