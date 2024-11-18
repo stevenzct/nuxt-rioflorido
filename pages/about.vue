@@ -31,7 +31,7 @@
 
             <button
               type="button"
-              @click="scrollToContacts"
+              @click="scrollToAbout"
               class="font-neue-montreal font-bold h-[55px] rounded-[4px] text-gray-900 text-[16px] bg-white border border-gray-400 px-8 py-3.5 my-4 md:w-[200px] transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
             >
               Scroll
@@ -42,7 +42,7 @@
     </section>
 
     <!-- about section -->
-    <section id="contacts-section" ref="contactsSection" class="h-auto bg-white">
+    <section id="about-section" ref="aboutSection" class="h-auto bg-white">
       <div class="h-full w-full">
         <div class="max-w-screen-2xl mx-auto px-4 py-16 lg:py-32 w-full">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20">
@@ -119,12 +119,12 @@
 import { ref } from 'vue';
 
 // Reference to the contacts section
-const contactsSection = ref(null);
+const aboutSection = ref(null);
 
 // Method to scroll to the contacts section
-const scrollToContacts = () => {
-  if (contactsSection.value) {
-    contactsSection.value.scrollIntoView({
+const scrollToAbout = () => {
+  if (aboutSection.value) {
+    aboutSection.value.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
