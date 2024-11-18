@@ -19,4 +19,8 @@ export default defineNuxtConfig({
     ],
   },
 },
+plugins: [
+  // Registering the baguettebox plugin
+  '~/plugins/baguettebox.js', // Add your plugin file here
+],
 })

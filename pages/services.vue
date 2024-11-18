@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <!-- hero section  -->
     <section id="hero-section" class="h-screen">
       <div
@@ -14,10 +14,8 @@
               Excellence in Every Structure
             </h1>
           </div>
-
           <div class="w-auto border-b border-[#F3F4F654]"></div>
         </div>
-
         <div class="w-full">
           <div
             class="max-w-screen-2xl mx-auto px-4 py-8 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between"
@@ -41,18 +39,18 @@
         </div>
       </div>
     </section>
+
     <!-- services swiper -->
     <section id="services-section" ref="servicesSection" class="bg-[#F5F9FC]">
       <div class="h-auto w-full py-16 lg:py-32">
         <div class="max-w-screen-2xl mx-auto px-4">
           <h1
-            class="font-neue-montreal font-bold leading-[137%] text-4xl md:text-7xl text-gray-900"
+            class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900"
           >
             Construction Work
           </h1>
-
           <p
-            class="font-neue-montreal font-normal text-gray-900  w-auto md:w-[706px] text-[20px] md:text-[24px]"
+            class="font-neue-montreal font-normal text-gray-900 w-auto md:w-[706px] text-[20px] md:text-[24px]"
           >
             Our seasoned professionals specialize in delivering excellence
             across Structural, Architectural, Plumbing, Electrical, and
@@ -60,66 +58,65 @@
           </p>
         </div>
 
-        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16 ">
+        <!-- Add 'gallery' class to enable BaguetteBox -->
+        <div class="gallery max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
-            :navigation="{
-              nextEl: '.next-test',
-              prevEl: '.prev-test',
-            }"
-            :pagination="{
-              clickable: true,
-            }"
+            :navigation="{ nextEl: '.next-test', prevEl: '.prev-test' }"
+            :pagination="{ clickable: true }"
             :breakpoints="breakpoints"
             :modules="modules"
             class="mySwiper flex justify-between"
           >
             <!-- swiper slide 1 -->
-            <swiper-slide class="">
+            <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a href="#">
+                <a
+                  href="/_nuxt/assets/images/services/construction-work/image-1.webp"
+                >
                   <img
                     class="rounded-lg"
-                    src="../assets/images/services/construction-work/image-1.webp"
-                    alt=""
+                    src="~/assets/images/services/construction-work/image-1.webp"
+                    alt="image-1"
                   />
                 </a>
               </div>
             </swiper-slide>
 
             <!-- swiper slide 2 -->
-            <swiper-slide class="">
+            <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a href="#">
+                <a
+                  href="/_nuxt/assets/images/services/construction-work/image-2.webp"
+                >
                   <img
                     class="rounded-lg"
-                    src="../assets/images/services/construction-work/image-2.webp"
-                    alt=""
+                    src="~/assets/images/services/construction-work/image-2.webp"
+                    alt="image-2"
                   />
                 </a>
               </div>
             </swiper-slide>
 
             <!-- swiper slide 3 -->
-            <swiper-slide class="">
+            <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a href="#">
+                <a
+                  href="/_nuxt/assets/images/services/construction-work/image-3.webp"
+                >
                   <img
                     class="rounded-lg"
-                    src="../assets/images/services/construction-work/image-3.webp"
-                    alt=""
+                    src="~/assets/images/services/construction-work/image-3.webp"
+                    alt="image-3"
                   />
                 </a>
               </div>
             </swiper-slide>
-
-
           </swiper>
         </div>
 
-        <!-- button swiper -->
-        <div class="max-w-screen-2xl mx-auto py-8 px-4">
+        <div class="max-w-screen-2xl mx-auto py-8 px-4 lg:hidden">
           <div class="flex justify-end gap-2">
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center prev-test"
@@ -166,6 +163,103 @@
             </button>
           </div>
         </div>
+
+        <!-- design plans signed and seal -->
+        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-32">
+          <h1
+            class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900"
+          >
+            Design plans signed and sealed
+          </h1>
+          <p
+            class="font-neue-montreal font-normal text-gray-900 w-auto md:w-[706px] text-[20px] md:text-[24px]"
+          >
+            Seamless, Professionally Certified Designs for Your Building Project
+            (Full sets)
+          </p>
+        </div>
+
+        <div class="gallery max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
+          <div class="max-w-full bg-white rounded-lg">
+            <a
+              href="../assets/images/services/design-plans/IMG-579818a38f7184294709739710dbd6c7-V 1.webp"
+            >
+              <img
+                class="rounded-lg"
+                src="../assets/images/services/design-plans/IMG-579818a38f7184294709739710dbd6c7-V 1.webp"
+                alt="image-design-plans"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- glass and aluminum works -->
+        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-32">
+          <h1
+            class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900"
+          >
+            Glass and Aluminum Works
+          </h1>
+          <p
+            class="font-neue-montreal font-normal text-gray-900 w-auto md:w-[706px] text-[20px] md:text-[24px]"
+          >
+          Expertly Tailored Glass and Aluminum Installations for Elegant Railings, Fencing, Windows, Doors and Gates.
+          </p>
+        </div>
+
+        <!-- Add 'gallery' class to enable BaguetteBox -->
+        <div class="gallery max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
+         
+        </div>
+
+        <div class="max-w-screen-2xl mx-auto py-8 px-4 ">
+          <div class="flex justify-end gap-2">
+            <button
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center prev-test"
+            >
+              <!-- SVG Icon -->
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M13 5H1m0 0L5 1m-4 4L5 9"
+                />
+              </svg>
+              <span class="sr-only">Icon description</span>
+            </button>
+
+            <button
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center next-test"
+            >
+              <!-- SVG Icon -->
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+              <span class="sr-only">Icon description</span>
+            </button>
+          </div>
+        </div>
+
       </div>
     </section>
   </div>
@@ -176,29 +270,32 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
-import { ref } from 'vue';
+import { ref } from "vue";
 // Define the component
 export default {
   components: {
     Swiper,
     SwiperSlide,
   },
+  data(){
+    return {
+    }
+  },
   setup() {
-     // Declare references and methods
-     const servicesSection = ref(null);
+    // Declare references and methods
+    const servicesSection = ref(null);
 
     // Scroll to Projects section
     const scrollToServices = () => {
       if (servicesSection.value) {
         servicesSection.value.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
+          behavior: "smooth",
+          block: "start",
         });
       }
     };
     // Swiper breakpoints setup
     const breakpoints = {
-
       // 360: {
       //   slidesPerView: 2,
       // },
@@ -219,6 +316,7 @@ export default {
       scrollToServices,
       breakpoints,
       modules: [Navigation],
+
     };
   },
 };
