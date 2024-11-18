@@ -9,7 +9,7 @@
         <div class="w-full">
           <div class="max-w-screen-2xl mx-auto px-4 py-8">
             <h1
-              class="tracking-wide text-white text-[30px] sm:text-[37px] md:text-[70px] lg:text-[70px] font-neue-montreal font-bold leading-[100%] lg:leading-[94%]"
+              class="tracking-wide text-white text-4xl md:text-7xl font-neue-montreal font-bold leading-[100%] lg:leading-[94%]"
             >
               Designed by Engineers, Perfected for you
             </h1>
@@ -133,6 +133,7 @@ const scrollToContacts = () => {
 </script>
 
 <style scoped>
+
 #hero-section {
   /* background-image: url("../assets/images/home/1-landing.webp"); */
   background:
@@ -154,4 +155,6 @@ const scrollToContacts = () => {
   background-size: cover;
   background-position: 50%;
 }
+
+
 </style>

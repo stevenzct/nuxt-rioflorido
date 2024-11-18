@@ -1,16 +1,221 @@
 <template>
-    <div class="my-2 mt-40">
-        <h2>Services</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, a vitae fugiat unde sint eveniet iusto porro nulla repellat animi molestiae atque laboriosam illo quisquam similique accusamus harum odio odit. Dolor minus repellendus quaerat rerum repellat voluptatibus quasi maiores dicta! Dignissimos modi, iusto soluta ducimus adipisci nam quasi. Rerum dignissimos animi beatae ducimus libero, sapiente quam, veritatis soluta ipsum illum totam iure? Saepe sequi cumque cupiditate excepturi dolorum, veniam ducimus amet ad, deleniti harum ipsam minus, voluptatem blanditiis id. Necessitatibus recusandae illo dignissimos modi quas ipsa vitae sed ex id molestiae beatae voluptate quam, impedit provident, aperiam nulla voluptas eum porro explicabo quibusdam reprehenderit facilis. Cum qui autem fugit minima repellendus, expedita necessitatibus officiis quam ipsum deleniti blanditiis consequuntur ullam corporis distinctio. Consequatur, quasi eum modi iusto fugit esse rem sit? Eius rem quos alias obcaecati quas facilis explicabo, architecto sit quia laboriosam neque ducimus tenetur adipisci iste odio pariatur voluptatem rerum recusandae, ab aut cumque? Quis minima consequuntur labore esse aperiam fuga corrupti animi molestiae dolorem soluta officiis odio modi, voluptatem illo perspiciatis veniam ut, officia inventore eveniet minus vitae non porro nulla alias? Consectetur quod culpa quidem, veritatis reiciendis numquam non eaque est illo doloremque porro pariatur! Explicabo eveniet consequatur aliquam doloribus nobis odio quaerat quae libero harum earum dolorum voluptatum dolores nisi nemo repellendus nihil, ut tempore incidunt! Quasi blanditiis quibusdam officia. Dolorem iure quia quam quibusdam mollitia accusantium, culpa quod possimus vitae officiis inventore vero officia illo deserunt. Rem perspiciatis eligendi doloribus vel ratione quis soluta corrupti quia, dolorem delectus tempora aliquam nostrum asperiores a. Quo cupiditate, accusamus nostrum adipisci laborum eum soluta eligendi, corrupti, iste eos blanditiis consectetur? Obcaecati facere cumque eum fugiat quas dolores rerum excepturi nam. Sit consequuntur vitae quos, laboriosam at culpa libero, laborum blanditiis sint, consectetur fugiat temporibus similique voluptatibus explicabo nostrum obcaecati! Itaque assumenda unde recusandae, odit officia eaque sit officiis voluptates nulla minus hic ipsum reiciendis dolore repellendus distinctio minima! Quibusdam voluptates omnis culpa, illum maxime sunt, unde commodi, quo sed praesentium facilis! A quas neque recusandae, dicta possimus nam ad deleniti, magni aliquid ducimus commodi quam impedit facilis tenetur veniam esse quis quos itaque laudantium perspiciatis, aliquam fuga dolores amet eos. Harum, similique veniam! Qui maiores quod, ea temporibus ullam dolores nisi quis, voluptate doloremque quam magnam, exercitationem maxime ut voluptatem. Labore, autem doloremque. Consectetur iste suscipit quibusdam possimus earum numquam rem incidunt? Minus, a amet praesentium dolorem doloremque dolorum repellendus? Sed ipsam maiores cum architecto. Vero ratione blanditiis ex, harum ducimus officiis, autem, eaque nam esse doloribus consequuntur! Numquam deleniti sed doloremque consequatur accusamus laborum expedita mollitia! Eligendi possimus vitae ducimus maxime, eaque quas aperiam velit? Necessitatibus, minus explicabo. Ad, minus repudiandae assumenda modi asperiores numquam aliquid. Doloremque ad porro nemo, et sint, reiciendis cumque repellendus velit ipsum, aspernatur praesentium eligendi id tempore quos obcaecati ea! Reprehenderit ab dolor natus, minima labore optio veritatis deserunt explicabo, quaerat doloremque fugit nam et at mollitia quam quae officiis tempore doloribus eos magnam sint odio deleniti molestias eaque? Est, deleniti?
-        </p>
+  <div class="">
+    <!-- hero section  -->
+    <section id="hero-section" class="h-screen">
+      <div
+        class="h-full w-full flex flex-col items-end justify-end"
+        id="container-text"
+      >
+        <div class="w-full">
+          <div class="max-w-screen-2xl mx-auto px-4 py-8">
+            <h1
+              class="tracking-wide text-white text-4xl md:text-7xl font-neue-montreal font-bold leading-[100%] lg:leading-[94%]"
+            >
+              Excellence in Every Structure
+            </h1>
+          </div>
 
-    </div>
+          <div class="w-auto border-b border-[#F3F4F654]"></div>
+        </div>
+
+        <div class="w-full">
+          <div
+            class="max-w-screen-2xl mx-auto px-4 py-8 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between"
+          >
+            <p
+              class="font-neue-montreal font-normal text-white pb-2 w-auto md:w-[706px] text-[20px] md:text-[24px]"
+            >
+              Leveraging the expertise of experienced civil engineers, we
+              deliver custom construction solutions that exceed industry
+              standards.
+            </p>
+
+            <button
+              type="button"
+              @click="scrollToContacts"
+              class="font-neue-montreal font-bold h-[55px] rounded-[4px] text-gray-900 text-[16px] bg-white border border-gray-400 px-8 py-3.5 my-4 md:w-[200px] transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+            >
+              Scroll
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services swiper -->
+    <section id="services-section" ref="servicesSection" class="bg-[#F5F9FC]">
+      <div class="h-auto w-full py-16 lg:py-32">
+        <div class="max-w-screen-2xl mx-auto px-4">
+          <h1
+            class="font-neue-montreal font-bold leading-[137%] text-4xl md:text-7xl text-gray-900"
+          >
+            Construction Work
+          </h1>
+
+          <p
+            class="font-neue-montreal font-normal text-gray-900  w-auto md:w-[706px] text-[20px] md:text-[24px]"
+          >
+            Our seasoned professionals specialize in delivering excellence
+            across Structural, Architectural, Plumbing, Electrical, and
+            Mechanical Works.
+          </p>
+        </div>
+
+        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16 ">
+          <swiper
+            :slidesPerView="1"
+            :spaceBetween="20"
+            :navigation="{
+              nextEl: '.next-test',
+              prevEl: '.prev-test',
+            }"
+            :pagination="{
+              clickable: true,
+            }"
+            :breakpoints="breakpoints"
+            :modules="modules"
+            class="mySwiper flex justify-between"
+          >
+            <!-- swiper slide 1 -->
+            <swiper-slide class="">
+              <div class="max-w-lg bg-white rounded-lg">
+                <a href="#">
+                  <img
+                    class="rounded-lg"
+                    src="../assets/images/services/construction-work/image-1.webp"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+            <!-- swiper slide 2 -->
+            <swiper-slide class="">
+              <div class="max-w-lg bg-white rounded-lg">
+                <a href="#">
+                  <img
+                    class="rounded-lg"
+                    src="../assets/images/services/construction-work/image-2.webp"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+            <!-- swiper slide 3 -->
+            <swiper-slide class="">
+              <div class="max-w-lg bg-white rounded-lg">
+                <a href="#">
+                  <img
+                    class="rounded-lg"
+                    src="../assets/images/services/construction-work/image-3.webp"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+
+          </swiper>
+        </div>
+
+        <!-- button swiper -->
+        <div class="max-w-screen-2xl mx-auto py-8 px-4">
+          <div class="flex justify-end gap-2">
+            <button
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center prev-test"
+            >
+              <!-- SVG Icon -->
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M13 5H1m0 0L5 1m-4 4L5 9"
+                />
+              </svg>
+              <span class="sr-only">Icon description</span>
+            </button>
+
+            <button
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center next-test"
+            >
+              <!-- SVG Icon -->
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+              <span class="sr-only">Icon description</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
-<script setup>
+<script>
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import { Navigation } from "swiper/modules";
 
+// Define the component
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    // Swiper breakpoints setup
+    const breakpoints = {
+
+      // 360: {
+      //   slidesPerView: 2,
+      // },
+      640: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    };
+
+    // Return the data that needs to be used in the template
+    return {
+      breakpoints,
+      modules: [Navigation],
+    };
+  },
+};
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+#hero-section {
+  background-image: url("../assets/images/services/hero-services.webp");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
 </style>
