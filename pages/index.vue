@@ -62,8 +62,8 @@
     </section>
 
     <!-- projects section -->
-    <section id="projects-section" ref="projectsSection"  class="">
-      <div class="h-full w-full">
+    <section id="projects-section" ref="projectsSection"  class="h-auto">
+      <div class="h-full w-full py-8 lg:py-16 ">
         <div
           class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between"
         >
@@ -85,7 +85,7 @@
         </div>
 
         <div
-          class="max-w-screen-2xl px-4 2xl:px-0 mx-auto flex justify-between"
+          class="max-w-screen-2xl px-4 mx-auto flex justify-between"
         >
           <swiper
             :slidesPerView="1"
@@ -103,7 +103,7 @@
           >
             <!-- swiper slide 1 -->
             <swiper-slide class="">
-              <div class="max-w-md bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -148,7 +148,7 @@
 
             <!-- swiper slide 2 -->
             <swiper-slide class="">
-              <div class="max-w-md bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -193,7 +193,7 @@
 
             <!-- swiper slide 3 -->
             <swiper-slide class="">
-              <div class="max-w-md bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -239,7 +239,7 @@
             <!-- ----------------------------------- -->
             <!-- swiper slide 4 -->
             <swiper-slide class="">
-              <div class="max-w-md bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -284,7 +284,7 @@
 
             <!-- swiper slide 5 -->
             <swiper-slide class="">
-              <div class="max-w-md bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -329,7 +329,7 @@
 
             <!-- swiper slide 6 -->
             <swiper-slide class="">
-              <div class="max-w-md bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="#">
                   <img
                     class="rounded-t-lg"

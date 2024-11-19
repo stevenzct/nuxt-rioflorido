@@ -18,8 +18,8 @@
         <section id="projects-section" class="h-auto">
             <div class="h-full w-full">
                 <div
-                    class="max-w-screen-2xl px-4 mx-auto grid md:grid-cols-2 lg:grid-cols-3 py-10 lg:py-32 gap-8 lg:gap-20 gap-y-10 lg:gap-y-32 justify-center">
-                    <div class="max-w-md bg-white rounded-lg">
+                    class="max-w-screen-2xl px-4 mx-auto grid md:grid-cols-2 lg:grid-cols-3 py-10 lg:py-32 gap-x-8  gap-y-10 lg:gap-y-32 justify-center">
+                    <div class="max-w-full bg-white rounded-lg">
                         <a href="#">
                             <img class="rounded-t-lg"
                                 src="../assets/images/all-images/buildings/Lucena, Rances Residence/IMG_E0210 (1).webp"
@@ -53,7 +53,7 @@
                         </div>
                     </div>
 
-                    <div class="max-w-md bg-white rounded-lg">
+                    <div class="max-w-full bg-white rounded-lg">
                         <a href="#">
                             <img class="rounded-t-lg"
                                 src="../assets/images/all-images/buildings/Nueva Vizcaya Project - Commercial Building/1688207351599-01 (2).webp"
@@ -87,7 +87,7 @@
                         </div>
                     </div>
 
-                    <div class=" max-w-md bg-white rounded-lg">
+                    <div class=" max-w-full bg-white rounded-lg">
                         <a href="#">
                             <img class="rounded-t-lg"
                                 src="../assets/images/all-images/buildings/Quezon City Project - Sir Manny Apartment/1704532065427.webp"
@@ -122,7 +122,7 @@
                     </div>
 
 
-                    <div class="max-w-md bg-white rounded-lg">
+                    <div class="max-w-full bg-white rounded-lg">
                         <a href="#">
                             <img class="rounded-t-lg"
                                 src="../assets/images/all-images/buildings/Lucena City Project - Joel _ Arlyn Residence/IMG_E7836.webp"
@@ -156,7 +156,7 @@
                         </div>
                     </div>
 
-                    <div class="max-w-md bg-white rounded-lg">
+                    <div class="max-w-full bg-white rounded-lg">
                         <a href="#">
                             <img class="rounded-t-lg"
                                 src="../assets/images/all-images/buildings/Lucena City Project - Sadia Residence/IMG_E7855.webp"
@@ -190,7 +190,7 @@
                         </div>
                     </div>
 
-                    <div class=" max-w-md bg-white rounded-lg">
+                    <div class=" max-w-full bg-white rounded-lg">
                         <a href="#">
                             <img class="rounded-t-lg"
                                 src="../assets/images/all-images/buildings/Lucena, Tamayo Residence/IMG_E7835.webp"
@@ -224,7 +224,7 @@
                         </div>
                     </div>
 
-                    <div class=" max-w-md bg-white rounded-lg">
+                    <div class=" max-w-full bg-white rounded-lg">
                         <a href="#">
                             <img class="rounded-t-lg" src="../assets/images/projects/Labitoria Residence.webp" alt="" />
                         </a>
@@ -256,7 +256,7 @@
                         </div>
                     </div>
 
-                    <div class=" max-w-md bg-white rounded-lg">
+                    <div class=" max-w-full bg-white rounded-lg">
                         <a href="#">
                             <img class="rounded-t-lg" src="../assets/images/projects/Ramil and Gina Residence.webp"
                                 alt="" />
@@ -289,7 +289,7 @@
                         </div>
                     </div>
 
-                    <div class=" max-w-md bg-white rounded-lg">
+                    <div class=" max-w-full bg-white rounded-lg">
                         <a href="#">
                             <img class="rounded-t-lg" src="../assets/images/projects/labitoria.webp" alt="" />
                         </a>
@@ -321,7 +321,7 @@
                         </div>
                     </div>
 
-                    <div class=" max-w-md bg-white rounded-lg">
+                    <div class=" max-w-full bg-white rounded-lg">
                         <a href="#">
                             <img class="rounded-t-lg" src="../assets/images/projects/Extension Building.webp" alt="" />
                         </a>
