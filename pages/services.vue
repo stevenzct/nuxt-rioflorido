@@ -228,7 +228,7 @@
                   <img
                     class="rounded-lg"
                     src="/images/services/glass and aluminum/glass1.webp"
-                    alt="image-1"
+                    alt="glass-1"
                   />
                 </a>
               </div>
@@ -243,7 +243,7 @@
                   <img
                     class="rounded-lg"
                     src="/images/services/glass and aluminum/glass2.webp"
-                    alt="image-2"
+                    alt="glass-2"
                   />
                 </a>
               </div>
@@ -258,7 +258,7 @@
                   <img
                     class="rounded-lg"
                     src="/images/services/glass and aluminum/glass3.webp"
-                    alt="image-3"
+                    alt="glass-3"
                   />
                 </a>
               </div>
