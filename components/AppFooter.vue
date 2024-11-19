@@ -11,7 +11,7 @@
             to="/"
             class="flex items-center space-x-3 py-4 rtl:space-x-reverse"
           >
-            <img src="/assets/images/logo/RV.png" class="logo" alt="RV Logo" />
+            <img src="/assets/images/logo/secondary-logo.svg" class="logo" alt="RV Logo" />
           </NuxtLink>
 
           <!-- socials links -->
