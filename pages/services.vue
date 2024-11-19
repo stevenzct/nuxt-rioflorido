@@ -60,7 +60,7 @@
         </div>
 
        
-        <div class=" max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
+        <div class=" max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -117,7 +117,7 @@
           </swiper>
         </div>
 
-        <div class="max-w-screen-2xl mx-auto py-8 px-4 lg:hidden">
+        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 lg:hidden">
           <div class="flex justify-end gap-2">
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center prev-test"
@@ -209,7 +209,7 @@
         </div>
 
         <!-- swiper goes here -->
-        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
+        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -263,10 +263,41 @@
                 </a>
               </div>
             </swiper-slide>
+
+             <!-- swiper slide 4 -->
+             <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a
+                  href="/images/services/glass-and-aluminum/glass4.webp"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="/images/services/glass-and-aluminum/glass4.webp"
+                    alt="glass-4"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+             <!-- swiper slide 5 -->
+             <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a
+                  href="/images/services/glass-and-aluminum/glass5.webp"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="/images/services/glass-and-aluminum/glass5.webp"
+                    alt="glass-5"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
           </swiper>
         </div>
 
-        <div class="max-w-screen-2xl mx-auto py-8 px-4 ">
+        <!-- button swiper -->
+        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 ">
           <div class="flex justify-end gap-2">
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center prev-test"
@@ -313,6 +344,9 @@
             </button>
           </div>
         </div>
+
+
+        <!--  -->
 
       </div>
     </section>
