@@ -223,11 +223,11 @@
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
                 <a
-                  href="/images/services/glass and aluminum/glass1.webp"
+                  href="/images/services/glass-and-aluminum/glass1.webp"
                 >
                   <img
                     class="rounded-lg"
-                    src="/images/services/glass and aluminum/glass1.webp"
+                    src="/images/services/glass-and-aluminum/glass1.webp"
                     alt="glass-1"
                   />
                 </a>
@@ -238,11 +238,11 @@
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
                 <a
-                  href="/images/services/glass and aluminum/glass2.webp"
+                  href="/images/services/glass-and-aluminum/glass2.webp"
                 >
                   <img
                     class="rounded-lg"
-                    src="/images/services/glass and aluminum/glass2.webp"
+                    src="/images/services/glass-and-aluminum/glass2.webp"
                     alt="glass-2"
                   />
                 </a>
@@ -253,11 +253,11 @@
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
                 <a
-                  href="/images/services/glass and aluminum/glass3.webp"
+                  href="/images/services/glass-and-aluminum/glass3.webp"
                 >
                   <img
                     class="rounded-lg"
-                    src="/images/services/glass and aluminum/glass3.webp"
+                    src="/images/services/glass-and-aluminum/glass3.webp"
                     alt="glass-3"
                   />
                 </a>
