@@ -73,11 +73,11 @@
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
                 <a
-                  href="/_nuxt/assets/images/services/construction-work/image-1.webp"
+                  href="/images/services/construction-work/image-1.webp"
                 >
                   <img
                     class="rounded-lg"
-                    src="~/assets/images/services/construction-work/image-1.webp"
+                    src="/images/services/construction-work/image-1.webp"
                     alt="image-1"
                   />
                 </a>
@@ -88,11 +88,11 @@
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
                 <a
-                  href="/_nuxt/assets/images/services/construction-work/image-2.webp"
+                  href="/images/services/construction-work/image-2.webp"
                 >
                   <img
                     class="rounded-lg"
-                    src="~/assets/images/services/construction-work/image-2.webp"
+                    src="/images/services/construction-work/image-2.webp"
                     alt="image-2"
                   />
                 </a>
@@ -103,11 +103,11 @@
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
                 <a
-                  href="/_nuxt/assets/images/services/construction-work/image-3.webp"
+                  href="/images/services/construction-work/image-3.webp"
                 >
                   <img
                     class="rounded-lg"
-                    src="~/assets/images/services/construction-work/image-3.webp"
+                    src="/images/services/construction-work/image-3.webp"
                     alt="image-3"
                   />
                 </a>
