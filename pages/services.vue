@@ -41,8 +41,12 @@
     </section>
 
     <!-- services swiper -->
-      <!-- Add 'gallery' class to enable BaguetteBox -->
-    <section id="services-section" ref="servicesSection" class="gallery bg-[#F5F9FC]">
+    <!-- Add 'gallery' class to enable BaguetteBox -->
+    <section
+      id="services-section"
+      ref="servicesSection"
+      class="gallery bg-[#F5F9FC]"
+    >
       <div class="h-auto w-full py-16 lg:py-32">
         <div class="max-w-screen-2xl mx-auto px-4">
           <h1
@@ -59,12 +63,14 @@
           </p>
         </div>
 
-       
-        <div class=" max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
-            :navigation="{ nextEl: '.construction-next', prevEl: '.construction-prev' }"
+            :navigation="{
+              nextEl: '.construction-next',
+              prevEl: '.construction-prev',
+            }"
             :pagination="{ clickable: true }"
             :breakpoints="breakpoints"
             :modules="modules"
@@ -73,9 +79,7 @@
             <!-- swiper slide 1 -->
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a
-                  href="/images/services/construction-work/image-1.webp"
-                >
+                <a href="/images/services/construction-work/image-1.webp">
                   <img
                     class="rounded-lg"
                     src="/images/services/construction-work/image-1.webp"
@@ -88,9 +92,7 @@
             <!-- swiper slide 2 -->
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a
-                  href="/images/services/construction-work/image-2.webp"
-                >
+                <a href="/images/services/construction-work/image-2.webp">
                   <img
                     class="rounded-lg"
                     src="/images/services/construction-work/image-2.webp"
@@ -103,9 +105,7 @@
             <!-- swiper slide 3 -->
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a
-                  href="/images/services/construction-work/image-3.webp"
-                >
+                <a href="/images/services/construction-work/image-3.webp">
                   <img
                     class="rounded-lg"
                     src="/images/services/construction-work/image-3.webp"
@@ -180,11 +180,9 @@
           </p>
         </div>
 
-        <div class=" max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <div class="max-w-full bg-white rounded-lg">
-            <a
-              href="/images/services/design-plans/design1.webp"
-            >
+            <a href="/images/services/design-plans/design1.webp">
               <img
                 class="rounded-lg"
                 src="/images/services/design-plans/design1.webp"
@@ -204,7 +202,8 @@
           <p
             class="font-neue-montreal font-normal text-gray-900 w-auto md:w-[706px] text-[20px] md:text-[24px]"
           >
-          Expertly Tailored Glass and Aluminum Installations for Elegant Railings, Fencing, Windows, Doors and Gates.
+            Expertly Tailored Glass and Aluminum Installations for Elegant
+            Railings, Fencing, Windows, Doors and Gates.
           </p>
         </div>
 
@@ -222,9 +221,7 @@
             <!-- swiper slide 1 -->
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a
-                  href="/images/services/glass-and-aluminum/glass1.webp"
-                >
+                <a href="/images/services/glass-and-aluminum/glass1.webp">
                   <img
                     class="rounded-lg"
                     src="/images/services/glass-and-aluminum/glass1.webp"
@@ -237,9 +234,7 @@
             <!-- swiper slide 2 -->
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a
-                  href="/images/services/glass-and-aluminum/glass2.webp"
-                >
+                <a href="/images/services/glass-and-aluminum/glass2.webp">
                   <img
                     class="rounded-lg"
                     src="/images/services/glass-and-aluminum/glass2.webp"
@@ -252,9 +247,7 @@
             <!-- swiper slide 3 -->
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a
-                  href="/images/services/glass-and-aluminum/glass3.webp"
-                >
+                <a href="/images/services/glass-and-aluminum/glass3.webp">
                   <img
                     class="rounded-lg"
                     src="/images/services/glass-and-aluminum/glass3.webp"
@@ -264,12 +257,10 @@
               </div>
             </swiper-slide>
 
-             <!-- swiper slide 4 -->
-             <swiper-slide>
+            <!-- swiper slide 4 -->
+            <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a
-                  href="/images/services/glass-and-aluminum/glass4.webp"
-                >
+                <a href="/images/services/glass-and-aluminum/glass4.webp">
                   <img
                     class="rounded-lg"
                     src="/images/services/glass-and-aluminum/glass4.webp"
@@ -279,12 +270,10 @@
               </div>
             </swiper-slide>
 
-             <!-- swiper slide 5 -->
-             <swiper-slide>
+            <!-- swiper slide 5 -->
+            <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a
-                  href="/images/services/glass-and-aluminum/glass5.webp"
-                >
+                <a href="/images/services/glass-and-aluminum/glass5.webp">
                   <img
                     class="rounded-lg"
                     src="/images/services/glass-and-aluminum/glass5.webp"
@@ -297,7 +286,7 @@
         </div>
 
         <!-- button swiper -->
-        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 ">
+        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4">
           <div class="flex justify-end gap-2">
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center glass-prev"
@@ -345,7 +334,6 @@
           </div>
         </div>
 
-
         <!-- Railings, Fencing and Gate-->
         <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
           <h1
@@ -356,12 +344,13 @@
           <p
             class="font-neue-montreal font-normal text-gray-900 w-auto md:w-[706px] text-[20px] md:text-[24px]"
           >
-          Experience Superior Design and Durability with Our Custom Railings, Fencing, and Gates
+            Experience Superior Design and Durability with Our Custom Railings,
+            Fencing, and Gates
           </p>
         </div>
 
-         <!-- swiper goes here -->
-         <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <!-- swiper goes here -->
+        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -374,9 +363,7 @@
             <!-- swiper slide 1 -->
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a
-                  href="/images/services/railings-fencing-gate/gate1.webp"
-                >
+                <a href="/images/services/railings-fencing-gate/gate1.webp">
                   <img
                     class="rounded-lg"
                     src="/images/services/railings-fencing-gate/gate1.webp"
@@ -389,9 +376,7 @@
             <!-- swiper slide 2 -->
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a
-                  href="/images/services/railings-fencing-gate/railings1.webp"
-                >
+                <a href="/images/services/railings-fencing-gate/railings1.webp">
                   <img
                     class="rounded-lg"
                     src="/images/services/railings-fencing-gate/railings1.webp"
@@ -404,9 +389,7 @@
             <!-- swiper slide 3 -->
             <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a
-                  href="/images/services/railings-fencing-gate/fencing1.webp"
-                >
+                <a href="/images/services/railings-fencing-gate/fencing1.webp">
                   <img
                     class="rounded-lg"
                     src="/images/services/railings-fencing-gate/fencing1.webp"
@@ -416,12 +399,10 @@
               </div>
             </swiper-slide>
 
-             <!-- swiper slide 4 -->
-             <swiper-slide>
+            <!-- swiper slide 4 -->
+            <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a
-                  href="/images/services/railings-fencing-gate/railings2.webp"
-                >
+                <a href="/images/services/railings-fencing-gate/railings2.webp">
                   <img
                     class="rounded-lg"
                     src="/images/services/railings-fencing-gate/railings2.webp"
@@ -431,12 +412,10 @@
               </div>
             </swiper-slide>
 
-             <!-- swiper slide 5 -->
-             <swiper-slide>
+            <!-- swiper slide 5 -->
+            <swiper-slide>
               <div class="max-w-lg bg-white rounded-lg">
-                <a
-                  href="/images/services/railings-fencing-gate/railings3.webp"
-                >
+                <a href="/images/services/railings-fencing-gate/railings3.webp">
                   <img
                     class="rounded-lg"
                     src="/images/services/railings-fencing-gate/railings3.webp"
@@ -449,7 +428,7 @@
         </div>
 
         <!-- button swiper -->
-        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 ">
+        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4">
           <div class="flex justify-end gap-2">
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center railings-prev"
@@ -496,6 +475,123 @@
             </button>
           </div>
         </div>
+
+        <!-- cabinets -->
+        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
+          <h1
+            class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900"
+          >
+            Modular Cabinets
+          </h1>
+          <p
+            class="font-neue-montreal font-normal text-gray-900 w-auto md:w-[706px] text-[20px] md:text-[24px]"
+          >
+            Expertly crafted to deliver durability, functionality, and seamless
+            design solutions for any space
+          </p>
+        </div>
+
+          <!-- swiper goes here -->
+          <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+          <swiper
+            :slidesPerView="1"
+            :spaceBetween="20"
+            :navigation="{ nextEl: '.cabinet-next', prevEl: '.cabinet-prev' }"
+            :pagination="{ clickable: true }"
+            :breakpoints="breakpoints"
+            :modules="modules"
+            class="mySwiper flex justify-between"
+          >
+            <!-- swiper slide 1 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a href="/images/services/modular-cabinets/cabinet1.webp">
+                  <img
+                    class="rounded-lg"
+                    src="/images/services/modular-cabinets/cabinet1.webp"
+                    alt="cabinet-1"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+            <!-- swiper slide 2 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a href="/images/services/modular-cabinets/cabinet2.webp">
+                  <img
+                    class="rounded-lg"
+                    src="/images/services/modular-cabinets/cabinet2.webp"
+                    alt="cabinet-2"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+            <!-- swiper slide 3 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a href="/images/services/modular-cabinets/cabinet3.webp">
+                  <img
+                    class="rounded-lg"
+                    src="/images/services/modular-cabinets/cabinet3.webp"
+                    alt="cabinet-3"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+          </swiper>
+        </div>
+
+        <!-- button swiper -->
+        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 lg:hidden">
+          <div class="flex justify-end gap-2">
+            <button
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center cabinet-prev"
+            >
+              <!-- SVG Icon -->
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M13 5H1m0 0L5 1m-4 4L5 9"
+                />
+              </svg>
+              <span class="sr-only">Icon description</span>
+            </button>
+
+            <button
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center cabinet-next"
+            >
+              <!-- SVG Icon -->
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+              <span class="sr-only">Icon description</span>
+            </button>
+          </div>
+        </div>
+
       </div>
     </section>
   </div>
@@ -513,9 +609,8 @@ export default {
     Swiper,
     SwiperSlide,
   },
-  data(){
-    return {
-    }
+  data() {
+    return {};
   },
   setup() {
     // Declare references and methods
@@ -552,7 +647,6 @@ export default {
       scrollToServices,
       breakpoints,
       modules: [Navigation],
-
     };
   },
 };
