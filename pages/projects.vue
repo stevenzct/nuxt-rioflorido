@@ -6,7 +6,7 @@
                 <div class="max-w-screen-2xl mx-auto px-4 py-8 w-full">
                     <div class="text-left">
                         <h1
-                            class="lg:py-8 text-black text-[30px] sm:text-[37px] md:text-[70px] lg:text-[90px] font-neue-montreal font-bold leading-[94%]">
+                            class="lg:py-8 text-black text-4xl md:text-7xl lg:text-8xl font-neue-montreal font-bold ">
                             Our Projects
                         </h1>
                     </div>

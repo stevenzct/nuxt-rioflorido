@@ -73,7 +73,7 @@
             Our Projects
           </h1>
 
-          <NuxtLink to="/projects">
+          <a href="">
             <button
               type="button"
               id="explore-projects"
@@ -81,11 +81,11 @@
             >
               View All
             </button>
-          </NuxtLink>
+          </a>
         </div>
 
         <div
-          class="max-w-screen-2xl px-4 mx-auto flex justify-between"
+          class="max-w-screen-2xl px-4 mx-auto flex justify-between "
         >
           <swiper
             :slidesPerView="1"
