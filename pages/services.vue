@@ -180,7 +180,7 @@
           </p>
         </div>
 
-        <div class=" max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
+        <div class=" max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <div class="max-w-full bg-white rounded-lg">
             <a
               href="/images/services/design-plans/design1.webp"
@@ -208,9 +208,62 @@
           </p>
         </div>
 
-        <!-- Add 'gallery' class to enable BaguetteBox -->
+        <!-- swiper goes here -->
         <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
-         
+          <swiper
+            :slidesPerView="1"
+            :spaceBetween="20"
+            :navigation="{ nextEl: '.next-test', prevEl: '.prev-test' }"
+            :pagination="{ clickable: true }"
+            :breakpoints="breakpoints"
+            :modules="modules"
+            class="mySwiper flex justify-between"
+          >
+            <!-- swiper slide 1 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a
+                  href="/images/services/glass and aluminum/glass1.webp"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="/images/services/glass and aluminum/glass1.webp"
+                    alt="image-1"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+            <!-- swiper slide 2 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a
+                  href="/images/services/glass and aluminum/glass2.webp"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="/images/services/glass and aluminum/glass2.webp"
+                    alt="image-2"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+            <!-- swiper slide 3 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a
+                  href="/images/services/glass and aluminum/glass3.webp"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="/images/services/glass and aluminum/glass3.webp"
+                    alt="image-3"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+          </swiper>
         </div>
 
         <div class="max-w-screen-2xl mx-auto py-8 px-4 ">
