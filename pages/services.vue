@@ -64,7 +64,7 @@
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
-            :navigation="{ nextEl: '.next-test', prevEl: '.prev-test' }"
+            :navigation="{ nextEl: '.construction-next', prevEl: '.construction-prev' }"
             :pagination="{ clickable: true }"
             :breakpoints="breakpoints"
             :modules="modules"
@@ -120,7 +120,7 @@
         <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 lg:hidden">
           <div class="flex justify-end gap-2">
             <button
-              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center prev-test"
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center construction-prev"
             >
               <!-- SVG Icon -->
               <svg
@@ -142,7 +142,7 @@
             </button>
 
             <button
-              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center next-test"
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center construction-next"
             >
               <!-- SVG Icon -->
               <svg
@@ -213,7 +213,7 @@
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
-            :navigation="{ nextEl: '.next-test', prevEl: '.prev-test' }"
+            :navigation="{ nextEl: '.glass-next', prevEl: '.glass-prev' }"
             :pagination="{ clickable: true }"
             :breakpoints="breakpoints"
             :modules="modules"
@@ -300,7 +300,7 @@
         <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 ">
           <div class="flex justify-end gap-2">
             <button
-              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center prev-test"
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center glass-prev"
             >
               <!-- SVG Icon -->
               <svg
@@ -322,7 +322,7 @@
             </button>
 
             <button
-              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center next-test"
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center glass-next"
             >
               <!-- SVG Icon -->
               <svg
@@ -346,8 +346,156 @@
         </div>
 
 
-        <!--  -->
+        <!-- Railings, Fencing and Gate-->
+        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
+          <h1
+            class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900"
+          >
+            Railings, Fencing and Gate
+          </h1>
+          <p
+            class="font-neue-montreal font-normal text-gray-900 w-auto md:w-[706px] text-[20px] md:text-[24px]"
+          >
+          Experience Superior Design and Durability with Our Custom Railings, Fencing, and Gates
+          </p>
+        </div>
 
+         <!-- swiper goes here -->
+         <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+          <swiper
+            :slidesPerView="1"
+            :spaceBetween="20"
+            :navigation="{ nextEl: '.railings-next', prevEl: '.railings-prev' }"
+            :pagination="{ clickable: true }"
+            :breakpoints="breakpoints"
+            :modules="modules"
+            class="mySwiper flex justify-between"
+          >
+            <!-- swiper slide 1 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a
+                  href="/images/services/railings-fencing-gate/gate1.webp"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="/images/services/railings-fencing-gate/gate1.webp"
+                    alt="gate-1"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+            <!-- swiper slide 2 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a
+                  href="/images/services/railings-fencing-gate/railings1.webp"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="/images/services/railings-fencing-gate/railings1.webp"
+                    alt="railings-1"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+            <!-- swiper slide 3 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a
+                  href="/images/services/railings-fencing-gate/fencing1.webp"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="/images/services/railings-fencing-gate/fencing1.webp"
+                    alt="fencing-1"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+             <!-- swiper slide 4 -->
+             <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a
+                  href="/images/services/railings-fencing-gate/railings2.webp"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="/images/services/railings-fencing-gate/railings2.webp"
+                    alt="railings-2"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+             <!-- swiper slide 5 -->
+             <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a
+                  href="/images/services/railings-fencing-gate/railings3.webp"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="/images/services/railings-fencing-gate/railings3.webp"
+                    alt="railings-3"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+          </swiper>
+        </div>
+
+        <!-- button swiper -->
+        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 ">
+          <div class="flex justify-end gap-2">
+            <button
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center railings-prev"
+            >
+              <!-- SVG Icon -->
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M13 5H1m0 0L5 1m-4 4L5 9"
+                />
+              </svg>
+              <span class="sr-only">Icon description</span>
+            </button>
+
+            <button
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center railings-next"
+            >
+              <!-- SVG Icon -->
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+              <span class="sr-only">Icon description</span>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   </div>
