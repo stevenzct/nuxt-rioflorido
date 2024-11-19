@@ -469,19 +469,19 @@
     </section>
 
     <!-- get in touch -->
-    <section id="get-in-touch" class="h-96 md:h-screen">
+    <section id="get-in-touch" class="h-auto md:h-screen py-8">
       <div
         class="h-96 md:h-full w-full flex flex-col justify-center items-start"
       >
         <div class="max-w-screen-2xl mx-auto px-4  py-16 ">
           <h1
-            class="font-neue-montreal font-bold text-4xl md:text-7xl text-start py-0 md:py-4 text-gray-900 leading-[94%] tracking-wide"
+            class="font-neue-montreal font-bold text-4xl md:text-7xl text-start py-0  text-gray-900  tracking-wide"
           >
             Your Home, Our Expertise
           </h1>
 
           <h3
-            class="font-neue-montreal font-[600] leading-[137%] text-gray-900 text-start text-[24px] md:text-[40px] xs:w-auto lg:w-4/5 py-4 "
+            class="font-neue-montreal font-normal leading-[137%] text-gray-900 text-start text-[24px] md:text-[40px] xs:w-auto lg:w-4/5 py-4 "
             id="h3-subheadline-years"
           >
             Elevate Your Projects with Precision, Reliability, and a Proven
