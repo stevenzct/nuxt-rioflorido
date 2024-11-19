@@ -41,7 +41,8 @@
     </section>
 
     <!-- services swiper -->
-    <section id="services-section" ref="servicesSection" class="bg-[#F5F9FC]">
+      <!-- Add 'gallery' class to enable BaguetteBox -->
+    <section id="services-section" ref="servicesSection" class="gallery bg-[#F5F9FC]">
       <div class="h-auto w-full py-16 lg:py-32">
         <div class="max-w-screen-2xl mx-auto px-4">
           <h1
@@ -58,8 +59,8 @@
           </p>
         </div>
 
-        <!-- Add 'gallery' class to enable BaguetteBox -->
-        <div class="gallery max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
+       
+        <div class=" max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -179,14 +180,14 @@
           </p>
         </div>
 
-        <div class="gallery max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
+        <div class=" max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
           <div class="max-w-full bg-white rounded-lg">
             <a
-              href="../assets/images/services/design-plans/IMG-579818a38f7184294709739710dbd6c7-V 1.webp"
+              href="/images/services/design-plans/design1.webp"
             >
               <img
                 class="rounded-lg"
-                src="../assets/images/services/design-plans/IMG-579818a38f7184294709739710dbd6c7-V 1.webp"
+                src="/images/services/design-plans/design1.webp"
                 alt="image-design-plans"
               />
             </a>
@@ -208,7 +209,7 @@
         </div>
 
         <!-- Add 'gallery' class to enable BaguetteBox -->
-        <div class="gallery max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
+        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
          
         </div>
 
