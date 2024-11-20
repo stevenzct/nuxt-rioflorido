@@ -491,8 +491,8 @@
           </p>
         </div>
 
-          <!-- swiper goes here -->
-          <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <!-- swiper goes here -->
+        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -592,6 +592,177 @@
           </div>
         </div>
 
+        <!-- windows -->
+        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-32">
+          <div class="grid grid-cols-1 lg:grid-cols-2 lg:flex justify-between">
+            <div>
+              <h1
+                class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900"
+              >
+                Custom Windows
+              </h1>
+              <p
+                class="font-neue-montreal font-normal text-gray-900 w-auto md:w-[706px] text-[20px] md:text-[24px]"
+              >
+                Expertly crafted windows designed to meet the specific needs and
+                vision of your construction project
+              </p>
+            </div>
+
+            <div>
+              <a href="">
+                <button
+                  type="button"
+                  id="explore-projects"
+                  class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+                >
+                  View All
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- swiper goes here -->
+        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+          <swiper
+            :slidesPerView="1"
+            :spaceBetween="20"
+            :navigation="{ nextEl: '.window-next', prevEl: '.window-prev' }"
+            :pagination="{ clickable: true }"
+            :breakpoints="breakpoints"
+            :modules="modules"
+            class="mySwiper flex justify-between"
+          >
+            <!-- swiper slide 1 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a href="/images/Glass-and-aluminum/130-SERIES-SLIDING-WITH-SECURITY-SCREEN/130-SERIES-SLIDING-WITH-SECURITY-SCREEN.webp">
+                  <img
+                    class="rounded-lg"
+                    src="/images/Glass-and-aluminum/130-SERIES-SLIDING-WITH-SECURITY-SCREEN/130-SERIES-SLIDING-WITH-SECURITY-SCREEN.webp"
+                    alt="130-SERIES-SLIDING-WITH-SECURITY-SCREEN"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+            <!-- swiper slide 2 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a href="/images/Glass-and-aluminum/SLIDING-WINDOW/900-SERIES/900-SERIES.webp">
+                  <img
+                    class="rounded-lg"
+                    src="/images/Glass-and-aluminum/SLIDING-WINDOW/900-SERIES/900-SERIES.webp"
+                    alt="900-SERIES"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+            <!-- swiper slide 3 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a href="/images/Glass-and-aluminum/85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN/85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN.webp">
+                  <img
+                    class="rounded-lg"
+                    src="/images/Glass-and-aluminum/85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN/85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN.webp"
+                    alt="85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+            <!-- swiper slide 4 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg">
+                <a href="/images/Glass-and-aluminum/YC-38-SERIES-NEW-PANEL/FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE/FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE.webp">
+                  <img
+                    class="rounded-lg"
+                    src="/images/Glass-and-aluminum/YC-38-SERIES-NEW-PANEL/FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE/FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE.webp"
+                    alt="FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+            <!-- swiper slide 5 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg object-fill">
+                <a href="/images/Glass-and-aluminum/SLIDING-WINDOW/900-SERIES-THREE-(3)-TRACKS/900-SERIES-THREE-(3)-TRACKS.webp">
+                  <img
+                    class="rounded-lg"
+                    src="/images/Glass-and-aluminum/SLIDING-WINDOW/900-SERIES-THREE-(3)-TRACKS/900-SERIES-THREE-(3)-TRACKS.webp"
+                    alt="900-SERIES-THREE-(3)-TRACKS"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+
+            <!-- swiper slide 6 -->
+            <swiper-slide>
+              <div class="max-w-lg bg-white rounded-lg object-fill">
+                <a href="/images/Glass-and-aluminum/SLIDING-WINDOW/798-SERIES/798-SERIES.we">
+                  <img
+                    class="rounded-lg"
+                    src="/images/Glass-and-aluminum/SLIDING-WINDOW/798-SERIES/798-SERIES.webp"
+                    alt="798-SERIES"
+                  />
+                </a>
+              </div>
+            </swiper-slide>
+          </swiper>
+
+        </div>
+
+         <!-- button swiper -->
+         <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4">
+          <div class="flex justify-end gap-2">
+            <button
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center window-prev"
+            >
+              <!-- SVG Icon -->
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M13 5H1m0 0L5 1m-4 4L5 9"
+                />
+              </svg>
+              <span class="sr-only">Icon description</span>
+            </button>
+
+            <button
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center window-next"
+            >
+              <!-- SVG Icon -->
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+              <span class="sr-only">Icon description</span>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   </div>

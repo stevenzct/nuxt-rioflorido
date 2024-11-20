@@ -237,7 +237,7 @@
   /* background: url(../assets/images/projects/abstract-hero.webp) lightgray 0px -50.902px /
     100% 437.247% no-repeat; */
   overflow: hidden;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
   background-position: 100%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 20.87%, rgba(0, 0, 0, 0.00) 59.56%), 

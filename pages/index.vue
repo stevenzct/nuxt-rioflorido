@@ -73,7 +73,7 @@
             Our Projects
           </h1>
 
-          <a href="">
+          <NuxtLink to="/projects">
             <button
               type="button"
               id="explore-projects"
@@ -81,7 +81,7 @@
             >
               View All
             </button>
-          </a>
+          </NuxtLink>
         </div>
 
         <div
@@ -91,8 +91,8 @@
             :slidesPerView="1"
             :spaceBetween="20"
             :navigation="{
-              nextEl: '.next-test',
-              prevEl: '.prev-test',
+              nextEl: '.next-project',
+              prevEl: '.prev-project',
             }"
             :pagination="{
               clickable: true,
@@ -376,7 +376,7 @@
         <div class="max-w-screen-2xl mx-auto py-4 md:py-12 px-4">
           <div class="flex justify-end gap-2">
             <button
-              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center prev-test"
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center prev-project"
             >
               <!-- SVG Icon -->
               <svg
@@ -398,7 +398,7 @@
             </button>
 
             <button
-              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center next-test"
+              class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center next-project"
             >
               <!-- SVG Icon -->
               <svg
