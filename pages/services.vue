@@ -45,7 +45,7 @@
     <section
       id="services-section"
       ref="servicesSection"
-      class="gallery bg-[#F5F9FC]"
+      class=" bg-[#F5F9FC]"
     >
       <div class="h-auto w-full py-16 lg:py-32">
         <div class="max-w-screen-2xl mx-auto px-4">
@@ -63,7 +63,7 @@
           </p>
         </div>
 
-        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -180,8 +180,8 @@
           </p>
         </div>
 
-        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
-          <div class="max-w-full bg-white rounded-lg">
+        <div class=" max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+          <div class="gallery max-w-full bg-white rounded-lg">
             <a href="/images/services/design-plans/design1.webp">
               <img
                 class="rounded-lg"
@@ -208,7 +208,7 @@
         </div>
 
         <!-- swiper goes here -->
-        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -350,7 +350,7 @@
         </div>
 
         <!-- swiper goes here -->
-        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -492,7 +492,7 @@
         </div>
 
         <!-- swiper goes here -->
-        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -624,7 +624,7 @@
         </div>
 
         <!-- swiper goes here -->
-        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"

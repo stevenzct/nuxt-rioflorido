@@ -101,7 +101,7 @@
         </div>
 
         <div
-          class="max-w-screen-2xl px-4 mx-auto grid grid-cols-2 lg:grid-cols-4 py-10 lg:py-16 gap-4 lg:gap-x-8 gap-y-10 lg:gap-y-8 justify-center"
+          class="gallery max-w-screen-2xl px-4 mx-auto grid grid-cols-2 py-10 lg:py-16 gap-4 lg:gap-x-8 gap-y-10 lg:gap-y-8 justify-center"
         >
           <div class="max-w-full bg-white rounded-lg">
             <a
@@ -127,30 +127,6 @@
             </a>
           </div>
 
-
-          <div class="max-w-full bg-white rounded-lg">
-            <a
-              href="/images/Glass-and-aluminum/YC-38-SERIES-NEW-PANEL/FIXED-&-CASEMENT-OR-AWNING-COMBINATION/FIXED-&-CASEMENT-OR-AWNING-COMBINATION3.webp"
-            >
-              <img
-                class="rounded-lg"
-                src="/images/Glass-and-aluminum/YC-38-SERIES-NEW-PANEL/FIXED-&-CASEMENT-OR-AWNING-COMBINATION/FIXED-&-CASEMENT-OR-AWNING-COMBINATION3.webp"
-                alt="FIXED-&-CASEMENT-OR-AWNING-COMBINATION3"
-              />
-            </a>
-          </div>
-
-          <div class="max-w-full bg-white rounded-lg">
-            <a
-              href="/images/Glass-and-aluminum/YC-38-SERIES-NEW-PANEL/FIXED-&-CASEMENT-OR-AWNING-COMBINATION/FIXED-&-CASEMENT-OR-AWNING-COMBINATION4.webp"
-            >
-              <img
-                class="rounded-lg"
-                src="/images/Glass-and-aluminum/YC-38-SERIES-NEW-PANEL/FIXED-&-CASEMENT-OR-AWNING-COMBINATION/FIXED-&-CASEMENT-OR-AWNING-COMBINATION4.webp"
-                alt="Fixed-and-Casement-Combination4"
-              />
-            </a>
-          </div>
         </div>
 
         <div class="max-w-screen-2xl mx-auto px-4 ">
