@@ -29,7 +29,7 @@
 
             <button
               type="button"
-              @click="scrollToServices"
+              @click="scrollToImages"
               class="font-neue-montreal font-bold h-[55px] rounded-[4px] text-gray-900 text-[16px] bg-white border border-gray-400 px-8 py-3.5 my-4 md:w-[200px] transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
             >
               Scroll
@@ -40,59 +40,70 @@
     </section>
 
     <!-- image gallery -->
-    <section id="image-gallery-section" ref="image-gallerySection">
-      <div class="h-auto w-full py-16 lg:py-32">
-        <div class="max-w-screen-2xl mx-auto px-4 ">
-            
-               <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
-                <img
-                    class="rounded-lg"
-                    src="../assets/images/all-images/buildings/Lucena, Rances Residence/rances1.webp"
-                    alt="image-1"
-                  />
+    <section id="images-section" ref="imagesSection">
+      <div class="h-auto w-full py-16 lg:py-32 gallery">
+        <div class="max-w-screen-2xl mx-auto px-4">
+          <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+            <a href="/images/projects/Lucena-Rances-Residence/rances1.webp">
+              <img
+                class="rounded-lg"
+                src="/images/projects/Lucena-Rances-Residence/rances1.webp"
+                alt="image-1"
+              />
+            </a>
 
-                  <img
-                    class="rounded-lg"
-                    src="../assets/images/all-images/buildings/Lucena, Rances Residence/rances2.webp"
-                    alt="image-1"
-                  />
+            <a href="/images/projects/Lucena-Rances-Residence/rances2.webp">
+              <img
+                class="rounded-lg"
+                src="/images/projects/Lucena-Rances-Residence/rances2.webp"
+                alt="image-2"
+              />
+            </a>
 
-                  <img
-                    class="rounded-lg"
-                    src="../assets/images/all-images/buildings/Lucena, Rances Residence/rances3.webp"
-                    alt="image-1"
-                  />
-               </div>
+            <a href="/images/projects/Lucena-Rances-Residence/rances3.webp">
+              <img
+                class="rounded-lg"
+                src="/images/projects/Lucena-Rances-Residence/rances3.webp"
+                alt="image-3"
+              />
+            </a>
+          </div>
 
-               <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 py-4 lg:py-8 lg:gap-8">
-                <img
-                    class="rounded-lg"
-                    src="../assets/images/all-images/buildings/Lucena, Rances Residence/rances4.webp"
-                    alt="image-1"
-                  />
+          <div
+            class="grid grid-cols-2 lg:grid-cols-4 gap-4 py-4 lg:py-8 lg:gap-8"
+          >
+            <a href="/images/projects/Lucena-Rances-Residence/rances4.webp">
+              <img
+                class="rounded-lg"
+                src="/images/projects/Lucena-Rances-Residence/rances4.webp"
+                alt="image-4"
+              />
+            </a>
 
-                  <img
-                    class="rounded-lg"
-                    src="../assets/images/all-images/buildings/Lucena, Rances Residence/rances5.webp"
-                    alt="image-1"
-                  />
+            <a href="/images/projects/Lucena-Rances-Residence/rances5.webp">
+              <img
+                class="rounded-lg"
+                src="/images/projects/Lucena-Rances-Residence/rances5.webp"
+                alt="image-5"
+              />
+            </a>
 
-                  <img
-                    class="rounded-lg"
-                    src="../assets/images/all-images/buildings/Lucena, Rances Residence/rances6.webp"
-                    alt="image-1"
-                  />
+            <a href="/images/projects/Lucena-Rances-Residence/rances6.webp">
+              <img
+                class="rounded-lg"
+                src="/images/projects/Lucena-Rances-Residence/rances6.webp"
+                alt="image-6"
+              />
+            </a>
 
-                  <img
-                    class="rounded-lg"
-                    src="../assets/images/all-images/buildings/Lucena, Rances Residence/rances7.webp"
-                    alt="image-1"
-                  />
-               </div>
-
-
-
-            
+            <a href="/images/projects/Lucena-Rances-Residence/rances7.webp">
+              <img
+                class="rounded-lg"
+                src="/images/projects/Lucena-Rances-Residence/rances7.webp"
+                alt="image-7"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -116,12 +127,12 @@ export default {
   },
   setup() {
     // Declare references and methods
-    const servicesSection = ref(null);
+    const imagesSection = ref(null);
 
     // Scroll to Projects section
-    const scrollToServices = () => {
-      if (servicesSection.value) {
-        servicesSection.value.scrollIntoView({
+    const scrollToImages = () => {
+      if (imagesSection.value) {
+        imagesSection.value.scrollIntoView({
           behavior: "smooth",
           block: "start",
         });
@@ -145,8 +156,8 @@ export default {
 
     // Return the data that needs to be used in the template
     return {
-      servicesSection,
-      scrollToServices,
+      imagesSection,
+      scrollToImages,
       breakpoints,
       modules: [Navigation],
     };
