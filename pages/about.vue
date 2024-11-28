@@ -130,6 +130,7 @@ const scrollToAbout = () => {
     });
   }
 };
+
 </script>
 
 <style scoped>

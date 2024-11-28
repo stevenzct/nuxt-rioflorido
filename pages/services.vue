@@ -63,7 +63,7 @@
           </p>
         </div>
 
-        <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16 " >
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -78,7 +78,7 @@
           >
             <!-- swiper slide 1 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/construction-work/image-1.webp">
                   <img
                     class="rounded-lg"
@@ -91,7 +91,7 @@
 
             <!-- swiper slide 2 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/construction-work/image-2.webp">
                   <img
                     class="rounded-lg"
@@ -104,7 +104,7 @@
 
             <!-- swiper slide 3 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/construction-work/image-3.webp">
                   <img
                     class="rounded-lg"
@@ -220,7 +220,7 @@
           >
             <!-- swiper slide 1 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/glass-and-aluminum/glass1.webp">
                   <img
                     class="rounded-lg"
@@ -233,7 +233,7 @@
 
             <!-- swiper slide 2 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/glass-and-aluminum/glass2.webp">
                   <img
                     class="rounded-lg"
@@ -246,7 +246,7 @@
 
             <!-- swiper slide 3 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/glass-and-aluminum/glass3.webp">
                   <img
                     class="rounded-lg"
@@ -259,7 +259,7 @@
 
             <!-- swiper slide 4 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/glass-and-aluminum/glass4.webp">
                   <img
                     class="rounded-lg"
@@ -272,7 +272,7 @@
 
             <!-- swiper slide 5 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/glass-and-aluminum/glass5.webp">
                   <img
                     class="rounded-lg"
@@ -362,7 +362,7 @@
           >
             <!-- swiper slide 1 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/railings-fencing-gate/gate1.webp">
                   <img
                     class="rounded-lg"
@@ -375,7 +375,7 @@
 
             <!-- swiper slide 2 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/railings-fencing-gate/railings1.webp">
                   <img
                     class="rounded-lg"
@@ -388,7 +388,7 @@
 
             <!-- swiper slide 3 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/railings-fencing-gate/fencing1.webp">
                   <img
                     class="rounded-lg"
@@ -401,7 +401,7 @@
 
             <!-- swiper slide 4 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/railings-fencing-gate/railings2.webp">
                   <img
                     class="rounded-lg"
@@ -414,7 +414,7 @@
 
             <!-- swiper slide 5 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/railings-fencing-gate/railings3.webp">
                   <img
                     class="rounded-lg"
@@ -504,7 +504,7 @@
           >
             <!-- swiper slide 1 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/modular-cabinets/cabinet1.webp">
                   <img
                     class="rounded-lg"
@@ -517,7 +517,7 @@
 
             <!-- swiper slide 2 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/modular-cabinets/cabinet2.webp">
                   <img
                     class="rounded-lg"
@@ -530,7 +530,7 @@
 
             <!-- swiper slide 3 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/services/modular-cabinets/cabinet3.webp">
                   <img
                     class="rounded-lg"
@@ -636,7 +636,7 @@
           >
             <!-- swiper slide 1 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/Glass-and-aluminum/130-SERIES-SLIDING-WITH-SECURITY-SCREEN/130-SERIES-SLIDING-WITH-SECURITY-SCREEN.webp">
                   <img
                     class="rounded-lg"
@@ -649,7 +649,7 @@
 
             <!-- swiper slide 2 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/Glass-and-aluminum/SLIDING-WINDOW/900-SERIES/900-SERIES.webp">
                   <img
                     class="rounded-lg"
@@ -662,7 +662,7 @@
 
             <!-- swiper slide 3 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/Glass-and-aluminum/85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN/85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN.webp">
                   <img
                     class="rounded-lg"
@@ -675,7 +675,7 @@
 
             <!-- swiper slide 4 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg">
+              <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/Glass-and-aluminum/YC-38-SERIES-NEW-PANEL/FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE/FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE.webp">
                   <img
                     class="rounded-lg"
@@ -688,7 +688,7 @@
 
             <!-- swiper slide 5 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg object-fill">
+              <div class="max-w-full bg-white rounded-lg object-fill">
                 <a href="/images/Glass-and-aluminum/SLIDING-WINDOW/900-SERIES-THREE-(3)-TRACKS/900-SERIES-THREE-(3)-TRACKS.webp">
                   <img
                     class="rounded-lg"
@@ -701,7 +701,7 @@
 
             <!-- swiper slide 6 -->
             <swiper-slide>
-              <div class="max-w-lg bg-white rounded-lg object-fill">
+              <div class="max-w-full bg-white rounded-lg object-fill">
                 <a href="/images/Glass-and-aluminum/SLIDING-WINDOW/798-SERIES/798-SERIES.we">
                   <img
                     class="rounded-lg"

@@ -238,6 +238,6 @@
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100%;
+    background-position: 8%;
 }
 </style>

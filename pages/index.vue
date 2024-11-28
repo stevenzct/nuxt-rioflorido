@@ -77,7 +77,7 @@
             <button
               type="button"
               id="explore-projects"
-              class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+              class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] w-full md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
             >
               View All
             </button>
@@ -85,11 +85,11 @@
         </div>
 
         <div
-          class="max-w-screen-2xl px-4 mx-auto flex justify-between "
+          class="max-w-screen-2xl px-4 mx-auto "
         >
           <swiper
-            :slidesPerView="1"
-            :spaceBetween="20"
+            :slidesPerView="3"
+            :spaceBetween="32"
             :navigation="{
               nextEl: '.next-project',
               prevEl: '.prev-project',
@@ -102,274 +102,8 @@
             class="mySwiper"
           >
             <!-- swiper slide 1 -->
-            <swiper-slide class="">
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="#">
-                  <img
-                    class="rounded-t-lg"
-                    src="../assets/images/all-images/buildings/Lucena, Rances Residence/IMG_E0210 (1).webp"
-                    alt=""
-                  />
-                </a>
-                <div class="p-4 md:p-8 pb-12 md:pb-14">
-                  <div class="inline-flex items-center">
-                    <div class="my-auto">
-                      <span class="material-icons">location_on</span>
-                      <!-- Classic Material Icon -->
-                    </div>
-                    <h5
-                      class="ms-2 mb-2 text-2xl font-bold text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]"
-                    >
-                      Lucena City
-                    </h5>
-                  </div>
-
-                  <p
-                    class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400"
-                  >
-                    Two (2) Storey Residential Building with 408 sqm floor area
-                    and 5-bedrooms.
-                  </p>
-
-                  <div class="flex items-start">
-                    <p class="my-auto font-neue-montreal font-normal">
-                      Rances Residence
-                    </p>
-                    <button
-                      type="button"
-                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
-                    >
-                      View Project
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 2 -->
-            <swiper-slide class="">
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="#">
-                  <img
-                    class="rounded-t-lg"
-                    src="../assets/images/all-images/buildings/Nueva Vizcaya Project - Commercial Building/1688207351599-01 (2).webp"
-                    alt=""
-                  />
-                </a>
-                <div class="p-4 md:p-8 pb-12 md:pb-14">
-                  <div class="inline-flex items-center">
-                    <div class="my-auto">
-                      <span class="material-icons">location_on</span>
-                      <!-- Classic Material Icon -->
-                    </div>
-                    <h5
-                      class="ms-2 mb-2 text-2xl font-bold text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]"
-                    >
-                      Nueva Vizcaya
-                    </h5>
-                  </div>
-
-                  <p
-                    class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400"
-                  >
-                    Five (5) Units, Two (2) Storey Commercial Building with 187
-                    sqm total floor area.
-                  </p>
-
-                  <div class="flex items-start">
-                    <p class="my-auto font-neue-montreal font-normal">
-                      Commercial Building
-                    </p>
-                    <button
-                      type="button"
-                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
-                    >
-                      View Project
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 3 -->
-            <swiper-slide class="">
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="#">
-                  <img
-                    class="rounded-t-lg"
-                    src="../assets/images/all-images/buildings/Quezon City Project - Sir Manny Apartment/1704532065427.webp"
-                    alt=""
-                  />
-                </a>
-                <div class="p-4 md:p-8 pb-12 md:pb-14">
-                  <div class="inline-flex items-center">
-                    <div class="my-auto">
-                      <span class="material-icons">location_on</span>
-                      <!-- Classic Material Icon -->
-                    </div>
-                    <h5
-                      class="ms-2 mb-2 text-2xl font-bold text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]"
-                    >
-                      Quezon City
-                    </h5>
-                  </div>
-
-                  <p
-                    class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400"
-                  >
-                    Two (2) Storey Residential/Apartment Building with 95 sqm
-                    floor area and 4-bedrooms.
-                  </p>
-
-                  <div class="flex items-start">
-                    <p class="my-auto font-neue-montreal font-normal">
-                      Manny Apartment
-                    </p>
-                    <button
-                      type="button"
-                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
-                    >
-                      View Project
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </swiper-slide>
-
-            <!-- ----------------------------------- -->
-            <!-- swiper slide 4 -->
-            <swiper-slide class="">
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="#">
-                  <img
-                    class="rounded-t-lg"
-                    src="../assets/images/all-images/buildings/Lucena City Project - Joel _ Arlyn Residence/IMG_E7836.webp"
-                    alt=""
-                  />
-                </a>
-                <div class="p-4 md:p-8 pb-12 md:pb-14">
-                  <div class="inline-flex items-center">
-                    <div class="my-auto">
-                      <span class="material-icons">location_on</span>
-                      <!-- Classic Material Icon -->
-                    </div>
-                    <h5
-                      class="ms-2 mb-2 text-2xl font-bold text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]"
-                    >
-                      Lucena City
-                    </h5>
-                  </div>
-
-                  <p
-                    class="mb-3 font-neue-montreal font-normal text-gray-700 dark:text-gray-400"
-                  >
-                    Two (2) Storey Residential/Apartment Building with 170 sqm
-                    floor area and 4-units.
-                  </p>
-
-                  <div class="flex items-start">
-                    <p class="my-auto font-neue-montreal font-normal">
-                      Joel Residence
-                    </p>
-                    <button
-                      type="button"
-                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
-                    >
-                      View Project
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 5 -->
-            <swiper-slide class="">
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="#">
-                  <img
-                    class="rounded-t-lg"
-                    src="../assets/images/all-images/buildings/Lucena City Project - Sadia Residence/IMG_E7855.webp"
-                    alt=""
-                  />
-                </a>
-                <div class="p-4 md:p-8 pb-12 md:pb-14">
-                  <div class="inline-flex items-center">
-                    <div class="my-auto">
-                      <span class="material-icons">location_on</span>
-                      <!-- Classic Material Icon -->
-                    </div>
-                    <h5
-                      class="ms-2 mb-2 text-2xl font-bold text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]"
-                    >
-                      Lucena City
-                    </h5>
-                  </div>
-
-                  <p
-                    class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400"
-                  >
-                    Two (2) Storey Residential Building with 128 sqm floor area
-                    and 3-bedrooms.
-                  </p>
-
-                  <div class="flex items-start">
-                    <p class="my-auto font-neue-montreal font-normal">
-                      Sadia Residence
-                    </p>
-                    <button
-                      type="button"
-                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
-                    >
-                      View Project
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 6 -->
-            <swiper-slide class="">
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="#">
-                  <img
-                    class="rounded-t-lg"
-                    src="../assets/images/all-images/buildings/Lucena, Tamayo Residence/IMG_E7835.webp"
-                    alt=""
-                  />
-                </a>
-                <div class="p-4 md:p-8 pb-12 md:pb-14">
-                  <div class="inline-flex items-center">
-                    <div class="my-auto">
-                      <span class="material-icons">location_on</span>
-                      <!-- Classic Material Icon -->
-                    </div>
-                    <h5
-                      class="font-neue-montreal ms-2 mb-2 text-2xl font-bold text-gray-900 dark:text-white font-neue-montreal text-[24px] leading-[122%]"
-                    >
-                      Quezon City
-                    </h5>
-                  </div>
-
-                  <p
-                    class="font-neue-montreal mb-3 font-normal text-gray-700 dark:text-gray-400"
-                  >
-                    Two (2) Storey Residential/Apartment Building with 95 sqm
-                    floor area and 4-bedrooms.
-                  </p>
-
-                  <div class="flex items-start">
-                    <p class="my-auto font-neue-montreal font-normal">
-                      Rances Residence
-                    </p>
-                    <button
-                      type="button"
-                      class="font-neue-montreal font-bold rounded-[4px] ms-auto text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
-                    >
-                      View Project
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <swiper-slide v-for="p in projects" :key="p.id">
+              <ProjectCard :project="p" />
             </swiper-slide>
           </swiper>
         </div>
@@ -430,7 +164,7 @@
           <h1
             class="font-neue-montreal font-bold text-4xl md:text-7xl py-4 lg:py-16 text-gray-900 leading-[150%] tracking-wide"
           >
-            Our Experts
+            Our Team
           </h1>
 
           <div
@@ -452,12 +186,15 @@
                 design, construction and more. We specialized in crafting homes
                 with enduring quality and personalized excellence.
               </h3>
-              <button
+              <NuxtLink to="/about">
+                <button
                 type="button"
                 class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
               >
                 More about us
               </button>
+              </NuxtLink>
+              
 
              
             </div>
@@ -491,7 +228,7 @@
           <NuxtLink to="/contact" class="w-full">
             <button
               type="button"
-              class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+              class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 md:my-4 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
             >
               Get in touch
             </button>
@@ -499,27 +236,33 @@
         </div>
       </div>
     </section>
+      
   </div>
 </template>
 
 
 
-<script>
+<script >
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 import { ref } from 'vue';
+import ProjectCard from "~/components/ProjectCard.vue";
 
 // Define the component
 export default {
   components: {
     Swiper,
     SwiperSlide,
+    ProjectCard
   },
-  setup() {
+  async setup() {
     // Declare references and methods
     const projectsSection = ref(null);
+
+    const { data: projects } = await useFetch('https://673f046ca9bc276ec4b6cdac.mockapi.io/projects/projectsSample')
+   
 
     // Scroll to Projects section
     const scrollToProjects = () => {
@@ -533,8 +276,14 @@ export default {
 
     // Swiper breakpoints setup
     const breakpoints = {
+      100: {
+        slidesPerView: 1,
+      },
+      360: {
+        slidesPerView: 1,
+      },
       640: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       768: {
         slidesPerView: 2,
@@ -550,6 +299,7 @@ export default {
       scrollToProjects,
       breakpoints,
       modules: [Navigation],
+      projects
     };
   },
 };
@@ -601,6 +351,7 @@ export default {
 #projects-section {
   background-color: #f5f9fc;
 }
+
 
 @media screen and (max-width: 556px) {
   #intro-text {
