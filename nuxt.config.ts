@@ -16,7 +16,7 @@ export default defineNuxtConfig({
         {
           rel: 'icon', // Corrected rel value
           type: 'image/x-icon', // Corrected type value
-          href: '/images/logo/secondary-logo.ico' // Path to the favicon
+          href: '/images/logo/secondary-logo.svg' // Path to the favicon
         },
         {
           rel: 'stylesheet',

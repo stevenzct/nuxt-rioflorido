@@ -315,19 +315,16 @@ export default {
 #hero-section {
   /* background-image: url("../assets/images/home/1-landing.webp"); */
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0) 49.71%, rgba(0, 0, 0, 0.2) 61.73%),
-    linear-gradient(
-      0deg,
-      var(--gradient-home, rgba(0, 0, 0, 0.2)) 0%,
-      var(--gradient-home, rgba(0, 0, 0, 0.2)) 100%
-    ),
-    linear-gradient(
-      0deg,
-      var(--gradient-home2, rgba(0, 0, 0, 0)) 0%,
-      var(--gradient-home2, rgba(0, 0, 0, 0)) 100%
-    ),
-    url("../assets/images/home/watermark-landing.webp") lightgray -0.587px -555.735px /
-      100% 210.526% no-repeat;
+  linear-gradient(180deg, rgba(0, 0, 0, 0.20) 15.94%, rgba(0, 0, 0, 0.00) 48.14%),
+                        linear-gradient(180deg, rgba(0, 0, 0, 0.00) 43.11%, rgba(0, 0, 0, 0.20) 68.98%, rgba(0, 0, 0, 0.20) 100%),
+                        linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.63%, rgba(0, 0, 0, 0.20) 70.1%),
+                        linear-gradient(219deg, rgba(0, 0, 0, 0.00) 44.54%, rgba(0, 0, 0, 0.20) 89.98%),
+                        linear-gradient(212deg, rgba(0, 0, 0, 0.00) 47.21%, rgba(0, 0, 0, 0.20) 89.01%),
+                        linear-gradient(180deg, rgba(0, 0, 0, 0.00) 59.79%, rgba(0, 0, 0, 0.20) 77.9%),
+                        url("../assets/images/home/hero1.webp");;
+
+
+      
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
