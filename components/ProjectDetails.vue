@@ -63,10 +63,13 @@
               :key="index"
               :href="imageObj.image"
             >
-              <img
+              <NuxtImg
+                loading="lazy" 
+                priority="true"
                 :src="imageObj.image"
                 class="w-full h-60 lg:h-96 object-cover rounded-lg"
                 :alt="'Gallery Image ' + (index + 1)"
+                format="webp"   
               />
             </a>
           </div>
