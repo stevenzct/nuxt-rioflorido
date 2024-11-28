@@ -21,7 +21,7 @@
           >
             <!-- SVG Icon -->
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=100083308930581"
               class="inline-flex items-center justify-center group-hover:text-black text-white transition-colors duration-300 ease-in-out"
             >
               <svg
@@ -63,7 +63,7 @@
           >
             <!-- SVG Icon (Email) -->
             <a
-              href="#"
+              href="mailto:rv.riocon@gmail.com"
               class="inline-flex items-center justify-center group-hover:text-black text-white transition-colors duration-300 ease-in-out"
             >
               <svg
@@ -84,7 +84,7 @@
           >
             <!-- SVG Icon (Phone Contact) -->
             <a
-              href="#"
+              href="tel:+639171441538"
               class="inline-flex items-center justify-center group-hover:text-black text-white transition-colors duration-300 ease-in-out"
             >
               <svg
