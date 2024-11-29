@@ -6,7 +6,7 @@
         <div class="max-w-screen-2xl mx-auto px-4 py-8 w-full">
           <div class="text-left">
             <h1
-              class="lg:py-8 text-black text-4xl md:text-7xl lg:text-8xl font-neue-montreal font-bold "
+              class="lg:py-8 text-black text-4xl md:text-7xl lg:text-8xl font-neue-montreal font-bold"
             >
               Here is how to get in touch with us.
             </h1>
@@ -19,65 +19,76 @@
     <section id="forms-section" class="h-auto">
       <div class="h-full w-full">
         <div class="max-w-screen-2xl px-4 mx-auto py-10 lg:py-16">
-          <form class="max-w-screen-2xl mx-auto">
+          <form @submit.prevent="submitForm" class="max-w-screen-2xl mx-auto">
             <!-- name -->
             <div class="w-full lg:w-10/12">
               <div class="relative mb-5 group py-3">
                 <input
+                  v-model="form.firstName"
                   type="text"
                   name="floating_first_name"
                   id="floating_first_name"
+                  minlength="3"
                   class="font-neue-montreal font-normal leading-[94%] text-[28px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-[3px] md:border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                   placeholder=" "
+                  :class="{ 'border-red-500': errors.firstName }"
                   required
                 />
-
                 <label
                   for="floating_first_name"
                   class="font-neue-montreal font-bold leading-[94%] text-[28px] md:text-[48px] text-black absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Your name
                 </label>
+                <span v-if="errors.firstName" class="text-red-500 text-sm"
+                  >Name must be minimum of 3 characters length
+                </span>
               </div>
 
               <!-- email -->
               <div class="relative mb-5 group py-3">
                 <input
+                  v-model="form.email"
                   type="email"
                   name="floating_email"
                   id="floating_email"
                   class="font-neue-montreal font-normal leading-[94%] text-[28px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-[3px] md:border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                   placeholder=" "
+                  :class="{ 'border-red-500': errors.email }"
                   required
                 />
-
                 <label
                   for="floating_email"
                   class="font-neue-montreal font-bold leading-[94%] text-[28px] md:text-[48px] text-black absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Your Email
                 </label>
+                <span v-if="errors.email" class="text-red-500 text-sm"
+                  >Please enter a valid email address</span
+                >
               </div>
 
               <!-- Tell us the project -->
-              <div class="">
-                <div class="relative mb-5 group py-3">
-                  <input
-                    type="text"
-                    name="project_name"
-                    id="project_name"
-                    class="font-neue-montreal font-normal leading-[94%] text-[28px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-[3px] md:border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-gray-600 peer"
-                    placeholder=" "
-                    required
-                  />
-
-                  <label
-                    for="project_name"
-                    class="font-neue-montreal font-bold leading-[94%] text-[28px] md:text-[48px] text-black absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                  >
-                    Tell us the project
-                  </label>
-                </div>
+              <div class="relative mb-5 group py-3">
+                <input
+                  v-model="form.projectName"
+                  type="text"
+                  name="project_name"
+                  id="project_name"
+                  class="font-neue-montreal font-normal leading-[94%] text-[28px] md:text-[38px] block py-2 lg:py-6 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-[3px] md:border-b-4 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                  placeholder=" "
+                  :class="{ 'border-red-500': errors.projectName }"
+                  required
+                />
+                <label
+                  for="project_name"
+                  class="font-neue-montreal font-bold leading-[94%] text-[28px] md:text-[48px] text-black absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Tell us the project
+                </label>
+                <span v-if="errors.projectName" class="text-red-500 text-sm"
+                  >This field is required</span
+                >
               </div>
 
               <div class="flex justify-end">
@@ -111,7 +122,8 @@
 
             <hr />
             <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
-              <a class="relative group" href="tel:+63427108762">042 710 8762 Telephone
+              <a class="relative group" href="tel:+63427108762"
+                >042 710 8762 Telephone
                 <span
                   :class="[
                     'bg-black',
@@ -123,7 +135,8 @@
             </p>
 
             <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
-              <a class="relative group" href="tel:+639171441538">0917-144-1538 Globe
+              <a class="relative group" href="tel:+639171441538"
+                >0917-144-1538 Globe
                 <span
                   :class="[
                     'bg-black',
@@ -135,7 +148,8 @@
             </p>
 
             <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
-              <a class="relative group" href="tel:+639696012447">0969-601-2447 Smart
+              <a class="relative group" href="tel:+639696012447"
+                >0969-601-2447 Smart
                 <span
                   :class="[
                     'bg-black',
@@ -223,21 +237,57 @@
             </p>
           </div>
         </div>
-
-       
       </div>
     </section>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, reactive } from "vue";
+
+const form = reactive({
+  firstName: "",
+  email: "",
+  projectName: "",
+});
+
+const errors = reactive({
+  firstName: false,
+  email: false,
+  projectName: false,
+});
+
+const submitForm = () => {
+  // Reset errors
+  Object.keys(errors).forEach((key) => {
+    errors[key] = false;
+  });
+
+  // Validate fields
+  if (form.firstName.length < 3 || form.firstName.length > 10) {
+    errors.firstName = true;
+  }
+  if (!form.email || !/\S+@\S+\.\S+/.test(form.email)) {
+    errors.email = true;
+  }
+  if (!form.projectName) {
+    errors.projectName = true;
+  }
+
+  // If no errors, submit form
+  if (!Object.values(errors).includes(true)) {
+    // Handle form submission here, like sending an API request
+    console.log("Form submitted successfully!", form);
+  }
+};
+</script>
 
 <style scoped>
 #contact-hero {
   background: url(../assets/images/projects/abstract.webp);
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 8%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 8%;
 }
 </style>
