@@ -2,13 +2,11 @@
   <div>
     <div class="max-w-full bg-white rounded-lg"
     >
-      <a href="#">
         <img
           class="rounded-t-lg"
           :src="project.image"
           alt="project-image-card-rances"
         />
-      </a>
       <div class="p-4 md:p-8 pb-12 md:pb-14">
         <div class="inline-flex items-center">
           <div class="my-auto">
