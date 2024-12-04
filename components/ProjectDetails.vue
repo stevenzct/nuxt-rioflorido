@@ -236,10 +236,12 @@ const getProjects = async () =>{
 
 // Initialize BaguetteBox once the gallery is ready
 const initializeGallery = () => {
-  nextTick(() => {
-    // Ensure BaguetteBox runs after the DOM has updated
-    BaguetteBox.run(".gallery");
-  });
+  if (process.client) { // Ensure this only runs in the client-side
+    nextTick(() => {
+      // BaguetteBox depends on the document, which is only available client-side
+      BaguetteBox.run(".gallery");
+    });
+  }
 };
 
 // Watch for changes to the gallery (in case project prop updates dynamically)
@@ -255,13 +257,13 @@ watch(
 
 // Also initialize on mount to handle the case when the gallery is loaded at the start
 onMounted(() => {
-  if (project?.gallery && project.gallery.length > 0) {
-    initializeGallery();
+  if (process.client && project?.gallery && project.gallery.length > 0) {
+    initializeGallery(); // Initialize gallery after mount
   }
+
   setTimeout(() => {
     getProjects();
   }, 300);
-
 });
 </script>
 
