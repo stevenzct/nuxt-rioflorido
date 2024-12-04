@@ -114,7 +114,7 @@
             class="mySwiper"
           >
             <!-- swiper slide 1 -->
-            <swiper-slide v-for="p in projects" :key="p.id">
+            <swiper-slide v-for="p in projectData" :key="p.id">
               <ProjectCard :project="p" />
             </swiper-slide>
           </swiper>
@@ -182,6 +182,8 @@ import { Navigation } from "swiper/modules";
 const { project } = defineProps(["project"]);
 const imagesSection = ref(null);
 
+const projectData = ref({});
+
 // Function to scroll to the gallery section
 const scrollToImages = () => {
   if (imagesSection.value) {
@@ -222,7 +224,15 @@ const breakpoints = {
 };
 
 // Fetch project data
-const { data: projects } = await useFetch('https://673f046ca9bc276ec4b6cdac.mockapi.io/projects/projectsSample');
+const getProjects = async () =>{
+
+  const { data } = await useFetch('https://673f046ca9bc276ec4b6cdac.mockapi.io/projects/projectsSample');
+
+  return projectData.value = data.value
+
+}
+
+
 
 // Initialize BaguetteBox once the gallery is ready
 const initializeGallery = () => {
@@ -248,6 +258,10 @@ onMounted(() => {
   if (project?.gallery && project.gallery.length > 0) {
     initializeGallery();
   }
+  setTimeout(() => {
+    getProjects();
+  }, 300);
+
 });
 </script>
 
