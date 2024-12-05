@@ -635,7 +635,7 @@
             class="mySwiper flex justify-between"
           >
             <!-- swiper slide 1 -->
-            <swiper-slide>
+            <!-- <swiper-slide>
               <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/Glass-and-aluminum/130-SERIES-SLIDING-WITH-SECURITY-SCREEN/130-SERIES-SLIDING-WITH-SECURITY-SCREEN.webp">
                   <img
@@ -645,10 +645,10 @@
                   />
                 </a>
               </div>
-            </swiper-slide>
+            </swiper-slide> -->
 
             <!-- swiper slide 2 -->
-            <swiper-slide>
+            <!-- <swiper-slide>
               <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/Glass-and-aluminum/SLIDING-WINDOW/900-SERIES/900-SERIES.webp">
                   <img
@@ -658,10 +658,10 @@
                   />
                 </a>
               </div>
-            </swiper-slide>
+            </swiper-slide> -->
 
             <!-- swiper slide 3 -->
-            <swiper-slide>
+            <!-- <swiper-slide>
               <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/Glass-and-aluminum/85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN/85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN.webp">
                   <img
@@ -671,10 +671,10 @@
                   />
                 </a>
               </div>
-            </swiper-slide>
+            </swiper-slide> -->
 
             <!-- swiper slide 4 -->
-            <swiper-slide>
+            <!-- <swiper-slide>
               <div class="max-w-full bg-white rounded-lg">
                 <a href="/images/Glass-and-aluminum/YC-38-SERIES-NEW-PANEL/FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE/FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE.webp">
                   <img
@@ -684,10 +684,10 @@
                   />
                 </a>
               </div>
-            </swiper-slide>
+            </swiper-slide> -->
 
             <!-- swiper slide 5 -->
-            <swiper-slide>
+            <!-- <swiper-slide>
               <div class="max-w-full bg-white rounded-lg object-fill">
                 <a href="/images/Glass-and-aluminum/SLIDING-WINDOW/900-SERIES-THREE-(3)-TRACKS/900-SERIES-THREE-(3)-TRACKS.webp">
                   <img
@@ -697,10 +697,10 @@
                   />
                 </a>
               </div>
-            </swiper-slide>
+            </swiper-slide> -->
 
             <!-- swiper slide 6 -->
-            <swiper-slide>
+            <!-- <swiper-slide>
               <div class="max-w-full bg-white rounded-lg object-fill">
                 <a href="/images/Glass-and-aluminum/SLIDING-WINDOW/798-SERIES/798-SERIES.we">
                   <img
@@ -710,7 +710,7 @@
                   />
                 </a>
               </div>
-            </swiper-slide>
+            </swiper-slide> -->
           </swiper>
 
         </div>
