@@ -34,7 +34,7 @@
             <div>
               <aside
                 id="default-sidebar"
-                class="fixed md:static top-0 left-0 md:top-auto md:left-auto z-40 w-72 lg:w-80 h-screen transition-transform -translate-x-full md:translate-x-0"
+                class="fixed md:static top-0 left-0 md:top-auto md:left-auto z-40 w-72 lg:w-80 h-full transition-transform -translate-x-full md:translate-x-0"
                 aria-label="Sidebar"
               >
                 <div class="h-full px-3 py-8 overflow-y-auto bg-[#ffffff] dark:bg-gray-800 lg:rounded-md">
@@ -113,7 +113,7 @@
                         >
                           <li
                             v-for="(seriesList, innerIndex) in seriesData.series.seriesList"
-                            :key="'series-list-' + innerIndex"
+                            :key="'series-list' + innerIndex"
                           >
                             <div
                               class="flex items-start leading-[1] w-full pl-5 p-2 text-gray-700 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
