@@ -610,7 +610,7 @@
             </div>
 
             <div>
-              <NuxtLink to="/windows">
+              <NuxtLink to="/windows2">
                 <button
                   type="button"
                   id="explore-projects"

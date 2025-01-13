@@ -48,8 +48,14 @@
                     >
                       Select Series
                     </h2>
+                    <!-- line -->
                     <hr class="pb-3 w-full" />
                   </div>
+
+                  <!-- list series/ variant -->
+                   <li>
+                    
+                   </li>
                 </div>
               </aside>
             </div>

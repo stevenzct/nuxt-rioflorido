@@ -307,13 +307,8 @@ const allSeries = ref([
             "/images/GlassAndAluminum/SlidingDoor/900Series/Capture.webp"
         ]
       }],
-
-
     }
   },
-  
-
-  
 ]);
 
 const selectedSeries = ref(null);
