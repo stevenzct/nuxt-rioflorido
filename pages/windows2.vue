@@ -23,10 +23,7 @@
           <div class="w-full">
             <button
               type="button"
-              data-drawer-target="default-sidebar"
-              data-drawer-toggle="default-sidebar"
-              aria-controls="default-sidebar"
-              aria-hidden="true"
+              @click="toggleSidebar"
               class="font-neue-montreal font-bold h-[55px] rounded-[4px] md:hidden text-gray-900 text-[16px] bg-white border border-gray-400 my-4 w-full transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
             >
               Select Series
@@ -34,10 +31,13 @@
           </div>
 
           <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div v-if="isSidebarOpen" class="md:hidden fixed inset-0 bg-black/50 z-30" @click="isSidebarOpen = false"></div>
             <div>
               <aside
                 id="default-sidebar"
-                class="fixed md:sticky top-0 md:top-[100px] left-0 md:left-auto z-40 w-72 lg:w-80 transition-transform -translate-x-full md:translate-x-0"
+                ref="sidebar"
+                class="fixed md:sticky top-0 md:top-[100px] left-0 md:left-auto z-40 w-72 lg:w-80 transition-transform duration-300 ease-in-out"
+                :class="{ '-translate-x-full md:translate-x-0': !isSidebarOpen, 'translate-x-0': isSidebarOpen }"
                 aria-label="Sidebar"
               >
                 <div
@@ -210,9 +210,15 @@
 </template>
 
 <script setup>
-import { ref, computed, watch } from "vue";
+import { ref, computed, watch, onMounted } from "vue";
 import BaguetteBox from "baguettebox.js";
 
+const isSidebarOpen = ref(false); // Reactive property for sidebar visibility
+const sidebar = ref(null); // Ref for the sidebar element
+
+const toggleSidebar = () => {
+  isSidebarOpen.value = !isSidebarOpen.value;
+};
 const allSeries = ref([
   {
     isDropDownOpen: false,
@@ -422,6 +428,26 @@ watch(filteredNames, () => {
     BaguetteBox.run(".gallery");
   });
 });
+
+
+onMounted(() => {
+  // ... other onMounted logic (BaguetteBox, etc.)
+  document.addEventListener('click', handleClickOutside);
+});
+
+// BeforeUnmount, remove the listener to avoid memory leaks:
+onBeforeUnmount(() => {
+    document.removeEventListener('click', handleClickOutside);
+});
+
+
+const handleClickOutside = (event) => {
+  if (isSidebarOpen.value && window.innerWidth >= 768) { // Only on desktop and when open
+    if (sidebar.value && !sidebar.value.contains(event.target)) {
+      isSidebarOpen.value = false;
+    }
+  }
+};
 </script>
 
 <style scoped>
