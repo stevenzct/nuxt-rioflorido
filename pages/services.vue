@@ -42,11 +42,7 @@
 
     <!-- services swiper -->
     <!-- Add 'gallery' class to enable BaguetteBox -->
-    <section
-      id="services-section"
-      ref="servicesSection"
-      class=" bg-[#F5F9FC]"
-    >
+    <section id="services-section" ref="servicesSection" class="bg-[#F5F9FC]">
       <div class="h-auto w-full py-16 lg:py-32">
         <div class="max-w-screen-2xl mx-auto px-4">
           <h1
@@ -63,7 +59,7 @@
           </p>
         </div>
 
-        <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16 " >
+        <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -180,7 +176,7 @@
           </p>
         </div>
 
-        <div class=" max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <div class="gallery max-w-full bg-white rounded-lg">
             <a href="/images/services/design-plans/design1.webp">
               <img
@@ -623,7 +619,7 @@
           </div>
         </div>
 
-        <!-- swiper goes here -->
+        <!-- swiper for windows -->
         <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
@@ -634,89 +630,91 @@
             :modules="modules"
             class="mySwiper flex justify-between"
           >
-            <!-- swiper slide 1 -->
-            <!-- <swiper-slide>
+            <swiper-slide>
               <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/Glass-and-aluminum/130-SERIES-SLIDING-WITH-SECURITY-SCREEN/130-SERIES-SLIDING-WITH-SECURITY-SCREEN.webp">
+                <a
+                  href="/images/services/custom-windows/130SeriesSlidingWithSecurityScreen.webp"
+                >
                   <img
-                    class="rounded-lg"
-                    src="/images/Glass-and-aluminum/130-SERIES-SLIDING-WITH-SECURITY-SCREEN/130-SERIES-SLIDING-WITH-SECURITY-SCREEN.webp"
-                    alt="130-SERIES-SLIDING-WITH-SECURITY-SCREEN"
+                    class="rounded-lg w-full h-60 lg:h-80 object-cover"
+                    src="/images/services/custom-windows/130SeriesSlidingWithSecurityScreen.webp"
+                    alt="130SeriesSlidingWithSecurityScreen"
                   />
                 </a>
               </div>
-            </swiper-slide> -->
+            </swiper-slide>
 
-            <!-- swiper slide 2 -->
-            <!-- <swiper-slide>
+            <swiper-slide>
               <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/Glass-and-aluminum/SLIDING-WINDOW/900-SERIES/900-SERIES.webp">
+                <a
+                  href="/images/services/custom-windows/900SeriesThree(3)Tracks.webp"
+                >
                   <img
-                    class="rounded-lg"
-                    src="/images/Glass-and-aluminum/SLIDING-WINDOW/900-SERIES/900-SERIES.webp"
-                    alt="900-SERIES"
+                    class="rounded-lg w-full h-60 lg:h-80 object-cover"
+                    src="/images/services/custom-windows/900SeriesThree(3)Tracks.webp"
+                    alt="900SeriesThree(3)Tracks.webp"
                   />
                 </a>
               </div>
-            </swiper-slide> -->
+            </swiper-slide>
 
-            <!-- swiper slide 3 -->
-            <!-- <swiper-slide>
+            <swiper-slide>
               <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/Glass-and-aluminum/85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN/85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN.webp">
+                <a
+                  href="/images/services/custom-windows/85SeriesAwningWindowWithSecurityScreen.webp"
+                >
                   <img
-                    class="rounded-lg"
-                    src="/images/Glass-and-aluminum/85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN/85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN.webp"
-                    alt="85-SERIES-AWNING-WINDOW-WITH-SECURITY-SCREEN"
+                    class="rounded-lg w-full h-60 lg:h-80 object-cover"
+                    src="/images/services/custom-windows/85SeriesAwningWindowWithSecurityScreen.webp"
+                    alt="85SeriesAwningWindowWithSecurityScreen.webp"
                   />
                 </a>
               </div>
-            </swiper-slide> -->
+            </swiper-slide>
 
-            <!-- swiper slide 4 -->
-            <!-- <swiper-slide>
+            <swiper-slide>
               <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/Glass-and-aluminum/YC-38-SERIES-NEW-PANEL/FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE/FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE.webp">
+                <a
+                  href="/images/services/custom-windows/FixedCasementOrAwningCombinationFrenchType.webp"
+                >
                   <img
-                    class="rounded-lg"
-                    src="/images/Glass-and-aluminum/YC-38-SERIES-NEW-PANEL/FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE/FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE.webp"
-                    alt="FIXED-&-CASEMENT-OR-AWNING-COMBINATION-FRENCH-TYPE"
+                    class="rounded-lg w-full h-60 lg:h-80 object-cover"
+                    src="/images/services/custom-windows/FixedCasementOrAwningCombinationFrenchType.webp"
+                    alt="FixedCasementOrAwningCombinationFrenchType.webp"
                   />
                 </a>
               </div>
-            </swiper-slide> -->
+            </swiper-slide>
 
-            <!-- swiper slide 5 -->
-            <!-- <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg object-fill">
-                <a href="/images/Glass-and-aluminum/SLIDING-WINDOW/900-SERIES-THREE-(3)-TRACKS/900-SERIES-THREE-(3)-TRACKS.webp">
+            <swiper-slide>
+              <div class="max-w-full bg-white rounded-lg">
+                <a
+                  href="/images/services/custom-windows/868SeriesThree(3)TracksWithSecurityScreen.webp"
+                >
                   <img
-                    class="rounded-lg"
-                    src="/images/Glass-and-aluminum/SLIDING-WINDOW/900-SERIES-THREE-(3)-TRACKS/900-SERIES-THREE-(3)-TRACKS.webp"
-                    alt="900-SERIES-THREE-(3)-TRACKS"
+                    class="rounded-lg w-full h-60 lg:h-80 object-cover"
+                    src="/images/services/custom-windows/868SeriesThree(3)TracksWithSecurityScreen.webp"
+                    alt="868SeriesThree(3)TracksWithSecurityScreen"
                   />
                 </a>
               </div>
-            </swiper-slide> -->
+            </swiper-slide>
 
-            <!-- swiper slide 6 -->
-            <!-- <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg object-fill">
-                <a href="/images/Glass-and-aluminum/SLIDING-WINDOW/798-SERIES/798-SERIES.we">
+            <swiper-slide>
+              <div class="max-w-full bg-white rounded-lg">
+                <a href="/images/services/custom-windows/798Series.webp">
                   <img
-                    class="rounded-lg"
-                    src="/images/Glass-and-aluminum/SLIDING-WINDOW/798-SERIES/798-SERIES.webp"
-                    alt="798-SERIES"
+                    class="rounded-lg w-full h-60 lg:h-80 object-cover"
+                    src="/images/services/custom-windows/798Series.webp"
+                    alt="798Series.webp"
                   />
                 </a>
               </div>
-            </swiper-slide> -->
+            </swiper-slide>
           </swiper>
-
         </div>
-
-         <!-- button swiper -->
-         <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4">
+        <!-- button swiper -->
+        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4">
           <div class="flex justify-end gap-2">
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center window-prev"
@@ -798,10 +796,10 @@ export default {
     };
     // Swiper breakpoints setup
     const breakpoints = {
-      // 360: {
-      //   slidesPerView: 2,
-      // },
-      640: {
+      360: {
+        slidesPerView: 1,
+      },
+      400: {
         slidesPerView: 2,
       },
       768: {

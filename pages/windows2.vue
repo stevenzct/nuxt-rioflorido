@@ -37,11 +37,11 @@
             <div>
               <aside
                 id="default-sidebar"
-                class="fixed md:static top-0 left-0 md:top-auto md:left-auto z-40 w-72 lg:w-80 h-full transition-transform -translate-x-full md:translate-x-0"
+                class="fixed md:sticky top-0 md:top-[100px] left-0 md:left-auto z-40 w-72 lg:w-80 transition-transform -translate-x-full md:translate-x-0"
                 aria-label="Sidebar"
               >
                 <div
-                  class="h-full px-3 py-8 overflow-y-auto bg-[#ffffff] dark:bg-gray-800 lg:rounded-md"
+                  class="h-[100vh] lg:h-[90vh] px-3 py-8 overflow-y-auto bg-[#ffffff] dark:bg-gray-800 lg:rounded-md"
                 >
                   <div>
                     <h2
@@ -122,7 +122,6 @@
                             </svg>
                           </button>
 
-                          <!-- Dropdown Menu with Animation -->
                           <ul
                             v-if="seriesData.isDropDownOpen"
                             class="py-2 space-y-2 transition-all ease-in-out duration-300 transform origin-top"
@@ -148,14 +147,14 @@
                                   type="checkbox"
                                   :checked="isChecked(seriesList.name)"
                                   @change="toggleFilter(seriesList.name)"
-                                  class="w-4 h-4 text-gray-500 bg-white border-gray-400 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-400 focus:outline-none focus:ring-0"
+                                  class="w-4 h-4 text-gray-500 bg-white border-gray-400 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-400 focus:outline-none focus:ring-0 cursor-pointer"
                                 />
                                 <label
                                   :for="
                                     seriesData.series.seriesTitle +
                                     seriesList.id
                                   "
-                                  class="text-gray-700 font-medium transition duration-75 ms-2"
+                                  class="text-gray-700 font-medium transition duration-75 ms-2 cursor-pointer"
                                 >
                                   {{ seriesList.name }}
                                 </label>
@@ -171,25 +170,26 @@
             </div>
 
             <!-- Gallery Section -->
-            <div class="lg:col-span-2">
+            <div class="lg:col-span-2 gallery">
               <div v-for="name in filteredNames" :key="name.id">
                 <div>
                   <h1
-                    class="font-neue-montreal font-bold text-[28px] md:text-4xl text-gray-900"
+                    class="font-neue-montreal font-bold text-[28px] md:text-4xl pb-1 text-gray-900"
                   >
                     {{ name.name }}
                   </h1>
                   <p
-                    class="font-neue-montreal font-normal text-gray-700 w-auto text-[20px] md:text-[24px]"
+                    class="font-neue-montreal font-normal text-gray-700 w-auto text-[20px] pb-4 md:text-[24px]"
                   >
                     {{ name.subheadline }}
                   </p>
 
                   <!-- Loop through the images array and display each image -->
-                  <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 gallery pb-12">
-                    <div
+                  <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 pb-12">
+                    <a
                       v-for="(image, index) in name.img"
-                      :key="index"
+                      :key="index + image"
+                      :href="image"
                       class="image-item"
                     >
                       <img
@@ -197,7 +197,7 @@
                         :alt="`Image ${index + 1} for ${name.name}`"
                         class="w-full h-60 lg:h-80 object-cover rounded-lg"
                       />
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -210,7 +210,8 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
+import BaguetteBox from "baguettebox.js";
 
 const allSeries = ref([
   {
@@ -221,7 +222,7 @@ const allSeries = ref([
         {
           id: 1,
           name: "Fixed Casement Combination",
-          subheadline: "Maximize Natural Light & Ventilation",
+          subheadline: "Seamless Fixed and Operable Windows for Any Space",
           img: [
             "/images/GlassAndAluminum/YC38SeriesNewPanel/FixedCasementCombination/IMG_6480.webp",
             "/images/GlassAndAluminum/YC38SeriesNewPanel/FixedCasementCombination/IMG_6482.webp",
@@ -232,7 +233,7 @@ const allSeries = ref([
         {
           id: 2,
           name: "Fixed Casement or Awning Combination",
-          subheadline: "Versatile Design for Every Home",
+          subheadline: "Versatile Window Combinations for Every Need",
           img: [
             "/images/GlassAndAluminum/YC38SeriesNewPanel/FixedCasementOrAwningCombination/IMG_20220911_133706.webp",
             "/images/GlassAndAluminum/YC38SeriesNewPanel/FixedCasementOrAwningCombination/IMG_20220911_133804.webp",
@@ -243,7 +244,7 @@ const allSeries = ref([
         {
           id: 3,
           name: "Fixed Casement or Awning Combination French Type",
-          subheadline: "Timeless Elegance with Modern Performance",
+          subheadline: "Elegant French-Style Window Solutions",
           img: [
             "/images/GlassAndAluminum/YC38SeriesNewPanel/FixedCasementOrAwningCombinationFrenchType/D2F4BCA9-81C2-4CC6-B2A7-997A22B7BDF0.webp",
             "/images/GlassAndAluminum/YC38SeriesNewPanel/FixedCasementOrAwningCombinationFrenchType/F1.webp",
@@ -261,7 +262,7 @@ const allSeries = ref([
         {
           id: 4,
           name: "798 series",
-          subheadline: "Maximize Natural Light & Ventilation",
+          subheadline: "High-Performance Sliding Windows for Modern Homes",
           img: [
             "/images/GlassAndAluminum/SlidingWindow/798Series/IMG_6471.webp",
           ],
@@ -269,7 +270,8 @@ const allSeries = ref([
         {
           id: 5,
           name: "868 Series Three (3) Tracks with Security Screen",
-          subheadline: "Versatile Design for Every Home",
+          subheadline:
+            "Enhanced Security and Smooth Operation with Triple Tracks",
           img: [
             "/images/GlassAndAluminum/SlidingWindow/868SeriesThree(3)TracksWithSecurityScreen/IMG_6455.webp",
             "/images/GlassAndAluminum/SlidingWindow/868SeriesThree(3)TracksWithSecurityScreen/IMG_6464.webp",
@@ -278,11 +280,98 @@ const allSeries = ref([
         {
           id: 6,
           name: "900 Series",
-          subheadline: "Versatile Design for Every Home",
+          subheadline: "Effortless Sliding Windows for Maximum Ventilation",
           img: [
             "/images/GlassAndAluminum/SlidingWindow/900Series/image1.webp",
             "/images/GlassAndAluminum/SlidingWindow/900Series/image2.webp",
           ],
+        },
+        {
+          id: 7,
+          name: "900 Series Three (3) Tracks",
+          subheadline:
+            "Triple Track Sliding Windows for Superior Functionality",
+          img: [
+            "/images/GlassAndAluminum/SlidingWindow/900SeriesThree(3)Tracks/IMG_6465.webp",
+            "/images/GlassAndAluminum/SlidingWindow/900SeriesThree(3)Tracks/IMG_20220911_171504.webp",
+            "/images/GlassAndAluminum/SlidingWindow/900SeriesThree(3)Tracks/IMG_20220911_171537.webp",
+            "/images/GlassAndAluminum/SlidingWindow/900SeriesThree(3)Tracks/IMG_20220911_171552.webp",
+          ],
+        },
+        {
+          id: 8,
+          name: "130 Series Sliding with Security Screen",
+          subheadline: "Reliable Sliding Windows with Built-in Security",
+          img: [
+            "/images/GlassAndAluminum/130SeriesSlidingWithSecurityScreen/IMG_6444.webp",
+            "/images/GlassAndAluminum/130SeriesSlidingWithSecurityScreen/IMG_6445.webp",
+            "/images/GlassAndAluminum/130SeriesSlidingWithSecurityScreen/IMG_6446 (1).webp",
+          ],
+        },
+      ],
+    },
+  },
+  {
+    isDropDownOpen: false,
+    series: {
+      seriesTitle: "Sliding Door",
+      seriesList: [
+        {
+          id: 9,
+          name: "900 series",
+          subheadline:
+            "Stylish, Smooth-Gliding Sliding Doors for Seamless Living",
+          img: [
+            "/images/GlassAndAluminum/SlidingDoor/900Series/305398059_131743259591440_3191313701467848932_n.webp",
+            "/images/GlassAndAluminum/SlidingDoor/900Series/Capture.webp",
+          ],
+        },
+      ],
+    },
+  },
+  {
+    isDropDownOpen: false,
+    series: {
+      seriesTitle: "Awning Windows",
+      seriesList: [
+        {
+          id: 10,
+          name: "YC 50 Series Awning",
+          subheadline: "Efficient, Durable Awning Windows for Any Space",
+          img: [
+            "/images/GlassAndAluminum/YC50SeriesAwning/IMG_6448.webp",
+            "/images/GlassAndAluminum/YC50SeriesAwning/IMG_6450.webp",
+            "/images/GlassAndAluminum/YC50SeriesAwning/IMG_6473.webp",
+            "/images/GlassAndAluminum/YC50SeriesAwning/IMG_20220911_171303.webp",
+            "/images/GlassAndAluminum/YC50SeriesAwning/IMG_20220911_171322.webp",
+            "/images/GlassAndAluminum/YC50SeriesAwning/IMG_20220911_171345.webp",
+            "/images/GlassAndAluminum/YC50SeriesAwning/IMG_20220911_171402.webp",
+            "/images/GlassAndAluminum/YC50SeriesAwning/IMG_20220911_171436.webp",
+          ],
+        },
+        {
+          id: 11,
+          name: "85 Series Awning Window with Security Screen",
+          subheadline:
+            "Secure, Stylish Awning Windows for Uncompromised Comfort",
+          img: [
+            "/images/GlassAndAluminum/85SeriesAwningWindowWithSecurityScreen/IMG_6452.webp",
+            "/images/GlassAndAluminum/85SeriesAwningWindowWithSecurityScreen/IMG_6453.webp",
+          ],
+        },
+      ],
+    },
+  },
+  {
+    isDropDownOpen: false,
+    series: {
+      seriesTitle: "Screens & Features",
+      seriesList: [
+        {
+          id: 12,
+          name: "Roll-Up Screen",
+          subheadline: "Reliable Protection with a Retractable Screen",
+          img: ["/images/GlassAndAluminum/RollUpScreen/IMG_6458.webp"],
         },
       ],
     },
@@ -326,6 +415,13 @@ const filteredNames = computed(() => {
     .flatMap((series) => series.series.seriesList)
     .filter((name) => filterNames.value.includes(name.name));
 });
+
+// Watcher to re-initialize BaguetteBox when filteredNames change
+watch(filteredNames, () => {
+  nextTick(() => {
+    BaguetteBox.run(".gallery");
+  });
+});
 </script>
 
 <style scoped>
@@ -335,5 +431,21 @@ const filteredNames = computed(() => {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 8%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(216, 216, 216);
+  border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
 }
 </style>
