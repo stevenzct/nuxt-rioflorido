@@ -174,12 +174,12 @@
               <div v-for="name in filteredNames" :key="name.id">
                 <div>
                   <h1
-                    class="font-neue-montreal font-bold text-[28px] md:text-4xl pb-1 text-gray-900"
+                    class="font-neue-montreal font-bold text-[28px] md:text-4xl pb-1 leading-[107%]  text-gray-900"
                   >
                     {{ name.name }}
                   </h1>
                   <p
-                    class="font-neue-montreal font-normal text-gray-700 w-auto text-[20px] pb-4 md:text-[24px]"
+                    class="font-neue-montreal font-normal text-gray-700 w-auto text-[20px] leading-[107%] pb-6 md:text-[24px]"
                   >
                     {{ name.subheadline }}
                   </p>
