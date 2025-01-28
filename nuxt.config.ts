@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
+  compatibilityDate: "2024-04-03",
   components: true,
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',

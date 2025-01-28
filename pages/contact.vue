@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <!-- Hero Section -->
     <section id="contact-hero" class="h-[300px] lg:h-[494px]">
       <div class="h-full w-full flex flex-col justify-end">
@@ -99,6 +99,13 @@
                   Send message
                 </button>
               </div>
+              <div
+                v-if="showSuccessMessage"
+                class="p-4 mb-4 font-neue-montreal font-bold text-[24px] md:text-[32px] text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
+                role="alert"
+              >
+                <span>Thanks for inquiry! We'll contact you shortly.</span>
+              </div>
             </div>
           </form>
         </div>
@@ -129,8 +136,7 @@
                     'bg-black',
                     'absolute bottom-0 left-0 w-full h-[1px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
-                >
-                </span>
+                ></span>
               </a>
             </p>
 
@@ -142,8 +148,7 @@
                     'bg-black',
                     'absolute bottom-0 left-0 w-full h-[1px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
-                >
-                </span>
+                ></span>
               </a>
             </p>
 
@@ -155,8 +160,7 @@
                     'bg-black',
                     'absolute bottom-0 left-0 w-full h-[1px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
-                >
-                </span>
+                ></span>
               </a>
             </p>
 
@@ -189,8 +193,7 @@
                     'bg-black',
                     'absolute bottom-0 left-0 w-full h-[1px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
-                >
-                </span>
+                ></span>
               </a>
             </p>
 
@@ -225,8 +228,7 @@
                     'bg-black',
                     'absolute bottom-0 left-0 w-full h-[1px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
-                >
-                </span>
+                ></span>
               </a>
             </p>
 
@@ -244,6 +246,7 @@
 
 <script setup>
 import { ref, reactive } from "vue";
+import { sendEmail } from "@/services/emailService"; // Adjust the path as necessary
 
 const form = reactive({
   firstName: "",
@@ -256,6 +259,8 @@ const errors = reactive({
   email: false,
   projectName: false,
 });
+
+const showSuccessMessage = ref(false);
 
 const submitForm = () => {
   // Reset errors
@@ -277,7 +282,27 @@ const submitForm = () => {
   // If no errors, submit form
   if (!Object.values(errors).includes(true)) {
     // Handle form submission here, like sending an API request
-    console.log("Form submitted successfully!", form);
+    sendEmail({
+      from_name: form.firstName,
+      from_email: form.email,
+      project_name: form.projectName,
+    })
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        // Show success message
+        showSuccessMessage.value = true;
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          showSuccessMessage.value = false;
+        }, 5000);
+        // Optionally, you can reset the form here
+        form.firstName = "";
+        form.email = "";
+        form.projectName = "";
+      })
+      .catch((error) => {
+        console.error("Failed to send email", error);
+      });
   }
 };
 </script>
