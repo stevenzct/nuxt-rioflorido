@@ -22,10 +22,17 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
         }
       ],
-      script:[{
+      script:[
+        {
        src:"https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js",
         type: 'text/javascript',
-      }]
+      },
+      {
+        src: "https://www.google.com/recaptcha/api.js",
+        async: true,
+        defer: true,
+      }
+    ]
     },
   },
   plugins: [

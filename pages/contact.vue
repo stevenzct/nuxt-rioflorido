@@ -5,9 +5,7 @@
       <div class="h-full w-full flex flex-col justify-end">
         <div class="max-w-screen-2xl mx-auto px-4 py-8 w-full">
           <div class="text-left">
-            <h1
-              class="lg:py-8 text-black text-4xl md:text-7xl lg:text-8xl font-neue-montreal font-bold"
-            >
+            <h1 class="lg:py-8 text-black text-4xl md:text-7xl lg:text-8xl font-neue-montreal font-bold">
               Here is how to get in touch with us.
             </h1>
           </div>
@@ -40,8 +38,8 @@
                 >
                   Your name
                 </label>
-                <span v-if="errors.firstName" class="text-red-500 text-sm"
-                  >Name must be minimum of 3 characters length
+                <span v-if="errors.firstName" class="text-red-500 text-sm">
+                  Name must be minimum of 3 characters length
                 </span>
               </div>
 
@@ -63,9 +61,9 @@
                 >
                   Your Email
                 </label>
-                <span v-if="errors.email" class="text-red-500 text-sm"
-                  >Please enter a valid email address</span
-                >
+                <span v-if="errors.email" class="text-red-500 text-sm">
+                  Please enter a valid email address
+                </span>
               </div>
 
               <!-- Tell us the project -->
@@ -86,9 +84,21 @@
                 >
                   Tell us the project
                 </label>
-                <span v-if="errors.projectName" class="text-red-500 text-sm"
-                  >This field is required</span
-                >
+                <span v-if="errors.projectName" class="text-red-500 text-sm">
+                  This field is required
+                </span>
+              </div>
+
+              <!-- reCAPTCHA -->
+              <div class="relative mb-5 group py-3">
+                <RecaptchaV2
+                  sitekey="6LfZYMUqAAAAADsDpcdZ2EHvh2WZRvf1KumAAftP"
+                  @verify="onCaptchaVerified"
+                  @expired="onCaptchaExpired"
+                />
+                <span v-if="errors.captcha" class="text-red-500 text-sm">
+                  Please complete the CAPTCHA
+                </span>
               </div>
 
               <div class="flex justify-end">
@@ -116,21 +126,16 @@
     <section id="contacts-section" class="h-auto bg-[#F5F9FC]">
       <div class="h-full w-full">
         <!-- links contact -->
-        <div
-          class="max-w-screen-2xl mx-auto px-4 py-16 w-full grid grid-cols-1 lg:grid-cols-3 gap-8"
-        >
+        <div class="max-w-screen-2xl mx-auto px-4 py-16 w-full grid grid-cols-1 lg:grid-cols-3 gap-8">
           <!-- phone contacts -->
           <div>
-            <p
-              class="font-neue-montreal font-normal text-[18px] text-[#494949]"
-            >
+            <p class="font-neue-montreal font-normal text-[18px] text-[#494949]">
               Call us
             </p>
-
             <hr />
             <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
-              <a class="relative group" href="tel:+63427108762"
-                >042 710 8762 Telephone
+              <a class="relative group" href="tel:+63427108762">
+                042 710 8762 Telephone
                 <span
                   :class="[
                     'bg-black',
@@ -139,10 +144,9 @@
                 ></span>
               </a>
             </p>
-
             <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
-              <a class="relative group" href="tel:+639171441538"
-                >0917-144-1538 Globe
+              <a class="relative group" href="tel:+639171441538">
+                0917-144-1538 Globe
                 <span
                   :class="[
                     'bg-black',
@@ -151,10 +155,9 @@
                 ></span>
               </a>
             </p>
-
             <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
-              <a class="relative group" href="tel:+639696012447"
-                >0969-601-2447 Smart
+              <a class="relative group" href="tel:+639696012447">
+                0969-601-2447 Smart
                 <span
                   :class="[
                     'bg-black',
@@ -163,22 +166,16 @@
                 ></span>
               </a>
             </p>
-
-            <p
-              class="font-neue-montreal font-normal text-[16px] text-[#696969]"
-            >
+            <p class="font-neue-montreal font-normal text-[16px] text-[#696969]">
               If you prefer to talk in person
             </p>
           </div>
 
           <!-- email -->
           <div>
-            <p
-              class="font-neue-montreal font-normal text-[18px] text-[#494949]"
-            >
+            <p class="font-neue-montreal font-normal text-[18px] text-[#494949]">
               Send a text
             </p>
-
             <hr />
             <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
               <a
@@ -187,7 +184,6 @@
                 aria-label="Email RV Rioflorido Construction"
               >
                 rv.riocon@gmail.com
-
                 <span
                   :class="[
                     'bg-black',
@@ -196,22 +192,16 @@
                 ></span>
               </a>
             </p>
-
-            <p
-              class="font-neue-montreal font-normal text-[16px] text-[#696969]"
-            >
+            <p class="font-neue-montreal font-normal text-[16px] text-[#696969]">
               Tell us all about the project
             </p>
           </div>
 
-          <!-- social  -->
+          <!-- social -->
           <div>
-            <p
-              class="font-neue-montreal font-normal text-[18px] text-[#494949]"
-            >
+            <p class="font-neue-montreal font-normal text-[18px] text-[#494949]">
               Follow us on social media
             </p>
-
             <hr />
             <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
               <a
@@ -222,7 +212,6 @@
                 aria-label="Visit our Facebook page"
               >
                 Facebook
-
                 <span
                   :class="[
                     'bg-black',
@@ -231,10 +220,7 @@
                 ></span>
               </a>
             </p>
-
-            <p
-              class="font-neue-montreal font-normal text-[16px] text-[#696969]"
-            >
+            <p class="font-neue-montreal font-normal text-[16px] text-[#696969]">
               If you want to keep updated
             </p>
           </div>
@@ -247,6 +233,7 @@
 <script setup>
 import { ref, reactive } from "vue";
 import { sendEmail } from "@/services/emailService"; // Adjust the path as necessary
+import RecaptchaV2 from "@/components/RecaptchaV2.vue"; // Adjust the path as necessary
 
 const form = reactive({
   firstName: "",
@@ -258,9 +245,20 @@ const errors = reactive({
   firstName: false,
   email: false,
   projectName: false,
+  captcha: false,
 });
 
 const showSuccessMessage = ref(false);
+const captchaVerified = ref(false);
+
+const onCaptchaVerified = (response) => {
+  captchaVerified.value = true;
+  errors.captcha = false;
+};
+
+const onCaptchaExpired = () => {
+  captchaVerified.value = false;
+};
 
 const submitForm = () => {
   // Reset errors
@@ -278,6 +276,9 @@ const submitForm = () => {
   if (!form.projectName) {
     errors.projectName = true;
   }
+  if (!captchaVerified.value) {
+    errors.captcha = true;
+  }
 
   // If no errors, submit form
   if (!Object.values(errors).includes(true)) {
@@ -286,6 +287,7 @@ const submitForm = () => {
       from_name: form.firstName,
       from_email: form.email,
       project_name: form.projectName,
+      'g-recaptcha-response': grecaptcha.getResponse(), // Add CAPTCHA response
     })
       .then((response) => {
         console.log("Email sent successfully!", response);
@@ -299,6 +301,8 @@ const submitForm = () => {
         form.firstName = "";
         form.email = "";
         form.projectName = "";
+        captchaVerified.value = false;
+        grecaptcha.reset(); // Reset CAPTCHA
       })
       .catch((error) => {
         console.error("Failed to send email", error);
