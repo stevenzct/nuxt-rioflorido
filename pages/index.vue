@@ -25,8 +25,7 @@
             <p
               class="font-neue-montreal font-normal text-white pb-2 w-auto md:w-[706px] text-[20px] md:text-[24px]"
             >
-              Your Dream Home Starts Here: Comprehensive Construction Solutions
-              by Expert Civil Engineers.
+              Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions
             </p>
 
             <button
