@@ -52,10 +52,7 @@
             class="font-neue-montreal font-bold leading-[137%] indent-0 md:indent-[200px] text-gray-900 text-start text-[24px] md:text-[48px]"
             id="intro-text"
           >
-            RV Rioflorido Construction is an all-in-one contractor for general
-            construction, dedicated to providing quality, safe, and reliable
-            services as quickly as possible. Construction is more than just our
-            business - it is who we are.
+          RV Rioflorido Construction is an all-in one contractor for general construction dedicated to providing quality, safe, and reliable services in the fastest way possible because construction is more than our business it is who we are.
           </h1>
         </div>
       </div>

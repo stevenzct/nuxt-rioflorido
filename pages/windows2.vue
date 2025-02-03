@@ -8,7 +8,7 @@
             <h1
               class="lg:py-8 text-black text-4xl md:text-7xl lg:text-8xl font-neue-montreal font-bold"
             >
-              Glass and Aluminum
+              Aluminum Series
             </h1>
           </div>
         </div>
