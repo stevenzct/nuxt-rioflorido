@@ -222,6 +222,40 @@
           </div>
         </div>
 
+         <!-- windows -->
+         <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-32">
+          <div class="grid grid-cols-1 lg:grid-cols-2 lg:flex justify-between">
+            <div>
+              <h1 class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900">
+                Aluminum Series
+              </h1>
+              <p class="font-neue-montreal font-normal text-gray-900 w-auto md:w-[706px] text-[20px] md:text-[24px]">
+                Expertly crafted windows designed to meet the specific needs and
+                vision of your construction project
+              </p>
+            </div>
+
+            <div>
+              <NuxtLink to="/windows2">
+                <button type="button" id="explore-projects"
+                  class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
+                  View All
+                </button>
+              </NuxtLink>
+            </div>
+          </div>
+        </div>
+
+        <!--image for aluminum series -->
+        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16 flex justify-center">
+          <div class="gallery w-auto rounded-lg">
+            <a href="/images/services/aluminum-series/aluminum-series.webp">
+              <img class="rounded-lg" src="/images/services/aluminum-series/aluminum-series.webp"
+                alt="image-aluminum-series" />
+            </a>
+          </div>
+        </div>
+
         <!-- Railings, Fencing and Gate-->
         <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
           <h1 class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900">
@@ -387,38 +421,7 @@
           </div>
         </div>
 
-        <!-- windows -->
-        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-32">
-          <div class="grid grid-cols-1 lg:grid-cols-2 lg:flex justify-between">
-            <div>
-              <h1 class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900">
-                Aluminum Series
-              </h1>
-              <p class="font-neue-montreal font-normal text-gray-900 w-auto md:w-[706px] text-[20px] md:text-[24px]">
-                Expertly crafted windows designed to meet the specific needs and
-                vision of your construction project
-              </p>
-            </div>
-
-            <div>
-              <NuxtLink to="/windows2">
-                <button type="button" id="explore-projects"
-                  class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white">
-                  View All
-                </button>
-              </NuxtLink>
-            </div>
-          </div>
-        </div>
-
-        <!--image for aluminum series -->
-        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16 flex justify-center">
-          <div class="gallery w-auto rounded-lg">
-            <a href="/images/services/aluminum-series/aluminum-series.webp">
-              <img class="rounded-lg" src="/images/services/aluminum-series/aluminum-series.webp" alt="image-aluminum-series" />
-            </a>
-          </div>
-        </div>
+       
       </div>
     </section>
   </div>
