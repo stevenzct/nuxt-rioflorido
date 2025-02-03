@@ -31,13 +31,20 @@
           </div>
 
           <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <div v-if="isSidebarOpen" class="md:hidden fixed inset-0 bg-black/50 z-30" @click="isSidebarOpen = false"></div>
+            <div
+              v-if="isSidebarOpen"
+              class="md:hidden fixed inset-0 bg-black/50 z-30"
+              @click="isSidebarOpen = false"
+            ></div>
             <div>
               <aside
                 id="default-sidebar"
                 ref="sidebar"
                 class="fixed md:sticky top-0 md:top-[100px] left-0 md:left-auto z-40 w-72 lg:w-80 transition-transform duration-300 ease-in-out"
-                :class="{ '-translate-x-full md:translate-x-0': !isSidebarOpen, 'translate-x-0': isSidebarOpen }"
+                :class="{
+                  '-translate-x-full md:translate-x-0': !isSidebarOpen,
+                  'translate-x-0': isSidebarOpen,
+                }"
                 aria-label="Sidebar"
               >
                 <div
@@ -171,10 +178,15 @@
 
             <!-- Gallery Section -->
             <div class="lg:col-span-2 gallery">
-              <div v-for="name in filteredNames" :key="name.id">
-                <div>
+              <div v-for="group in groupedNames" :key="group.seriesTitle">
+                <h1
+                  class="font-neue-montreal uppercase font-extrabold text-[24px] md:text-4xl pb-1 leading-[107%] text-gray-900"
+                >
+                  {{ group.seriesTitle }}
+                </h1>
+                <div v-for="name in group.items" :key="name.id">
                   <h1
-                    class="font-neue-montreal font-bold text-[28px] md:text-4xl pb-1 leading-[107%]  text-gray-900"
+                    class="font-neue-montreal font-bold text-[24px] md:text-4xl pb-1 leading-[107%] text-gray-700"
                   >
                     {{ name.name }}
                   </h1>
@@ -371,7 +383,7 @@ const allSeries = ref([
   {
     isDropDownOpen: false,
     series: {
-      seriesTitle: "Screens & Features",
+      seriesTitle: "Security Screen",
       seriesList: [
         {
           id: 12,
@@ -385,6 +397,21 @@ const allSeries = ref([
 ]);
 
 const filterNames = ref([]);
+const groupedNames = computed(() => {
+  const grouped = {};
+
+  filteredNames.value.forEach((item) => {
+    if (!grouped[item.seriesTitle]) {
+      grouped[item.seriesTitle] = {
+        seriesTitle: item.seriesTitle,
+        items: [],
+      };
+    }
+    grouped[item.seriesTitle].items.push(item);
+  });
+
+  return Object.values(grouped);
+});
 
 // Reset filter logic
 const resetFilter = () => {
@@ -414,11 +441,21 @@ const toggleDropdown = (index) => {
 // Computed property to filter names
 const filteredNames = computed(() => {
   if (filterNames.value.length === 0) {
-    return allSeries.value.flatMap((series) => series.series.seriesList);
+    return allSeries.value.flatMap((series) =>
+      series.series.seriesList.map((item) => ({
+        ...item,
+        seriesTitle: series.series.seriesTitle,
+      }))
+    );
   }
 
   return allSeries.value
-    .flatMap((series) => series.series.seriesList)
+    .flatMap((series) =>
+      series.series.seriesList.map((item) => ({
+        ...item,
+        seriesTitle: series.series.seriesTitle,
+      }))
+    )
     .filter((name) => filterNames.value.includes(name.name));
 });
 
@@ -429,20 +466,19 @@ watch(filteredNames, () => {
   });
 });
 
-
 onMounted(() => {
   // ... other onMounted logic (BaguetteBox, etc.)
-  document.addEventListener('click', handleClickOutside);
+  document.addEventListener("click", handleClickOutside);
 });
 
 // BeforeUnmount, remove the listener to avoid memory leaks:
 onBeforeUnmount(() => {
-    document.removeEventListener('click', handleClickOutside);
+  document.removeEventListener("click", handleClickOutside);
 });
 
-
 const handleClickOutside = (event) => {
-  if (isSidebarOpen.value && window.innerWidth >= 768) { // Only on desktop and when open
+  if (isSidebarOpen.value && window.innerWidth >= 768) {
+    // Only on desktop and when open
     if (sidebar.value && !sidebar.value.contains(event.target)) {
       isSidebarOpen.value = false;
     }
