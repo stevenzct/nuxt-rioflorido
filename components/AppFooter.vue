@@ -200,8 +200,16 @@
           </p>
 
           <p class="text-[#8B8B8B] font-neue-montreal font-normal text-[14px]">
-            Privacy Policy
+            Terms of Service
           </p>
+
+          <p class="text-[#8B8B8B] font-neue-montreal font-normal text-[14px]">
+            <NuxtLink to="/privacy">
+              Privacy Policy
+            </NuxtLink>
+          
+          </p>
+        
         </div>
       </div>
     </footer>
