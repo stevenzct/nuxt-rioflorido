@@ -11,7 +11,11 @@
             to="/"
             class="flex items-center space-x-3 py-4 rtl:space-x-reverse"
           >
-            <img src="/assets/images/logo/secondary-logo.svg" class="logo" alt="RV Logo" />
+            <img
+              src="/assets/images/logo/secondary-logo.svg"
+              class="logo"
+              alt="RV Logo"
+            />
           </NuxtLink>
 
           <!-- socials links -->
@@ -200,16 +204,12 @@
           </p>
 
           <p class="text-[#8B8B8B] font-neue-montreal font-normal text-[14px]">
-            Terms of Service
+            <NuxtLink to="/terms"> Terms of Service </NuxtLink>
           </p>
 
           <p class="text-[#8B8B8B] font-neue-montreal font-normal text-[14px]">
-            <NuxtLink to="/privacy">
-              Privacy Policy
-            </NuxtLink>
-          
+            <NuxtLink to="/privacy"> Privacy Policy </NuxtLink>
           </p>
-        
         </div>
       </div>
     </footer>
