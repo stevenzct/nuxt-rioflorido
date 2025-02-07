@@ -14,10 +14,8 @@
         </div>
         <div class="w-full">
           <div class="max-w-screen-2xl mx-auto px-4 py-8 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between">
-            <p class="font-neue-montreal font-normal text-white pb-2 w-auto md:w-[706px] text-[20px] md:text-[24px]">
-              Leveraging the expertise of experienced civil engineers, we
-              deliver custom construction solutions that exceed industry
-              standards.
+            <p class="font-neue-montreal font-normal text-white pb-2 w-auto lg:w-[980px] text-[20px] md:text-[24px]">
+              We provide general construction services, including structural, architectural, plumbing, and electrical work. Our services also include signed and sealed design plans, building permit processing, glass and aluminum works such as railings, fencing, and gates, as well as stainless steel works, modular cabinets, and repair or renovation works.
             </p>
 
             <button type="button" @click="scrollToServices"
@@ -222,8 +220,8 @@
           </div>
         </div>
 
-         <!-- windows -->
-         <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-32">
+        <!-- windows -->
+        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-32">
           <div class="grid grid-cols-1 lg:grid-cols-2 lg:flex justify-between">
             <div>
               <h1 class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900">
@@ -421,7 +419,7 @@
           </div>
         </div>
 
-       
+
       </div>
     </section>
   </div>
@@ -486,16 +484,29 @@ export default {
 #hero-section {
   /* background-image: url("../assets/images/services/hero-services.webp"); */
   overflow: hidden;
-background:  
-  linear-gradient(180deg, rgba(0, 0, 0, 0.20) 15.94%, rgba(0, 0, 0, 0.00) 48.14%),
-  linear-gradient(180deg, rgba(0, 0, 0, 0.00) 43.11%, rgba(0, 0, 0, 0.20) 68.98%, rgba(0, 0, 0, 0.20) 100%),
-  linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.63%, rgba(0, 0, 0, 0.20) 70.1%),
-  linear-gradient(219deg, rgba(0, 0, 0, 0.00) 44.54%, rgba(0, 0, 0, 0.20) 89.98%),
-  linear-gradient(212deg, rgba(0, 0, 0, 0.00) 47.21%, rgba(0, 0, 0, 0.20) 89.01%),
-  linear-gradient(180deg, rgba(0, 0, 0, 0.00) 59.79%, rgba(0, 0, 0, 0.20) 77.9%),
-  url("../assets/images/services/hero-services.webp");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: 50%;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.20) 15.94%, rgba(0, 0, 0, 0.00) 48.14%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.00) 43.11%, rgba(0, 0, 0, 0.20) 68.98%, rgba(0, 0, 0, 0.20) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.63%, rgba(0, 0, 0, 0.20) 70.1%),
+    linear-gradient(219deg, rgba(0, 0, 0, 0.00) 44.54%, rgba(0, 0, 0, 0.20) 89.98%),
+    linear-gradient(212deg, rgba(0, 0, 0, 0.00) 47.21%, rgba(0, 0, 0, 0.20) 89.01%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.00) 59.79%, rgba(0, 0, 0, 0.20) 77.9%),
+    url("../assets/images/services/hero-services.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+@media (max-width: 990px) {
+  #hero-section{
+    background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.20) 104.94%, rgba(0, 0, 0, 0.00) 48.14%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.00) 9.11%, rgba(0, 0, 0, 0.20) 68.98%, rgba(0, 0, 0, 0.20) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.00) 19.63%, rgba(0, 0, 0, 0.20) 70.1%),
+    linear-gradient(219deg, rgba(0, 0, 0, 0.00) 10.54%, rgba(0, 0, 0, 0.20) 89.98%),
+    linear-gradient(212deg, rgba(0, 0, 0, 0.00) 22.21%, rgba(0, 0, 0, 0.20) 89.01%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.00) 2%, rgba(0, 0, 0, 0.20) 77.9%),
+    url("../assets/images/services/hero-services.webp");
+    background-position: 50%
+  }
 }
 </style>
