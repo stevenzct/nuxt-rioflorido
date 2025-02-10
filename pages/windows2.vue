@@ -40,7 +40,7 @@
               <aside
                 id="default-sidebar"
                 ref="sidebar"
-                class="fixed md:sticky top-0 md:top-[100px] left-0 md:left-auto z-20 w-72 lg:w-80 transition-transform duration-300 ease-in-out"
+                class="fixed md:sticky top-0 md:top-[100px] left-0 md:left-auto z-40 md:z-20 w-72 lg:w-80 transition-transform duration-300 ease-in-out"
                 :class="{
                   '-translate-x-full md:translate-x-0': !isSidebarOpen,
                   'translate-x-0': isSidebarOpen,
