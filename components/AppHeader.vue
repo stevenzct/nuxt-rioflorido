@@ -221,18 +221,6 @@ export default {
 </script>
 
 <style scoped>
-/* .logo {
-  width: 100%;
-  height: auto;
-} */
-
-#get-in-touch {
-  /* font-size: 16px;
-  width: 200px;
-  height: 55px;
-  border-radius: 4px;
-  font-size: 16px; */
-}
 
 nav {
   font-family: "Montreal Book", serif;
