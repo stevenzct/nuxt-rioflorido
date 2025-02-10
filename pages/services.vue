@@ -72,41 +72,13 @@
             :modules="modules"
             class="mySwiper flex justify-between"
           >
-            <!-- swiper slide 1 -->
-            <swiper-slide>
+            <swiper-slide
+              v-for="(image, index) in constructionImages"
+              :key="index"
+            >
               <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/construction-work/image-1.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/construction-work/image-1.webp"
-                    alt="image-1"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 2 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/construction-work/image-2.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/construction-work/image-2.webp"
-                    alt="image-2"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 3 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/construction-work/image-3.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/construction-work/image-3.webp"
-                    alt="image-3"
-                  />
+                <a :href="image.src">
+                  <img class="rounded-lg" :src="image.src" :alt="image.alt" />
                 </a>
               </div>
             </swiper-slide>
@@ -214,79 +186,13 @@
             :modules="modules"
             class="mySwiper flex justify-between"
           >
-            <!-- swiper slide 1 -->
-            <swiper-slide>
+            <swiper-slide
+              v-for="(image, index) in glassAndAluminumImages"
+              :key="index"
+            >
               <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/glass-and-aluminum/glass1.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/glass-and-aluminum/glass1.webp"
-                    alt="glass-1"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 2 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/glass-and-aluminum/glass2.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/glass-and-aluminum/glass2.webp"
-                    alt="glass-2"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 3 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/glass-and-aluminum/glass3.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/glass-and-aluminum/glass3.webp"
-                    alt="glass-3"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 4 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/glass-and-aluminum/glass4.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/glass-and-aluminum/glass4.webp"
-                    alt="glass-4"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 5 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/glass-and-aluminum/glass5.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/glass-and-aluminum/glass5.webp"
-                    alt="glass-5"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-            <!-- swiper slide 6 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/glass-and-aluminum/glass6.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/glass-and-aluminum/glass6.webp"
-                    alt="glass-6"
-                  />
+                <a :href="image.src">
+                  <img class="rounded-lg" :src="image.src" :alt="image.alt" />
                 </a>
               </div>
             </swiper-slide>
@@ -405,81 +311,24 @@
 
         <!-- swiper goes here -->
         <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
-          <swiper
-            :slidesPerView="1"
-            :spaceBetween="20"
-            :navigation="{ nextEl: '.railings-next', prevEl: '.railings-prev' }"
-            :pagination="{ clickable: true }"
-            :breakpoints="breakpoints"
-            :modules="modules"
-            class="mySwiper flex justify-between"
-          >
-            <!-- swiper slide 1 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/railings-fencing-gate/gate1.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/railings-fencing-gate/gate1.webp"
-                    alt="gate-1"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 2 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/railings-fencing-gate/railings1.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/railings-fencing-gate/railings1.webp"
-                    alt="railings-1"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 3 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/railings-fencing-gate/fencing1.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/railings-fencing-gate/fencing1.webp"
-                    alt="fencing-1"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 4 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/railings-fencing-gate/railings2.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/railings-fencing-gate/railings2.webp"
-                    alt="railings-2"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 5 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/railings-fencing-gate/railings3.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/railings-fencing-gate/railings3.webp"
-                    alt="railings-3"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-          </swiper>
-        </div>
+      <swiper
+        :slidesPerView="1"
+        :spaceBetween="20"
+        :navigation="{ nextEl: '.railings-next', prevEl: '.railings-prev' }"
+        :pagination="{ clickable: true }"
+        :breakpoints="breakpoints"
+        :modules="modules"
+        class="mySwiper flex justify-between"
+      >
+        <swiper-slide v-for="(image, index) in railingsFencingGateImages" :key="index">
+          <div class="max-w-full bg-white rounded-lg">
+            <a :href="image.src">
+              <img class="rounded-lg" :src="image.src" :alt="image.alt" />
+            </a>
+          </div>
+        </swiper-slide>
+      </swiper>
+    </div>
 
         <!-- button swiper -->
         <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4">
@@ -556,41 +405,10 @@
             :modules="modules"
             class="mySwiper flex justify-between"
           >
-            <!-- swiper slide 1 -->
-            <swiper-slide>
+            <swiper-slide v-for="(image, index) in modularCabinetsImages" :key="index">
               <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/modular-cabinets/cabinet1.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/modular-cabinets/cabinet1.webp"
-                    alt="cabinet-1"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 2 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/modular-cabinets/cabinet2.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/modular-cabinets/cabinet2.webp"
-                    alt="cabinet-2"
-                  />
-                </a>
-              </div>
-            </swiper-slide>
-
-            <!-- swiper slide 3 -->
-            <swiper-slide>
-              <div class="max-w-full bg-white rounded-lg">
-                <a href="/images/services/modular-cabinets/cabinet3.webp">
-                  <img
-                    class="rounded-lg"
-                    src="/images/services/modular-cabinets/cabinet3.webp"
-                    alt="cabinet-3"
-                  />
+                <a :href="image.src">
+                  <img class="rounded-lg" :src="image.src" :alt="image.alt" />
                 </a>
               </div>
             </swiper-slide>
@@ -672,6 +490,58 @@ export default {
         "Stainless steel works",
         "Modular Cabinets",
         "Repair/ Renovation Works",
+      ],
+      constructionImages: [
+        {
+          src: "/images/services/construction-work/image-1.webp",
+          alt: "image-1",
+        },
+        {
+          src: "/images/services/construction-work/image-2.webp",
+          alt: "image-2",
+        },
+        {
+          src: "/images/services/construction-work/image-3.webp",
+          alt: "image-3",
+        },
+      ],
+      glassAndAluminumImages: [
+        {
+          src: "/images/services/glass-and-aluminum/glass1.webp",
+          alt: "glass-1",
+        },
+        {
+          src: "/images/services/glass-and-aluminum/glass2.webp",
+          alt: "glass-2",
+        },
+        {
+          src: "/images/services/glass-and-aluminum/glass3.webp",
+          alt: "glass-3",
+        },
+        {
+          src: "/images/services/glass-and-aluminum/glass4.webp",
+          alt: "glass-4",
+        },
+        {
+          src: "/images/services/glass-and-aluminum/glass5.webp",
+          alt: "glass-5",
+        },
+        {
+          src: "/images/services/glass-and-aluminum/glass6.webp",
+          alt: "glass-6",
+        },
+      ],
+      railingsFencingGateImages: [
+        { src: '/images/services/railings-fencing-gate/gate1.webp', alt: 'gate-1' },
+        { src: '/images/services/railings-fencing-gate/railings1.webp', alt: 'railings-1' },
+        { src: '/images/services/railings-fencing-gate/fencing1.webp', alt: 'fencing-1' },
+        { src: '/images/services/railings-fencing-gate/railings2.webp', alt: 'railings-2' },
+        { src: '/images/services/railings-fencing-gate/railings3.webp', alt: 'railings-3' },
+      ],
+      modularCabinetsImages: [
+        { src: '/images/services/modular-cabinets/cabinet1.webp', alt: 'cabinet-1' },
+        { src: '/images/services/modular-cabinets/cabinet2.webp', alt: 'cabinet-2' },
+        { src: '/images/services/modular-cabinets/cabinet3.webp', alt: 'cabinet-3' },
       ],
     };
   },

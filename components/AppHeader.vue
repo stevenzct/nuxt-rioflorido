@@ -2,7 +2,7 @@
   <header>
     <nav
       :class="[
-        'fixed w-full z-20 top-0 start-0',
+        'fixed w-full z-40 top-0 start-0',
         { 'bg-white': isScrolled || isScrolledY || isHeroWhite },
       ]"
       ref="nav"
