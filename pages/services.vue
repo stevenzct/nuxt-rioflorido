@@ -17,7 +17,7 @@
 
               <div v-for="(service, index) in services" :key="service">
                 <p
-                  class="font-neue-montreal font-normal text-gray-900 w-auto text-[20px] md:text-[24px]"
+                  class="font-neue-montreal font-bold text-gray-900 w-auto text-[20px] md:text-[24px]"
                 >
                   {{ service }}
                 </p>
