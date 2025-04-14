@@ -266,7 +266,7 @@
             </div>
 
             <div>
-              <NuxtLink to="/windows2">
+              <NuxtLink to="/aluminum-series">
                 <button
                   type="button"
                   id="explore-projects"

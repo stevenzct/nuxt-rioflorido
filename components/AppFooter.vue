@@ -40,11 +40,10 @@
             </a>
             <span class="sr-only">Facebook Icon</span>
           </button>
-
-          <button
+    <!--instagram  -->
+          <!-- <button
             class="mr-4 group bg-[#252324] hover:bg-white border border-gray-9d rounded-full p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out"
           >
-            <!-- SVG Icon (Instagram-like) -->
             <a
               href="#"
               class="inline-flex items-center justify-center group-hover:text-black text-white transition-colors duration-300 ease-in-out"
@@ -60,7 +59,7 @@
               </svg>
             </a>
             <span class="sr-only">Instagram Icon</span>
-          </button>
+          </button> -->
 
           <button
             class="mr-4 group bg-[#252324] hover:bg-white border border-gray-9d rounded-full p-4 text-center inline-flex items-center transition-all duration-300 ease-in-out"
