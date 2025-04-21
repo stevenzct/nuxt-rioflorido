@@ -9,6 +9,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'RV Rioflorido Construction',
+      htmlAttrs: {
+        lang: 'en',
+      },
       meta: [
         { name: 'description', content: 'Rioflorido Construction' }
       ],
