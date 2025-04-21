@@ -27,6 +27,7 @@
             <a
               href="https://www.facebook.com/profile.php?id=100083308930581"
               class="inline-flex items-center justify-center group-hover:text-black text-white transition-colors duration-300 ease-in-out"
+              aria-label="Visit our Facebook page"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,6 +69,7 @@
             <a
               href="mailto:rv.riocon@gmail.com"
               class="inline-flex items-center justify-center group-hover:text-black text-white transition-colors duration-300 ease-in-out"
+              aria-label="Send us an email"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,6 +91,7 @@
             <a
               href="tel:+639171441538"
               class="inline-flex items-center justify-center group-hover:text-black text-white transition-colors duration-300 ease-in-out"
+              aria-label="Call us at +639171441538"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
