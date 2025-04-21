@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
   compatibilityDate: "2024-04-03",
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   components: true,
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
@@ -24,6 +24,12 @@ export default defineNuxtConfig({
           rel: 'icon', // Corrected rel value
           type: 'image/x-icon', // Corrected type value
           href: '/images/logo/secondary-logo.svg' // Path to the favicon
+        },
+        {
+          rel: 'preload',
+          as: 'style',
+          href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+          onload: "this.onload=null;this.rel='stylesheet'",
         },
         {
           rel: 'stylesheet',
