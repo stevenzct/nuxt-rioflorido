@@ -26,6 +26,12 @@ export default defineNuxtConfig({
           href: '/images/logo/secondary-logo.svg' // Path to the favicon
         },
         {
+          rel: 'preload',
+          as: 'style',
+          href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+          onload: "this.onload=null;this.rel='stylesheet'",
+        },
+        {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
         }
