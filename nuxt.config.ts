@@ -13,7 +13,11 @@ export default defineNuxtConfig({
         lang: 'en',
       },
       meta: [
-        { name: 'description', content: 'Rioflorido Construction' }
+        { name: 'description', content: 'Rioflorido Construction' },
+        {
+          name: 'google-site-verification',
+          content: 'kIURHvlriUlkIoMsREThIoqa3NTgfcSz10RSV0tXbQc',
+        },
       ],
       link: [
         {
