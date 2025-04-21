@@ -8,10 +8,6 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'RV Rioflorido Construction',
-      htmlAttrs: {
-        lang: 'en',
-      },
       meta: [
         { name: 'description', content: 'Rioflorido Construction' },
         {
@@ -20,11 +16,6 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        {
-          rel: 'icon', // Corrected rel value
-          type: 'image/x-icon', // Corrected type value
-          href: '/images/logo/secondary-logo.svg' // Path to the favicon
-        },
         {
           rel: 'preload',
           as: 'style',

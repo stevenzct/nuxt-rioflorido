@@ -21,4 +21,14 @@ useSeoMeta({
   twitterImage: '/images/logo/thumbnail-logo.png',
   twitterCard: 'summary'
 })
+
+useHead({
+  title: 'RV Rioflorido Construction',
+  htmlAttrs: {
+        lang: 'en',
+  },   
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/images/logo/secondary-logo.svg' },
+  ]
+})
 </script>
