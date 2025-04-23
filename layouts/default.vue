@@ -23,13 +23,5 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
-useHead({
-  title: 'RV Rioflorido Construction',
-  htmlAttrs: {
-        lang: 'en',
-  },   
-  link: [
-    { rel: 'icon', type: 'image/x-icon', href: '/images/logo/secondary-logo.svg' },
-  ]
-})
+useDefaultHead('Home - RV Rioflorido Construction')
 </script>

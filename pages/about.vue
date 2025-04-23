@@ -131,6 +131,7 @@ const scrollToAbout = () => {
   }
 };
 
+useDefaultHead('About - RV Rioflorido Construction')
 </script>
 
 <style scoped>

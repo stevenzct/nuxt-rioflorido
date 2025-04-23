@@ -133,6 +133,8 @@ const privacyPolicy = {
     },
   ],
 };
+
+useDefaultHead('Terms - RV Rioflorido Construction')
 </script>
 
 <style scoped></style>

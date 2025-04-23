@@ -195,14 +195,15 @@ const scrollToImages = () => {
 };
 
 // Preload images using `useHead` once the gallery is fetched
-useHead({
-  link:
-    project?.gallery?.map((imageObj) => ({
-      rel: "preload",
-      as: "image",
-      href: imageObj.image,
-    })) || [],
-});
+// useHead({
+//   link:
+//     project?.gallery?.map((imageObj) => ({
+//       rel: "preload",
+//       as: "image",
+//       href: imageObj.image,
+//     })) || [],
+// });
+useDefaultHead('Projects - RV Rioflorido Construction')
 
 // Swiper setup for breakpoints
 const breakpoints = {

@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <section id="hero-section" class="h-screen">
+  <div>
+    <section id="hero-section" class="h-screen">
       <div
         class="h-full w-full flex flex-col items-end justify-end"
         id="container-text"
@@ -24,39 +24,37 @@
             <p
               class="font-neue-montreal font-normal text-gray-900 pb-2 w-auto md:w-[706px] text-[20px] md:text-[24px]"
             >
-            Oops! The page you're looking for can't be found. {{ error.nessage }}
+              Oops! The page you're looking for can't be found.
+              {{ error.nessage }}
             </p>
 
             <NuxtLink to="/">
               <button
-              type="button"
-              class="font-neue-montreal font-bold h-[55px] rounded-[4px] text-gray-900 text-[16px] bg-white border border-gray-400 px-8 py-3.5 my-4 md:w-[200px] transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
-            >
-              Back to home
-            </button>
+                type="button"
+                class="font-neue-montreal font-bold h-[55px] rounded-[4px] text-gray-900 text-[16px] bg-white border border-gray-400 px-8 py-3.5 my-4 md:w-[200px] transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+              >
+                Back to home
+              </button>
             </NuxtLink>
-           
           </div>
         </div>
       </div>
     </section>
-    </div>
+  </div>
 </template>
 
 <script setup>
-  defineProps([error])
-
+defineProps([error]);
+useDefaultHead("error - RV Rioflorido Construction");
 </script>
 
 <style scoped>
- #hero-section{
-   /* background-image: url("../assets/images/home/1-landing.webp"); */
-   background:
-    url("/images/404-error/404-error.webp");
+#hero-section {
+  /* background-image: url("../assets/images/home/1-landing.webp"); */
+  background: url("/images/404-error/404-error.webp");
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
- }
-
+}
 </style>

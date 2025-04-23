@@ -484,6 +484,8 @@ const handleClickOutside = (event) => {
     }
   }
 };
+
+useDefaultHead('Aluminum Series - RV Rioflorido Construction')
 </script>
 
 <style scoped>

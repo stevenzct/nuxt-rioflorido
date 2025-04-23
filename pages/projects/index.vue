@@ -29,17 +29,13 @@
 </template>
 
 <script setup>
+// Fetch the projects
+const { data: projects } = await useFetch(
+  "https://673f046ca9bc276ec4b6cdac.mockapi.io/projects/projectsSample"
+);
+console.log(projects);
 
-    // Fetch the projects
-    const { data: projects } = await useFetch('https://673f046ca9bc276ec4b6cdac.mockapi.io/projects/projectsSample')
-    console.log(projects)
-
-    useHead({
-      title: 'RV Rioflorido Construction Projects',
-      meta: [
-        {name: 'description', content: 'All projects'}
-      ]
-    })
+useDefaultHead("Projects - RV Rioflorido Construction");
 </script>
 
 <style scoped>

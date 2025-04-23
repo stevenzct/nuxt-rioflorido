@@ -299,6 +299,8 @@ export default {
     };
   },
 };
+
+useDefaultHead('Home - RV Rioflorido Construction')
 </script>
 
 <style scoped>
