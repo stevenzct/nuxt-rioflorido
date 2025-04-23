@@ -546,6 +546,8 @@ export default {
     };
   },
   setup() {
+    // Import the useDefaultHead function from the composables directory
+    useDefaultHead('Services - RV Rioflorido Construction')
     // Declare references and methods
     const servicesSection = ref(null);
 
@@ -583,8 +585,6 @@ export default {
     };
   },
 };
-
-useDefaultHead('Services - RV Rioflorido Construction')
 </script>
 
 <style scoped></style>

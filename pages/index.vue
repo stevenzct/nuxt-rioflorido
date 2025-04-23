@@ -254,6 +254,9 @@ export default {
     ProjectCard
   },
   async setup() {
+    // usehead title
+    useDefaultHead('Home - RV Rioflorido Construction')
+
     // Declare references and methods
     const projectsSection = ref(null);
 
@@ -299,8 +302,6 @@ export default {
     };
   },
 };
-
-useDefaultHead('Home - RV Rioflorido Construction')
 </script>
 
 <style scoped>

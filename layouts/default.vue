@@ -22,6 +22,4 @@ useSeoMeta({
   twitterImage: '/thumbnail-logo.png',
   twitterCard: 'summary_large_image',
 })
-
-useDefaultHead('Home - RV Rioflorido Construction')
 </script>
