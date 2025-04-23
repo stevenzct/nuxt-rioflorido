@@ -78,7 +78,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 py-12 lg:py-32 gap-y-8">
             <div>
               <div
-                class="block w-full p-8 lg:p-16 h-full lg:h-[400px] bg-white border border-gray-200 rounded-lg shadow hover:bg-[#F5F9FC] dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                class="block w-full p-8 lg:p-16 h-full lg:h-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
               >
                 <h3
                   class="mb-2 font-neue-montreal font-bold text-4xl md:text-[48px] text-gray-900 leading-[150%] tracking-wide"
@@ -96,7 +96,7 @@
 
             <div>
               <div
-                class="block w-full p-8 lg:p-16 h-full  lg:h-[400px] bg-white border border-gray-200 rounded-lg shadow hover:bg-[#F5F9FC] dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                class="block w-full p-8 lg:p-16 h-full  lg:h-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
               >
                 <h3
                   class="mb-2 font-neue-montreal font-bold text-4xl md:text-[48px] text-gray-900 leading-[150%] tracking-wide"
