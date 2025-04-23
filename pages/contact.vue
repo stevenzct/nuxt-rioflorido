@@ -179,11 +179,11 @@
             <hr />
             <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
               <a
-                href="mailto:rv.riocon@gmail.com"
+                href="mailto:hello.rioflorido@gmail.com"
                 class="relative group"
                 aria-label="Email RV Rioflorido Construction"
               >
-                rv.riocon@gmail.com
+                hello.rioflorido@gmail.com
                 <span
                   :class="[
                     'bg-black',
