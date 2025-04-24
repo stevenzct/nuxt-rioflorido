@@ -1,14 +1,8 @@
+@import 'swiper/swiper-bundle.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import '../fonts/PPNeueMontreal-Book.otf';
-@import '../fonts/PPNeueMontreal-Bold.otf';
-@import '../fonts/PPNeueMontreal-Italic.otf';
-@import '../fonts/PPNeueMontreal-Medium.otf';
-@import '../fonts/PPNeueMontreal-SemiBolditalic.otf';
-@import '../fonts/PPNeueMontreal-Thin.otf';
-@import 'swiper/swiper-bundle.css';
 
 @font-face {
   font-family: 'Montreal Book' ;
