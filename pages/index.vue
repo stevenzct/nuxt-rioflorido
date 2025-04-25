@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden bg-white">
     <!-- hero section  -->
-    <section id="hero-section" class="h-screen">
+    <section id="hero-section" class="h-screen" loading="lazy">
       <div
         class="h-full w-full flex flex-col items-end justify-end"
         id="container-text"
