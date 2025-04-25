@@ -12,7 +12,7 @@
           <img src="/assets/images/logo/main-logo.svg" class="logo" alt="RV Logo" />
         </NuxtLink>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <NuxtLink to="/contact" class="inline-block">
+          <NuxtLink to="/contact" class="inline-block" aria-label="Contact">
             <button
               type="button"
               id="get-in-touch"
