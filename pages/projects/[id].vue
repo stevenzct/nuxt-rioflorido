@@ -45,6 +45,8 @@ useSeoMeta({
   ogImage: project.value.image || "/default.jpg",
   twitterDescription: project.value.details + " (" + project.value.client + ")",
   twitterImage: project.value.image || "/default.jpg",
+  title: project.value.address + " - " + "RV Rioflorido Construction",
+  ogTitle: project.value.address + " - " + "RV Rioflorido Construction",
 });
 </script>
 
