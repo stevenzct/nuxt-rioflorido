@@ -39,19 +39,31 @@ definePageMeta({
   layout: 'projects'
 })
 
+// Dynamically set the Open Graph (OG) meta tags using `useHead()`
+useHead(() => {
+  if (!project.value) return {}
 
+  return {
+    title: project.value.title,
+    meta: [
+      { name: 'description', content: project.value.details || 'A project from our showcase.' },
 
+      // Open Graph tags
+      { property: 'og:title', content: project.value.title },
+      { property: 'og:description', content: project.value.details || '' },
+      { property: 'og:image', content: project.value.image || '/default.jpg' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: `https://rioflorido3213.netlify.app/projects/${id}` },
 
-// const fetchItem = async () => {
-//   if (!project.value) {
-//     throw createError({
-//       statusCode: 404,
-//       statusMessage: "Project not found", fatal:true
-//     });
-//   }
-// };
+      // Twitter tags (optional)
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: project.value.title },
+      { name: 'twitter:description', content: project.value.details || '' },
+      { name: 'twitter:image', content: project.value.image || '/default.jpg' },
+    ]
+  }
+})
 
-// onMounted(fetchItem); // Correctly pass the reference to fetchItem
 </script>
 
 <style scoped>
