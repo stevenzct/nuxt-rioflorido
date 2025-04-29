@@ -203,7 +203,7 @@ const scrollToImages = () => {
 //       href: imageObj.image,
 //     })) || [],
 // });
-useDefaultHead('Projects - RV Rioflorido Construction')
+// useDefaultHead('Projects - RV Rioflorido Construction')
 
 // Swiper setup for breakpoints
 const breakpoints = {

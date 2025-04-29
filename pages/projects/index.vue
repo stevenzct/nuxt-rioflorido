@@ -36,6 +36,7 @@ const { data: projects } = await useFetch(
 console.log(projects);
 
 useDefaultHead("Projects - RV Rioflorido Construction");
+
 </script>
 
 <style scoped>
