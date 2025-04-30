@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AppHeader />
+    <!-- <AppHeader /> -->
     <!-- <p v-if="project">ID: {{ project.id }}</p>
     <p v-if="project">Address: {{ project.address }}</p>
     <p v-if="project">Client: {{ project.client }}</p>
@@ -10,7 +10,7 @@
 
     <ProjectDetails :project="project" />
 
-    <AppFooter />
+    <!-- <AppFooter /> -->
     <!-- This will render the footer component -->
   </div>
 </template>
