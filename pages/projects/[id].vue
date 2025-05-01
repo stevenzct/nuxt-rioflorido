@@ -9,7 +9,6 @@
     <p v-else>Loading...</p> -->
 
     <ProjectDetails :project="project" />
-
     <!-- <AppFooter /> -->
     <!-- This will render the footer component -->
   </div>
