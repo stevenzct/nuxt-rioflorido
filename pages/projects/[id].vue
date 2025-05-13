@@ -21,10 +21,9 @@
 
 const { id } = useRoute().params;
 
-const uri = `https://673f046ca9bc276ec4b6cdac.mockapi.io/projects/projectsSample/${id}`;
 
 // Fetch the project
-const { data: project } = await useFetch(uri, { key: id });
+const { data: project } = await useFetch(`/api/projects/${id}`, { key: id });
 
 if (!project.value) {
   throw createError({
@@ -34,7 +33,7 @@ if (!project.value) {
   });
 }
 onMounted(() => {
-  console.log(project.value, "test");
+  // console.log(project.value, "test");
 });
 
 useDefaultHead(project.value.address + " - " + "RV Rioflorido Construction");

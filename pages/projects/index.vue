@@ -30,10 +30,8 @@
 
 <script setup>
 // Fetch the projects
-const { data: projects } = await useFetch(
-  "https://673f046ca9bc276ec4b6cdac.mockapi.io/projects/projectsSample"
-);
-console.log(projects);
+const { data: projects } = await useFetch('/api/projects');
+// console.log(projects);
 
 useDefaultHead("Projects - RV Rioflorido Construction");
 

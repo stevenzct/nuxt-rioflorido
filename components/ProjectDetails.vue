@@ -227,7 +227,7 @@ const breakpoints = {
 // Fetch project data
 const getProjects = async () =>{
 
-  const { data } = await useFetch('https://673f046ca9bc276ec4b6cdac.mockapi.io/projects/projectsSample');
+  const { data } = await useFetch('/api/projects');
 
   return projectData.value = data.value
 
