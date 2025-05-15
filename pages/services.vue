@@ -10,12 +10,12 @@
           >
             <div class="pb-8">
               <h1
-                class="tracking-wide text-black text-4xl md:text-7xl pb-4 md:pb-8 font-neue-montreal font-bold leading-[100%] lg:leading-[94%]"
+                class=" text-black text-4xl md:text-7xl pb-4 md:pb-6 font-neue-montreal font-bold leading-[100%] lg:leading-[94%]"
               >
-                Our Services
+                Build with Confidence, Backed by Professionals
               </h1>
 
-              <div v-for="(service, index) in services" :key="service">
+              <!-- <div v-for="(service, index) in services" :key="service">
                 <p
                   class="font-neue-montreal font-bold text-gray-900 w-auto text-[20px] md:text-[24px]"
                 >
@@ -25,7 +25,26 @@
                   v-if="index < services.length - 1"
                   class="h-px my-4 bg-[#E8E8E8] border-0"
                 />
+              </div> -->
+              <div>
+                <p
+                  class="font-neue-montreal font-bold text-gray-900 w-auto text-[20px] md:text-[32px]"
+                >
+                  Our Team manages Everything: Design, Documentation, Construction, and Finishing Touches—Bringing Clarity and Craft to Every Step.
+                </p>
               </div>
+
+              <div>
+              <NuxtLink to="#services-section">
+                <button
+                  type="button"
+                  id="view-services"
+                  class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+                >
+                  View our Services
+                </button>
+              </NuxtLink>
+            </div>
             </div>
 
             <div>
@@ -482,15 +501,15 @@ export default {
   },
   data() {
     return {
-      services: [
-        "General Construction Work (Structural, Architectural, Plumbing & Electrical)",
-        "Design plans signed and sealed by professionals (full sets) Building Permit application & documents",
-        "Glass and Aluminum Works",
-        "Railings, Fencing and Gate",
-        "Stainless steel works",
-        "Modular Cabinets",
-        "Repair/ Renovation Works",
-      ],
+      // services: [
+      //   "General Construction Work (Structural, Architectural, Plumbing & Electrical)",
+      //   "Design plans signed and sealed by professionals (full sets) Building Permit application & documents",
+      //   "Glass and Aluminum Works",
+      //   "Railings, Fencing and Gate",
+      //   "Stainless steel works",
+      //   "Modular Cabinets",
+      //   "Repair/ Renovation Works",
+      // ],
       constructionImages: [
         {
           src: "/images/services/construction-work/image-1.webp",

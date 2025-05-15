@@ -23,3 +23,8 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 </script>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
