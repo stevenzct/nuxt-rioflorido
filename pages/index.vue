@@ -260,7 +260,7 @@ export default {
     // Declare references and methods
     const projectsSection = ref(null);
 
-    const { data: projects } = await useFetch('https://673f046ca9bc276ec4b6cdac.mockapi.io/projects/projectsSample')
+    const { data: projects } = await useFetch('/api/projects')
    
 
     // Scroll to Projects section
