@@ -68,7 +68,8 @@ export default defineNuxtConfig({
                 object-src 'none';
                 base-uri 'self';
                 frame-ancestors 'self';
-              `.replace(/\s{2,}/g, ' ').trim()
+              `.replace(/\s{2,}/g, ' ').trim(),
+              'X-Content-Type-Options': 'nosniff',
         }
       }
     }
