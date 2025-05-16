@@ -52,4 +52,25 @@ export default defineNuxtConfig({
       emailjsUserId: process.env.EMAILJS_USER_ID, // public, server-only
     }
   },
+  nitro: {
+    routeRules: {
+      // Apply headers to all routes
+      '/**': {
+        headers: {
+              'Content-Security-Policy': `
+                default-src 'self';
+                script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://cdn.emailjs.com;
+                style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+                font-src 'self' https://fonts.gstatic.com data:;
+                img-src 'self' data:;
+                connect-src 'self' https://api.emailjs.com https://www.google.com https://www.gstatic.com;
+                frame-src https://www.google.com https://www.gstatic.com;
+                object-src 'none';
+                base-uri 'self';
+                frame-ancestors 'self';
+              `.replace(/\s{2,}/g, ' ').trim()
+        }
+      }
+    }
+  }
 })
