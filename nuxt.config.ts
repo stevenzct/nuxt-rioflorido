@@ -71,7 +71,9 @@ export default defineNuxtConfig({
               `.replace(/\s{2,}/g, ' ').trim(),
               'X-Content-Type-Options': 'nosniff',
               'Referrer-Policy': 'strict-origin-when-cross-origin',
-              'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), fullscreen=(self)' 
+              'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), fullscreen=(self)',
+              'X-Frame-Options': 'DENY',
+              'X-XSS-Protection': '1; mode=block' 
         }
       }
     }
