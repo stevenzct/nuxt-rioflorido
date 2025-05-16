@@ -74,7 +74,7 @@ export default defineNuxtConfig({
               'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), fullscreen=(self)',
               'X-Frame-Options': 'DENY',
               'X-XSS-Protection': '1; mode=block',
-              'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload' 
+              'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload',
         }
       }
     }
