@@ -1,6 +1,10 @@
 export default defineEventHandler(async (event) => {
-  const { id } = event.context.params;
+  if (event.method !== 'GET') {
+    throw createError({ statusCode: 405, statusMessage: 'Method Not Allowed' });
+  }
 
-  const project = await $fetch(`https://673f046ca9bc276ec4b6cdac.mockapi.io/projects/projectsSample/${id}`);
+  const config = useRuntimeConfig();
+  const { id } = event.context.params;
+  const project = await $fetch(`${config.apiBaseUrl}/projects/projectsSample/${id}`);
   return project;
 });

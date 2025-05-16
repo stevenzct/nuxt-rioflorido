@@ -39,7 +39,7 @@
                   Your name
                 </label>
                 <span v-if="errors.firstName" class="text-red-500 text-sm">
-                  Name must be minimum of 3 characters length
+                  Name must be between 3 and 40 characters long. No numbers or special characters.
                 </span>
               </div>
 
@@ -85,7 +85,7 @@
                   Tell us the project
                 </label>
                 <span v-if="errors.projectName" class="text-red-500 text-sm">
-                  This field is required
+                  Project details are required and must not contain special characters.
                 </span>
               </div>
 
@@ -267,13 +267,13 @@ const submitForm = () => {
   });
 
   // Validate fields
-  if (form.firstName.length < 3 || form.firstName.length > 10) {
+  if (form.firstName.length < 3 || form.firstName.length > 40 || /<[^>]*>/g.test(form.firstName) || /\d/.test(form.firstName) ) {
     errors.firstName = true;
   }
-  if (!form.email || !/\S+@\S+\.\S+/.test(form.email)) {
+  if (!form.email || !/\S+@\S+\.\S+/.test(form.email) || /<[^>]*>/g.test(form.email) ) {
     errors.email = true;
   }
-  if (!form.projectName) {
+  if (!form.projectName || /<[^>]*>/g.test(form.projectName) ) {
     errors.projectName = true;
   }
   if (!captchaVerified.value) {
@@ -290,7 +290,7 @@ const submitForm = () => {
       'g-recaptcha-response': grecaptcha.getResponse(), // Add CAPTCHA response
     })
       .then((response) => {
-        console.log("Email sent successfully!", response);
+        //console.log("Email sent successfully!", response);
         // Show success message
         showSuccessMessage.value = true;
         // Hide success message after 5 seconds

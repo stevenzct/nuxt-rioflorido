@@ -44,4 +44,12 @@ export default defineNuxtConfig({
     // Registering the baguettebox plugin
     '~/plugins/baguettebox.js',
   ],
+  runtimeConfig: {
+    apiBaseUrl: process.env.API_BASE_URL, // This is private, server-only
+    public: {
+      emailjsServiceId: process.env.EMAILJS_SERVICE_ID, // public, server-only
+      emailjsTemplateId: process.env.EMAILJS_TEMPLATE_ID, // public, server-only
+      emailjsUserId: process.env.EMAILJS_USER_ID, // public, server-only
+    }
+  },
 })
