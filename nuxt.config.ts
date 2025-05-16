@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxthub/core'],
   compatibilityDate: "2024-04-03",
   devtools: { enabled: false },
   components: true,
@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Rioflorido Construction' },
         {
           name: 'google-site-verification',
-          content: 'kIURHvlriUlkIoMsREThIoqa3NTgfcSz10RSV0tXbQc',
+          content: 'bvqs3WO0uSNy_FXnJUya5cJlnTf7kJC0k_nBafABfJ8',
         },
       ],
       link: [
