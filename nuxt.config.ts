@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxthub/core'],
   compatibilityDate: "2024-04-03",
   devtools: { enabled: false },
   components: true,
