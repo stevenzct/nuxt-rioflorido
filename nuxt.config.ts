@@ -1,67 +1,74 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxthub/core', '@nuxtjs/robots',  ['@nuxtjs/sitemap', {
-      hostname: 'https://rioflorido.nuxt.dev',  
-      gzip: true,
-      trailingSlash: true,
-  }]],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxt/image",
+    "@nuxthub/core",
+    "@nuxtjs/robots",
+    [
+      "@nuxtjs/sitemap",
+      {
+        hostname: "https://rioflorido.nuxt.dev",
+        gzip: true,
+        trailingSlash: true,
+      },
+    ],
+  ],
   ssr: true,
   compatibilityDate: "2024-04-03",
   devtools: { enabled: false },
   components: true,
   tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
+    cssPath: "~/assets/css/tailwind.css",
   },
   app: {
     head: {
       meta: [
-        { name: 'description', content: 'Rioflorido Construction' },
+        { name: "description", content: "Rioflorido Construction" },
         {
-          name: 'google-site-verification',
-          content: 'bvqs3WO0uSNy_FXnJUya5cJlnTf7kJC0k_nBafABfJ8',
+          name: "google-site-verification",
+          content: "bvqs3WO0uSNy_FXnJUya5cJlnTf7kJC0k_nBafABfJ8",
         },
       ],
       link: [
         {
-          rel: 'preload',
-          as: 'style',
-          href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+          rel: "preload",
+          as: "style",
+          href: "https://fonts.googleapis.com/icon?family=Material+Icons",
           onload: "this.onload=null;this.rel='stylesheet'",
         },
         {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
-        }
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+        },
       ],
-      script:[
+      script: [
         {
-       src:"https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js",
-        type: 'text/javascript',
-      },
-      //JSON-LD Schema Markup
-      {
-          type: 'application/ld+json',
-          children: JSON.stringify({
+          src: "https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js",
+          type: "text/javascript",
+        },
+        //JSON-LD Schema Markup
+        {
+          innerHTML: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "RVRioflorido Construction",
-            "url": "https://rioflorido.nuxt.dev",
-            "sameAs": [
-              "https://www.facebook.com/profile.php?id=100083308930581"
-            ]
-          })
+            name: "RVRioflorido Construction",
+            url: "https://rioflorido.nuxt.dev",
+            sameAs: ["https://www.facebook.com/profile.php?id=100083308930581"],
+          }),
+          key: "ld-json-schema",
         },
-      //Google reCAPTCHA
-      {
-        src: "https://www.google.com/recaptcha/api.js",
-        async: true,
-        defer: true,
-      }
-    ]
+        //Google reCAPTCHA
+        {
+          src: "https://www.google.com/recaptcha/api.js",
+          async: true,
+          defer: true,
+        },
+      ],
     },
   },
   plugins: [
     // Registering the baguettebox plugin
-    '~/plugins/baguettebox.js',
+    "~/plugins/baguettebox.js",
   ],
   runtimeConfig: {
     apiBaseUrl: process.env.API_BASE_URL, // This is private, server-only
@@ -69,15 +76,15 @@ export default defineNuxtConfig({
       emailjsServiceId: process.env.EMAILJS_SERVICE_ID, // public, server-only
       emailjsTemplateId: process.env.EMAILJS_TEMPLATE_ID, // public, server-only
       emailjsUserId: process.env.EMAILJS_USER_ID, // public, server-only
-    }
+    },
   },
   nitro: {
     routeRules: {
-      '/robots.txt': { static: true },
+      "/robots.txt": { static: true },
       // Apply headers to all routes
-      '/**': {
+      "/**": {
         headers: {
-              'Content-Security-Policy': `
+          "Content-Security-Policy": `
                 default-src 'self';
                 script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://cdn.emailjs.com;
                 style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
@@ -88,15 +95,19 @@ export default defineNuxtConfig({
                 object-src 'none';
                 base-uri 'self';
                 frame-ancestors 'self';
-              `.replace(/\s{2,}/g, ' ').trim(),
-              'X-Content-Type-Options': 'nosniff',
-              'Referrer-Policy': 'strict-origin-when-cross-origin',
-              'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), fullscreen=(self)',
-              'X-Frame-Options': 'DENY',
-              'X-XSS-Protection': '1; mode=block',
-              'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload',
-        }
-      }
-    }
+              `
+            .replace(/\s{2,}/g, " ")
+            .trim(),
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "strict-origin-when-cross-origin",
+          "Permissions-Policy":
+            "camera=(), microphone=(), geolocation=(), payment=(), usb=(), fullscreen=(self)",
+          "X-Frame-Options": "DENY",
+          "X-XSS-Protection": "1; mode=block",
+          "Strict-Transport-Security":
+            "max-age=63072000; includeSubDomains; preload",
+        },
+      },
+    },
   },
-})
+});
