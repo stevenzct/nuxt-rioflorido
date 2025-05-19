@@ -24,6 +24,13 @@ export default defineNuxtConfig({
     head: {
       title: 'RV Rioflorido Construction',
       meta: [
+        { property: 'og:site_name', content: 'RV Rioflorido Construction' },
+        { property: 'og:title', content: 'RV Rioflorido Construction: Home' },
+        { property: 'og:description', content: 'RV Rioflorido Construction is an all-in-one contractor for general construction offering quality, safety, and reliability.' },
+        { property: 'og:url', content: 'https://rioflorido.nuxt.dev' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'RV Rioflorido Construction' },
+        { name: 'twitter:description', content: 'An all-in-one general construction contractor offering quality and reliable services.' },
         { name: "description",
           content: 'RV Rioflorido Construction is an all-in-one contractor for general construction offering quality, safety, and reliability.' },
         {
