@@ -22,8 +22,17 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      title: 'RV Rioflorido Construction',
       meta: [
-        { name: "description", content: "Rioflorido Construction" },
+        { name: "description",
+          content: 'RV Rioflorido Construction is an all-in-one contractor for general construction offering quality, safety, and reliability.' },
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1'
+        },
+        {
+          charset: 'utf-8'
+        },
         {
           name: "google-site-verification",
           content: "bvqs3WO0uSNy_FXnJUya5cJlnTf7kJC0k_nBafABfJ8",
@@ -31,6 +40,8 @@ export default defineNuxtConfig({
         { name: "robots", content: "index, follow" },
       ],
       link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'     
+        },
         {
           rel: "preload",
           as: "style",
