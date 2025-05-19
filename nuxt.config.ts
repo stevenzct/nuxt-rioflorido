@@ -1,5 +1,10 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxthub/core'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxthub/core', '@nuxtjs/robots',  ['@nuxtjs/sitemap', {
+      hostname: 'https://rioflorido.nuxt.dev',  
+      gzip: true,
+      trailingSlash: true,
+  }]],
+  ssr: true,
   compatibilityDate: "2024-04-03",
   devtools: { enabled: false },
   components: true,
@@ -32,6 +37,20 @@ export default defineNuxtConfig({
        src:"https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js",
         type: 'text/javascript',
       },
+      //JSON-LD Schema Markup
+      {
+          type: 'application/ld+json',
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "RVRioflorido Construction",
+            "url": "https://rioflorido.nuxt.dev",
+            "sameAs": [
+              "https://www.facebook.com/profile.php?id=100083308930581"
+            ]
+          })
+        },
+      //Google reCAPTCHA
       {
         src: "https://www.google.com/recaptcha/api.js",
         async: true,
@@ -54,6 +73,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     routeRules: {
+      '/robots.txt': { static: true },
       // Apply headers to all routes
       '/**': {
         headers: {
@@ -78,5 +98,5 @@ export default defineNuxtConfig({
         }
       }
     }
-  }
+  },
 })
