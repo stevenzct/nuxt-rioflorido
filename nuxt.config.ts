@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Rioflorido Construction' },
         {
           name: 'google-site-verification',
-          content: 'bvqs3WO0uSNy_FXnJUya5cJlnTf7kJC0k_nBafABfJ8',
+          content: 'bvqs3WO0uSNy_F',
         },
       ],
       link: [
