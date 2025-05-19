@@ -40,7 +40,7 @@ export default defineNuxtConfig({
         { name: "robots", content: "index, follow" },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'     
+        { rel: 'icon', type: 'image/x-icon', href: '/public/images/logo/secondary-logo.ico'     
         },
         {
           rel: "preload",
@@ -66,6 +66,13 @@ export default defineNuxtConfig({
             name: "RVRioflorido Construction",
             url: "https://rioflorido.nuxt.dev",
             sameAs: ["https://www.facebook.com/profile.php?id=100083308930581"],
+            "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+63-917-144-1538",
+            "contactType": "Customer Service",
+            "areaServed": "PH",
+            "availableLanguage": ["English", "Filipino"]
+          },
           }),
           key: "ld-json-schema",
         },
