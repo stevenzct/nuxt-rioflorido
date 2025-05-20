@@ -16,7 +16,7 @@ useSeoMeta({
   ogTitle: 'RV Rioflorido Construction',
   ogDescription: 'Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions',
   ogImage: '/thumbnail-logo.png',
-  ogUrl: '[og:url]',
+  ogUrl: 'https://rioflorido.nuxt.dev',
   twitterTitle: 'RV Rioflorido Construction',
   twitterDescription: 'Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions',
   twitterImage: '/thumbnail-logo.png',

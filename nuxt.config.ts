@@ -47,7 +47,7 @@ export default defineNuxtConfig({
         { name: "robots", content: "index, follow" },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/images/logo/secondary-logo.ico'},
+        { rel: 'icon', type: 'image/x-icon', href: '/secondary-logo.ico'},
         { rel: "apple-touch-icon", sizes: "180x180", href: "/images/logo/secondary-logo.ico" },
         {
           rel: "preload",
