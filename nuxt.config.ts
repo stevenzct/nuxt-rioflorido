@@ -22,23 +22,26 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'RV Rioflorido Construction',
+      title: "RV Rioflorido Construction",
       meta: [
-        { property: 'og:site_name', content: 'RV Rioflorido Construction' },
-        { property: 'og:title', content: 'RV Rioflorido Construction: Home' },
-        { property: 'og:description', content: 'RV Rioflorido Construction is an all-in-one contractor for general construction offering quality, safety, and reliability.' },
-        { property: 'og:url', content: 'https://rioflorido.nuxt.dev' },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'RV Rioflorido Construction' },
-        { name: 'twitter:description', content: 'An all-in-one general construction contractor offering quality and reliable services.' },
+        //open graph
+        { property: "og:type", content: "website" },
+        { property: "og:site_name", content: "RV Rioflorido Construction" },
+        { property: "og:title", content: "RV Rioflorido Construction: Home" },
+        { property: "og:description", content: "RV Rioflorido Construction is an all-in-one contractor for general construction offering quality, safety, and reliability." },
+        { property: "og:url", content: "https://rioflorido.nuxt.dev" },
+        //twitter card 
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: "RV Rioflorido Construction" },
+        { name: "twitter:description", content: "An all-in-one general construction contractor offering quality and reliable services." },
         { name: "description",
-          content: 'RV Rioflorido Construction is an all-in-one contractor for general construction offering quality, safety, and reliability.' },
+          content: "RV Rioflorido Construction is an all-in-one contractor for general construction offering quality, safety, and reliability." },
         {
-          name: 'viewport',
-          content: 'width=device-width, initial-scale=1'
+          name: "viewport",
+          content: "width=device-width, initial-scale=1"
         },
         {
-          charset: 'utf-8'
+          charset: "utf-8"
         },
         {
           name: "google-site-verification",
@@ -47,8 +50,8 @@ export default defineNuxtConfig({
         { name: "robots", content: "index, follow" },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/secondary-logo.ico'},
-        { rel: "apple-touch-icon", sizes: "180x180", href: "/images/logo/secondary-logo.ico" },
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico"},
+        { rel: "apple-touch-icon", sizes: "180x180", href: "/favicon.ico" },
         {
           rel: "preload",
           as: "style",
