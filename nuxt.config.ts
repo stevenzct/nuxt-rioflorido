@@ -50,8 +50,8 @@ export default defineNuxtConfig({
         { name: "robots", content: "index, follow" },
       ],
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico"},
-        { rel: "apple-touch-icon", sizes: "180x180", href: "/favicon.ico" },
+        { rel: "icon", type: "image/x-icon", href: "/images/logo/secondary-logo.svg"},
+        { rel: "apple-touch-icon", sizes: "180x180", href: "/images/logo/secondary-logo.svg" },
         {
           rel: "preload",
           as: "style",

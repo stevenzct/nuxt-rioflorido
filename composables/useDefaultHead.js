@@ -1,6 +1,7 @@
 export function useDefaultHead(title) {
   useHead({
-    title,
+    titleTemplate: '%s - RV Rioflorido Construction',
+    title: title || 'RV Rioflorido Construction',
     htmlAttrs: {
       lang: 'en',
     },
