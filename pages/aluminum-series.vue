@@ -484,8 +484,16 @@ const handleClickOutside = (event) => {
     }
   }
 };
-
-useDefaultHead('Aluminum Series - RV Rioflorido Construction')
+useHead({
+  title: "Aluminum Series | RV Rioflorido",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Explore our Aluminum Series, featuring a wide range of sliding windows, awning windows, and security screens. Discover the perfect solution for your space.",
+    },
+  ], 
+})
 </script>
 
 <style scoped>

@@ -144,8 +144,14 @@ const privacyPolicy = {
     },
   ]
 };
-
-useDefaultHead('Privacy - RV Rioflorido Construction')
+useHead({
+  title: 'Privacy Policy | RV Rioflorido',
+  meta: [
+    { name: 'description', content: 'Read about how we collect, use, and protect your data on RV Rioflorido.' },
+    { name: 'keywords', content: 'privacy, data protection, user info' },
+    { name: 'robots', content: 'index, follow' }
+  ] 
+})
 </script>
 
 <style scoped></style>

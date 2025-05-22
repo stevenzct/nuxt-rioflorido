@@ -130,8 +130,15 @@ const scrollToAbout = () => {
     });
   }
 };
-
-useDefaultHead('About - RV Rioflorido Construction')
+useHead({
+  title: "About Us - RV Rioflorido",
+  meta: [
+    {
+      name: "description",
+      content: "Founded in 2022, RV Rioflorido Construction offers efficient, reliable, and expert-led construction services backed by years of engineering experience.",
+    }
+  ] 
+})
 </script>
 
 <style scoped>

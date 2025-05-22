@@ -32,9 +32,16 @@
 // Fetch the projects
 const { data: projects } = await useFetch('/api/projects');
 // console.log(projects);
-
-useDefaultHead("Projects - RV Rioflorido Construction");
-
+useHead({
+  title: 'Projects | RV Rioflorido',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Explore our diverse portfolio of projects, from residential to commercial, showcasing our commitment to excellence and innovation.',
+    },
+  ],
+})
 </script>
 
 <style scoped>

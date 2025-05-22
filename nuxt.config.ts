@@ -25,15 +25,20 @@ export default defineNuxtConfig({
       title: "RV Rioflorido Construction",
       meta: [
         //open graph
-        { property: "og:type", content: "website" },
-        { property: "og:site_name", content: "RV Rioflorido Construction" },
-        { property: "og:title", content: "RV Rioflorido Construction: Home" },
-        { property: "og:description", content: "RV Rioflorido Construction is an all-in-one contractor for general construction offering quality, safety, and reliability." },
-        { property: "og:url", content: "https://rioflorido.nuxt.dev" },
+        { property: 'og:title', content: 'RV Rioflorido Construction' },
+        { property: 'og:description', content: 'Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions' },
+        { property: 'og:image', content: '/thumbnail-logo.png' },
+        { property: 'og:url', content: 'https://rioflorido.nuxt.dev' },
+        { property: 'og:type', content: 'website' },
+        //twitter
+        { name: 'twitter:title', content: 'RV Rioflorido Construction' },
+        { name: 'twitter:description', content: 'Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions' },
+        { name: 'twitter:image', content: '/thumbnail-logo.png' },
+        { name: 'twitter:card', content: 'summary_large_image' },
         //twitter card 
-        { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: "RV Rioflorido Construction" },
-        { name: "twitter:description", content: "An all-in-one general construction contractor offering quality and reliable services." },
+        //{ name: "twitter:card", content: "summary_large_image" },
+        //{ name: "twitter:title", content: "RV Rioflorido Construction" },
+        //{ name: "twitter:description", content: "An all-in-one general construction contractor offering quality and reliable services." },
         { name: "description",
           content: "RV Rioflorido Construction is an all-in-one contractor for general construction offering quality, safety, and reliability." },
         {
@@ -50,7 +55,7 @@ export default defineNuxtConfig({
         { name: "robots", content: "index, follow" },
       ],
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/images/logo/secondary-logo.svg"},
+        { rel: "icon", type: "image/svg+xml", href: "/images/logo/secondary-logo.svg"},
         { rel: "apple-touch-icon", sizes: "180x180", href: "/images/logo/secondary-logo.svg" },
         {
           rel: "preload",

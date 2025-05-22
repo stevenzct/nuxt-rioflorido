@@ -10,18 +10,18 @@
 </template>
 
 <script setup>
-useSeoMeta({
-  title: 'RV Rioflorido Construction',
-  description: 'Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions',
-  ogTitle: 'RV Rioflorido Construction',
-  ogDescription: 'Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions',
-  ogImage: '/thumbnail-logo.png',
-  ogUrl: 'https://rioflorido.nuxt.dev',
-  twitterTitle: 'RV Rioflorido Construction',
-  twitterDescription: 'Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions',
-  twitterImage: '/thumbnail-logo.png',
-  twitterCard: 'summary_large_image',
-})
+// useSeoMeta({
+//   title: 'RV Rioflorido Construction',
+//   description: 'Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions',
+//   ogTitle: 'RV Rioflorido Construction',
+//   ogDescription: 'Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions',
+//   ogImage: '/thumbnail-logo.png',
+//   ogUrl: 'https://rioflorido.nuxt.dev',
+//   twitterTitle: 'RV Rioflorido Construction',
+//   twitterDescription: 'Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions',
+//   twitterImage: '/thumbnail-logo.png',
+//   twitterCard: 'summary_large_image',
+// })
 </script>
 <style>
 html {

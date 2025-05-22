@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Head>
+        <Title> Projects | {{ project.address }} </Title>
+        <Meta name="description" :content="project.details"/>
+    </Head>
     <!-- <AppHeader /> -->
     <!-- <p v-if="project">ID: {{ project.id }}</p>
     <p v-if="project">Address: {{ project.address }}</p>
@@ -36,7 +40,7 @@ onMounted(() => {
   // console.log(project.value, "test");
 });
 
-useDefaultHead(project.value.address + " - " + "RV Rioflorido Construction");
+// useDefaultHead(project.value.address + " - " + "RV Rioflorido Construction");
 useSeoMeta({
   description: project.value.details + " (" + project.value.client + ")",
   ogDescription: project.value.details + " (" + project.value.client + ")",

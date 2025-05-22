@@ -45,7 +45,15 @@
 
 <script setup>
 defineProps([error]);
-useDefaultHead("error - RV Rioflorido Construction");
+useHead({
+  title: "404 error page not found",
+  meta: [
+    {
+      name: "description",
+      content: "Oops! The page you're looking for can't be found.",
+    },
+  ],
+});
 </script>
 
 <style scoped>

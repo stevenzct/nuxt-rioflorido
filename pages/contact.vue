@@ -309,8 +309,16 @@ const submitForm = () => {
       });
   }
 };
-
-useDefaultHead('Contact - RV Rioflorido Construction')
+useHead({
+  title: "Contact Us - RV Rioflorido Construction",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Contact RV Rioflorido Construction for your construction needs. Reach out to us for a seamless experience.",
+    },  
+  ] 
+})
 </script>
 
 <style scoped>

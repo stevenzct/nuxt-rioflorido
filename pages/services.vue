@@ -565,8 +565,6 @@ export default {
     };
   },
   setup() {
-    // Import the useDefaultHead function from the composables directory
-    useDefaultHead('Services - RV Rioflorido Construction')
     // Declare references and methods
     const servicesSection = ref(null);
 
@@ -604,6 +602,12 @@ export default {
     };
   },
 };
+useHead({
+  title: "Services | RV Rioflorido", 
+  meta: [
+    { name: 'description', content: 'Explore our comprehensive range of services designed to elevate your living spaces and elevate your lifestyle.' }
+  ]
+})
 </script>
 
 <style scoped></style>

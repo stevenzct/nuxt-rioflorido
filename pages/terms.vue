@@ -133,8 +133,15 @@ const privacyPolicy = {
     },
   ],
 };
-
-useDefaultHead('Terms - RV Rioflorido Construction')
+useHead({
+  title: "Terms of Service - RV Rioflorido",
+  meta: [
+    {
+      name: "description",
+      content: "Terms of Service for RV Rioflorido", 
+    }  
+  ]
+})
 </script>
 
 <style scoped></style>

@@ -238,71 +238,51 @@
 
 
 
-<script >
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from "swiper/vue";
-import "swiper/css";
-import { Navigation } from "swiper/modules";
-import { ref } from 'vue';
-import ProjectCard from "~/components/ProjectCard.vue";
+<script setup>
+import { ref } from 'vue'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/css'
+import { Navigation } from 'swiper/modules'
+import ProjectCard from '~/components/ProjectCard.vue'
 
-// Define the component
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-    ProjectCard
-  },
-  async setup() {
-    // usehead title
-    useDefaultHead('Home - RV Rioflorido Construction')
+// references
+const projectsSection = ref(null)
 
-    // Declare references and methods
-    const projectsSection = ref(null);
+// fetch projects data
+const { data: projects } = await useFetch('/api/projects')
 
-    const { data: projects } = await useFetch('/api/projects')
-   
+// scroll to projects section method
+const scrollToProjects = () => {
+  if (projectsSection.value) {
+    projectsSection.value.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
+  }
+}
 
-    // Scroll to Projects section
-    const scrollToProjects = () => {
-      if (projectsSection.value) {
-        projectsSection.value.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
-      }
-    };
+// swiper breakpoints
+const breakpoints = {
+  100: { slidesPerView: 1 },
+  360: { slidesPerView: 1 },
+  640: { slidesPerView: 1 },
+  768: { slidesPerView: 2 },
+  1024: { slidesPerView: 3 },
+}
 
-    // Swiper breakpoints setup
-    const breakpoints = {
-      100: {
-        slidesPerView: 1,
-      },
-      360: {
-        slidesPerView: 1,
-      },
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    };
-
-    // Return the data that needs to be used in the template
-    return {
-      projectsSection,
-      scrollToProjects,
-      breakpoints,
-      modules: [Navigation],
-      projects
-    };
-  },
-};
+// swiper modules to pass to component
+const modules = [Navigation]
+useHead({
+  title: "Home - RV Rioflorido",
+  meta: [
+    {
+      name: "description",
+      content: "Welcome to RV Rioflorido, your premier destination for exceptional construction services. Explore our portfolio, learn about our team, and get in touch for your next project.",
+    }
+  ] 
+})
 </script>
+
 
 <style scoped>
 .swiper-slide {
