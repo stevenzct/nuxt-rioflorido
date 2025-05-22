@@ -25,6 +25,7 @@ export default defineNuxtConfig({
       title: "RV Rioflorido Construction",
       meta: [
         //open graph
+        { name: 'og:title', content: 'RV Rioflorido Construction' },
         { property: 'og:title', content: 'RV Rioflorido Construction' },
         { property: 'og:description', content: 'Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions' },
         { property: 'og:image', content: '/thumbnail-logo.png' },
