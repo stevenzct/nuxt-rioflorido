@@ -111,6 +111,7 @@ export default defineNuxtConfig({
       emailjsServiceId: process.env.EMAILJS_SERVICE_ID, // public, server-only
       emailjsTemplateId: process.env.EMAILJS_TEMPLATE_ID, // public, server-only
       emailjsUserId: process.env.EMAILJS_USER_ID, // public, server-only
+      siteUrl: 'https://rioflorido.nuxt.dev' //site url
     },
   },
   nitro: {

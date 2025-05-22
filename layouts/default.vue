@@ -22,6 +22,19 @@
 //   twitterImage: '/thumbnail-logo.png',
 //   twitterCard: 'summary_large_image',
 // })
+import { useRoute, useRuntimeConfig, useHead } from '#imports'
+
+const route = useRoute()
+const config = useRuntimeConfig()
+
+useHead(() => {
+  const canonical = config.public.siteUrl + route.path
+  return {
+    link: [
+      { rel: 'canonical', href: canonical }
+    ]
+  }
+})
 </script>
 <style>
 html {
