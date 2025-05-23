@@ -6,6 +6,8 @@ export default defineNuxtConfig({
         lang: 'en',
       },
       meta: [
+        { name: 'application-name', content: 'RV Rioflorido' },
+        { property: 'og:site_name', content: 'RV Rioflorido' },
         //open graph
         { name: 'og:title', content: 'RV Rioflorido Construction' },
         { property: 'og:title', content: 'RV Rioflorido Construction' },
