@@ -1,28 +1,10 @@
 export default defineNuxtConfig({
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@nuxt/image",
-    "@nuxthub/core",
-    "@nuxtjs/robots",
-    [
-      "@nuxtjs/sitemap",
-      {
-        hostname: "https://rioflorido.nuxt.dev",
-        gzip: true,
-        trailingSlash: true,
-      },
-    ],
-  ],
-  ssr: true,
-  compatibilityDate: "2024-04-03",
-  devtools: { enabled: false },
-  components: true,
-  tailwindcss: {
-    cssPath: "~/assets/css/tailwind.css",
-  },
   app: {
     head: {
       title: "RV Rioflorido Construction",
+      htmlAttrs: {
+        lang: 'en',
+      },
       meta: [
         //open graph
         { name: 'og:title', content: 'RV Rioflorido Construction' },
@@ -100,6 +82,27 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxt/image",
+    "@nuxthub/core",
+    "@nuxtjs/robots",
+    [
+      "@nuxtjs/sitemap",
+      {
+        hostname: "https://rioflorido.nuxt.dev",
+        gzip: true,
+        trailingSlash: true,
+      },
+    ],
+  ],
+  ssr: true,
+  compatibilityDate: "2024-04-03",
+  devtools: { enabled: false },
+  components: true,
+  tailwindcss: {
+    cssPath: "~/assets/css/tailwind.css",
   },
   plugins: [
     // Registering the baguettebox plugin
