@@ -61,7 +61,7 @@ export default defineNuxtConfig({
           innerHTML: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "RVRioflorido Construction",
+            name: "RV Rioflorido Construction",
             url: "https://rioflorido.nuxt.dev",
             sameAs: ["https://www.facebook.com/profile.php?id=100083308930581"],
             "contactPoint": {
