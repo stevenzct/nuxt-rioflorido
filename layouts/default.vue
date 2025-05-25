@@ -36,13 +36,14 @@ useHead({
   ],
   script: [
     {
+      hid: 'org-jsonld', // unique ID for the script
       type: 'application/ld+json',
-      children: JSON.stringify({
+      innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Organization",
         name: "RV Rioflorido Construction",
         url: "https://rioflorido.nuxt.dev",
-        logo: "https://rioflorido.nuxt.dev/thumbnail-logo.png", // optional but good for SEO
+        logo: "https://rioflorido.nuxt.dev/thumbnail-logo.png",
         sameAs: [
           "https://www.facebook.com/profile.php?id=100083308930581"
         ],
@@ -53,9 +54,13 @@ useHead({
           areaServed: "PH",
           availableLanguage: ["English", "Filipino"]
         }
-      })
+      }),
+      tagPosition: 'head'
     }
-  ]
+  ],
+  __dangerouslyDisableSanitizersByTagID: {
+    'org-jsonld': ['innerHTML']
+  }
 })
 </script>
 <style>
