@@ -27,13 +27,35 @@ import { useRoute, useRuntimeConfig, useHead } from '#imports'
 const route = useRoute()
 const config = useRuntimeConfig()
 
-useHead(() => {
-  const canonical = config.public.siteUrl + route.path
-  return {
-    link: [
-      { rel: 'canonical', href: canonical }
-    ]
-  }
+
+const canonical = config.public.siteUrl + route.path
+
+useHead({
+  link: [
+    { rel: 'canonical', href: canonical }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "RV Rioflorido Construction",
+        url: "https://rioflorido.nuxt.dev",
+        logo: "https://rioflorido.nuxt.dev/thumbnail-logo.png", // optional but good for SEO
+        sameAs: [
+          "https://www.facebook.com/profile.php?id=100083308930581"
+        ],
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+63-917-144-1538",
+          contactType: "Customer Service",
+          areaServed: "PH",
+          availableLanguage: ["English", "Filipino"]
+        }
+      })
+    }
+  ]
 })
 </script>
 <style>
