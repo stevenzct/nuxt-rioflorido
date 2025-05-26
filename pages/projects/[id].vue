@@ -39,8 +39,6 @@ if (!project.value) {
 onMounted(() => {
   // console.log(project.value, "test");
 });
-
-// useDefaultHead(project.value.address + " - " + "RV Rioflorido Construction");
 useSeoMeta({
   description: project.value.details + " (" + project.value.client + ")",
   ogDescription: project.value.details + " (" + project.value.client + ")",

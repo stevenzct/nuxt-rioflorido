@@ -3,35 +3,42 @@ export default defineNuxtConfig({
     head: {
       title: "RV Rioflorido Construction",
       htmlAttrs: {
-        lang: 'en',
+        lang: "en",
       },
       meta: [
-        { name: 'application-name', content: 'RV Rioflorido' },
-        { property: 'og:site_name', content: 'RV Rioflorido' },
+        { name: "application-name", content: "RV Rioflorido" },
+        { property: "og:site_name", content: "RV Rioflorido" },
         //open graph
-        { name: 'og:title', content: 'RV Rioflorido Construction' },
-        { property: 'og:title', content: 'RV Rioflorido Construction' },
-        { property: 'og:description', content: 'Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions' },
-        { property: 'og:image', content: '/thumbnail-logo.png' },
-        { property: 'og:url', content: 'https://rioflorido.nuxt.dev' },
-        { property: 'og:type', content: 'website' },
-        //twitter
-        { name: 'twitter:title', content: 'RV Rioflorido Construction' },
-        { name: 'twitter:description', content: 'Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions' },
-        { name: 'twitter:image', content: '/thumbnail-logo.png' },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        //twitter card 
-        //{ name: "twitter:card", content: "summary_large_image" },
-        //{ name: "twitter:title", content: "RV Rioflorido Construction" },
-        //{ name: "twitter:description", content: "An all-in-one general construction contractor offering quality and reliable services." },
-        { name: "description",
-          content: "RV Rioflorido Construction is an all-in-one contractor for general construction offering quality, safety, and reliability." },
+        { name: "og:title", content: "RV Rioflorido Construction" },
+        { property: "og:title", content: "RV Rioflorido Construction" },
         {
-          name: "viewport",
-          content: "width=device-width, initial-scale=1"
+          property: "og:description",
+          content:
+            "Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions",
+        },
+        { property: "og:image", content: "/thumbnail-logo.png" },
+        { property: "og:url", content: "https://rioflorido.nuxt.dev" },
+        { property: "og:type", content: "website" },
+        //twitter
+        { name: "twitter:title", content: "RV Rioflorido Construction" },
+        {
+          name: "twitter:description",
+          content:
+            "Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions",
+        },
+        { name: "twitter:image", content: "/thumbnail-logo.png" },
+        { name: "twitter:card", content: "summary_large_image" },
+        {
+          name: "description",
+          content:
+            "RV Rioflorido Construction is an all-in-one contractor for general construction offering quality, safety, and reliability.",
         },
         {
-          charset: "utf-8"
+          name: "viewport",
+          content: "width=device-width, initial-scale=1",
+        },
+        {
+          charset: "utf-8",
         },
         {
           name: "google-site-verification",
@@ -40,8 +47,16 @@ export default defineNuxtConfig({
         { name: "robots", content: "index, follow" },
       ],
       link: [
-        { rel: "icon", type: "image/svg+xml", href: "/images/logo/secondary-logo.svg"},
-        { rel: "apple-touch-icon", sizes: "180x180", href: "/images/logo/secondary-logo.svg" },
+        {
+          rel: "icon",
+          type: "image/svg+xml",
+          href: "/images/logo/secondary-logo.svg",
+        },
+        {
+          rel: "apple-touch-icon",
+          sizes: "180x180",
+          href: "/images/logo/secondary-logo.svg",
+        },
         {
           rel: "preload",
           as: "style",
@@ -60,7 +75,7 @@ export default defineNuxtConfig({
         },
         //JSON-LD Schema Markup
         {
-          type: 'application/ld+json',
+          type: "application/ld+json",
           children: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
@@ -72,9 +87,9 @@ export default defineNuxtConfig({
               telephone: "+63-917-144-1538",
               contactType: "Customer Service",
               areaServed: "PH",
-              availableLanguage: ["English", "Filipino"]
-            }
-          })
+              availableLanguage: ["English", "Filipino"],
+            },
+          }),
         },
         //Google reCAPTCHA
         {
@@ -116,7 +131,7 @@ export default defineNuxtConfig({
       emailjsServiceId: process.env.EMAILJS_SERVICE_ID, // public, server-only
       emailjsTemplateId: process.env.EMAILJS_TEMPLATE_ID, // public, server-only
       emailjsUserId: process.env.EMAILJS_USER_ID, // public, server-only
-      siteUrl: 'https://rioflorido.nuxt.dev' //site url
+      siteUrl: "https://rioflorido.nuxt.dev", //site url
     },
   },
   nitro: {

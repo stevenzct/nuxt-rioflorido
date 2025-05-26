@@ -487,126 +487,111 @@
   </div>
 </template>
 
-<script>
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from "swiper/vue";
-import "swiper/css";
-import { Navigation } from "swiper/modules";
-import { ref } from "vue";
-// Define the component
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  data() {
-    return {
-      // services: [
-      //   "General Construction Work (Structural, Architectural, Plumbing & Electrical)",
-      //   "Design plans signed and sealed by professionals (full sets) Building Permit application & documents",
-      //   "Glass and Aluminum Works",
-      //   "Railings, Fencing and Gate",
-      //   "Stainless steel works",
-      //   "Modular Cabinets",
-      //   "Repair/ Renovation Works",
-      // ],
-      constructionImages: [
-        {
-          src: "/images/services/construction-work/image-1.webp",
-          alt: "image-1",
-        },
-        {
-          src: "/images/services/construction-work/image-2.webp",
-          alt: "image-2",
-        },
-        {
-          src: "/images/services/construction-work/image-3.webp",
-          alt: "image-3",
-        },
-      ],
-      glassAndAluminumImages: [
-        {
-          src: "/images/services/glass-and-aluminum/glass1.webp",
-          alt: "glass-1",
-        },
-        {
-          src: "/images/services/glass-and-aluminum/glass2.webp",
-          alt: "glass-2",
-        },
-        {
-          src: "/images/services/glass-and-aluminum/glass3.webp",
-          alt: "glass-3",
-        },
-        {
-          src: "/images/services/glass-and-aluminum/glass4.webp",
-          alt: "glass-4",
-        },
-        {
-          src: "/images/services/glass-and-aluminum/glass5.webp",
-          alt: "glass-5",
-        },
-        {
-          src: "/images/services/glass-and-aluminum/glass6.webp",
-          alt: "glass-6",
-        },
-      ],
-      railingsFencingGateImages: [
-        { src: '/images/services/railings-fencing-gate/gate1.webp', alt: 'gate-1' },
-        { src: '/images/services/railings-fencing-gate/railings1.webp', alt: 'railings-1' },
-        { src: '/images/services/railings-fencing-gate/fencing1.webp', alt: 'fencing-1' },
-        { src: '/images/services/railings-fencing-gate/railings2.webp', alt: 'railings-2' },
-        { src: '/images/services/railings-fencing-gate/railings3.webp', alt: 'railings-3' },
-      ],
-      modularCabinetsImages: [
-        { src: '/images/services/modular-cabinets/cabinet1.webp', alt: 'cabinet-1' },
-        { src: '/images/services/modular-cabinets/cabinet2.webp', alt: 'cabinet-2' },
-        { src: '/images/services/modular-cabinets/cabinet3.webp', alt: 'cabinet-3' },
-      ],
-    };
-  },
-  setup() {
-    // Declare references and methods
-    const servicesSection = ref(null);
+<script setup>
+import { ref } from 'vue'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/css'
+import { Navigation } from 'swiper/modules'
 
-    // Scroll to Projects section
-    const scrollToServices = () => {
-      if (servicesSection.value) {
-        servicesSection.value.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-    };
-    // Swiper breakpoints setup
-    const breakpoints = {
-      360: {
-        slidesPerView: 1,
-      },
-      400: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    };
+// Define references
+const servicesSection = ref(null)
 
-    // Return the data that needs to be used in the template
-    return {
-      servicesSection,
-      scrollToServices,
-      breakpoints,
-      modules: [Navigation],
-    };
+// Scroll to Services section
+// const scrollToServices = () => {
+//   if (servicesSection.value) {
+//     servicesSection.value.scrollIntoView({
+//       behavior: 'smooth',
+//       block: 'start',
+//     })
+//   }
+// }
+
+// Swiper breakpoints
+const breakpoints = {
+  360: {
+    slidesPerView: 1,
   },
-};
+  400: {
+    slidesPerView: 2,
+  },
+  768: {
+    slidesPerView: 2,
+  },
+  1024: {
+    slidesPerView: 3,
+  },
+}
+
+// Image data
+const constructionImages = [
+  {
+    src: '/images/services/construction-work/image-1.webp',
+    alt: 'image-1',
+  },
+  {
+    src: '/images/services/construction-work/image-2.webp',
+    alt: 'image-2',
+  },
+  {
+    src: '/images/services/construction-work/image-3.webp',
+    alt: 'image-3',
+  },
+]
+
+const glassAndAluminumImages = [
+  {
+    src: '/images/services/glass-and-aluminum/glass1.webp',
+    alt: 'glass-1',
+  },
+  {
+    src: '/images/services/glass-and-aluminum/glass2.webp',
+    alt: 'glass-2',
+  },
+  {
+    src: '/images/services/glass-and-aluminum/glass3.webp',
+    alt: 'glass-3',
+  },
+  {
+    src: '/images/services/glass-and-aluminum/glass4.webp',
+    alt: 'glass-4',
+  },
+  {
+    src: '/images/services/glass-and-aluminum/glass5.webp',
+    alt: 'glass-5',
+  },
+  {
+    src: '/images/services/glass-and-aluminum/glass6.webp',
+    alt: 'glass-6',
+  },
+]
+
+const railingsFencingGateImages = [
+  { src: '/images/services/railings-fencing-gate/gate1.webp', alt: 'gate-1' },
+  { src: '/images/services/railings-fencing-gate/railings1.webp', alt: 'railings-1' },
+  { src: '/images/services/railings-fencing-gate/fencing1.webp', alt: 'fencing-1' },
+  { src: '/images/services/railings-fencing-gate/railings2.webp', alt: 'railings-2' },
+  { src: '/images/services/railings-fencing-gate/railings3.webp', alt: 'railings-3' },
+]
+
+const modularCabinetsImages = [
+  { src: '/images/services/modular-cabinets/cabinet1.webp', alt: 'cabinet-1' },
+  { src: '/images/services/modular-cabinets/cabinet2.webp', alt: 'cabinet-2' },
+  { src: '/images/services/modular-cabinets/cabinet3.webp', alt: 'cabinet-3' },
+]
+
+// Swiper modules
+const modules = [Navigation]
+
+// Page metadata
 useHead({
-  title: "Services | RV Rioflorido", 
+  title: 'Services | RV Rioflorido',
   meta: [
-    { name: 'description', content: 'Explore our comprehensive range of services designed to elevate your living spaces and elevate your lifestyle.' }
-  ]
+    {
+      name: 'description',
+      content:
+        'Explore our comprehensive range of services designed to elevate your living spaces and elevate your lifestyle.',
+    },
+  ],
 })
 </script>
 

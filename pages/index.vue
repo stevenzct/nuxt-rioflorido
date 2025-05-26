@@ -273,7 +273,7 @@ const breakpoints = {
 // swiper modules to pass to component
 const modules = [Navigation]
 useHead({
-  title: "Home - RV Rioflorido",
+  title: "Home | RV Rioflorido",
   meta: [
     {
       name: "description",
