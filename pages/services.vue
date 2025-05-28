@@ -97,14 +97,14 @@
             >
               <div class="max-w-full bg-white rounded-lg">
                 <a :href="image.src">
-                  <img class="rounded-lg" :src="image.src" :alt="image.alt" />
+                  <img class="rounded-lg object-cover aspect-[772/940]" :src="image.src" :alt="image.alt" />
                 </a>
               </div>
             </swiper-slide>
           </swiper>
         </div>
 
-        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 lg:hidden">
+        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4">
           <div class="flex justify-end gap-2">
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center construction-prev"
@@ -535,6 +535,14 @@ const constructionImages = [
     src: '/images/services/construction-work/image-3.webp',
     alt: 'image-3',
   },
+  {
+    src: '/images/services/construction-work/image-4.webp',
+    alt: 'image-4',
+  },
+  {
+    src: '/images/services/construction-work/image-5.webp',
+    alt: 'image-5',
+  }
 ]
 
 const glassAndAluminumImages = [
