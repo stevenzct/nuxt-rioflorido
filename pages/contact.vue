@@ -134,8 +134,8 @@
             </p>
             <hr />
             <p class="font-neue-montreal font-bold text-[24px] md:text-[32px]">
-              <a class="relative group" href="tel:+63427108762">
-                042 710 8762 Telephone
+              <a class="relative group" href="tel:+63288128450">
+                02-8812-8450 Telephone
                 <span
                   :class="[
                     'bg-black',

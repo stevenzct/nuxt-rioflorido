@@ -157,13 +157,12 @@
           <h1
             class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900"
           >
-            Design plans signed and sealed
+            Design plans
           </h1>
           <p
             class="font-neue-montreal font-normal text-gray-900 w-auto md:w-[706px] text-[20px] md:text-[24px]"
           >
-            Seamless, Professionally Certified Designs for Your Building Project
-            (Full sets)
+            Complete sets of plans signed and sealed by professionals
           </p>
         </div>
 
