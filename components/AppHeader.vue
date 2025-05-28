@@ -3,7 +3,7 @@
     <nav
       :class="[
         'fixed w-full z-40 top-0 start-0',
-        { 'bg-white': isScrolled || isScrolledY || isHeroWhite },
+        { 'bg-white': isScrolled || isScrolledY || isHeroWhite|| isAdminLoginPage || isAdminForgotpassPage || isAdminProjectsPage},
       ]"
       ref="nav"
     >
@@ -18,7 +18,7 @@
               id="get-in-touch"
               class="font-neue-montreal font-bold text-base w-48 h-14 rounded-[4px] px-8 py-3.5 transition ease-out duration-300"
               :class="[
-                isScrolled || isScrolledY || isHeroWhite
+                isScrolled || isScrolledY || isHeroWhite || isAdminLoginPage || isAdminForgotpassPage || isAdminProjectsPage
                   ? 'text-gray-900 bg-white border border-gray-400 hover:bg-gray-900 hover:text-white'
                   : 'text-white border border-white',
               ]"
@@ -86,7 +86,7 @@
               <NuxtLink
                 to="/"
                 :class="[
-                  isScrolled || isScrolledY || isHeroWhite ? 'text-black' : 'text-white',
+                  isScrolled || isScrolledY || isHeroWhite || isAdminLoginPage || isAdminForgotpassPage || isAdminProjectsPage ? 'text-black' : 'text-white',
                   'relative inline-block group',
                 ]"
                 @click="toggleNavbar"
@@ -95,7 +95,7 @@
                 Home
                 <span
                   :class="[
-                    isScrolled || isScrolledY || isHeroWhite ? 'bg-black' : 'bg-white',
+                    isScrolled || isScrolledY || isHeroWhite || isAdminLoginPage || isAdminForgotpassPage || isAdminProjectsPage ? 'bg-black' : 'bg-white',
                     'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
                 ></span>
@@ -105,7 +105,7 @@
               <NuxtLink
                 to="/projects"
                 :class="[
-                  isScrolled || isScrolledY || isHeroWhite ? 'text-black' : 'text-white',
+                  isScrolled || isScrolledY || isHeroWhite || isAdminLoginPage || isAdminForgotpassPage || isAdminProjectsPage ? 'text-black' : 'text-white',
                   'relative inline-block group',
                 ]"
                 @click="toggleNavbar"
@@ -113,7 +113,7 @@
                 Projects
                 <span
                   :class="[
-                    isScrolled || isScrolledY || isHeroWhite ? 'bg-black' : 'bg-white',
+                    isScrolled || isScrolledY || isHeroWhite || isAdminLoginPage || isAdminForgotpassPage || isAdminProjectsPage ? 'bg-black' : 'bg-white',
                     'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
                 ></span>
@@ -123,7 +123,7 @@
               <NuxtLink
                 to="/services"
                 :class="[
-                  isScrolled || isScrolledY || isHeroWhite ? 'text-black' : 'text-white',
+                  isScrolled || isScrolledY || isHeroWhite || isAdminLoginPage || isAdminForgotpassPage || isAdminProjectsPage ? 'text-black' : 'text-white',
                   'relative inline-block group',
                 ]"
                 @click="toggleNavbar"
@@ -131,7 +131,7 @@
                 Services
                 <span
                   :class="[
-                    isScrolled || isScrolledY || isHeroWhite ? 'bg-black' : 'bg-white',
+                    isScrolled || isScrolledY || isHeroWhite || isAdminLoginPage || isAdminForgotpassPage || isAdminProjectsPage ? 'bg-black' : 'bg-white',
                     'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
                 ></span>
@@ -141,7 +141,7 @@
               <NuxtLink
                 to="/about"
                 :class="[
-                  isScrolled || isScrolledY || isHeroWhite ? 'text-black' : 'text-white',
+                  isScrolled || isScrolledY || isHeroWhite || isAdminLoginPage || isAdminForgotpassPage || isAdminProjectsPage ? 'text-black' : 'text-white',
                   'relative inline-block group',
                 ]"
                 @click="toggleNavbar"
@@ -149,7 +149,7 @@
                 About
                 <span
                   :class="[
-                    isScrolled || isScrolledY || isHeroWhite ? 'bg-black' : 'bg-white',
+                    isScrolled || isScrolledY || isHeroWhite || isAdminLoginPage || isAdminForgotpassPage || isAdminProjectsPage ? 'bg-black' : 'bg-white',
                     'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
                   ]"
                 ></span>
@@ -189,6 +189,15 @@ export default {
       return this.scrollPosition > 50;
     },
     // Computed property for `isScrolledY`, making it reactive
+    isAdminLoginPage() {
+    return this.$route.path === '/adminLogin';
+    },
+    isAdminForgotpassPage() {
+    return this.$route.path === '/adminForgotpass';
+    },
+    isAdminProjectsPage() {
+    return this.$route.path === '/adminProjects';
+    },
   },
   methods: {
     toggleNavbar() {
