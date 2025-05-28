@@ -3,7 +3,7 @@
     <div class="max-w-full bg-white rounded-lg"
     >
         <img
-          class="rounded-t-lg"
+          class="rounded-t-lg w-full h-auto object-cover aspect-[774/718]"
           :src="project.image"
           alt="project-image-card-rances"
         />
