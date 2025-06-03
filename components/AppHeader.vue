@@ -7,9 +7,14 @@
       ]"
       ref="nav"
     >
-      <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/assets/images/logo/main-logo.svg" class="logo" alt="RV Logo" />
+      <div
+        class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <NuxtLink
+          to="/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="/images/logo/main-logo.svg" class="logo" alt="RV Logo" />
         </NuxtLink>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <NuxtLink to="/contact" class="inline-block" aria-label="Contact">
@@ -86,7 +91,9 @@
               <NuxtLink
                 to="/"
                 :class="[
-                  isScrolled || isScrolledY || isHeroWhite ? 'text-black' : 'text-white',
+                  isScrolled || isScrolledY || isHeroWhite
+                    ? 'text-black'
+                    : 'text-white',
                   'relative inline-block group',
                 ]"
                 @click="toggleNavbar"
@@ -95,8 +102,16 @@
                 Home
                 <span
                   :class="[
-                    isScrolled || isScrolledY || isHeroWhite ? 'bg-black' : 'bg-white',
-                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                    {
+                      'bg-black': isScrolled || isScrolledY || isHeroWhite,
+                      'bg-white': !isScrolled && !isScrolledY && !isHeroWhite,
+                      'scale-x-100': $route.path === '/',
+                      'scale-x-0': $route.path !== '/',
+                    },
+                    'absolute bottom-0 left-0 w-full h-[2px] transform origin-bottom-right transition-transform duration-200 ease-out',
+                    $route.path !== '/'
+                      ? 'group-hover:scale-x-100 group-hover:origin-bottom-left'
+                      : '',
                   ]"
                 ></span>
               </NuxtLink>
@@ -105,7 +120,9 @@
               <NuxtLink
                 to="/projects"
                 :class="[
-                  isScrolled || isScrolledY || isHeroWhite ? 'text-black' : 'text-white',
+                  isScrolled || isScrolledY || isHeroWhite
+                    ? 'text-black'
+                    : 'text-white',
                   'relative inline-block group',
                 ]"
                 @click="toggleNavbar"
@@ -113,8 +130,16 @@
                 Projects
                 <span
                   :class="[
-                    isScrolled || isScrolledY || isHeroWhite ? 'bg-black' : 'bg-white',
-                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                    {
+                      'bg-black': isScrolled || isScrolledY || isHeroWhite,
+                      'bg-white': !isScrolled && !isScrolledY && !isHeroWhite,
+                      'scale-x-100': $route.path === '/projects',
+                      'scale-x-0': $route.path !== '/projects',
+                    },
+                    'absolute bottom-0 left-0 w-full h-[2px] transform origin-bottom-right transition-transform duration-200 ease-out',
+                    $route.path !== '/projects'
+                      ? 'group-hover:scale-x-100 group-hover:origin-bottom-left'
+                      : '',
                   ]"
                 ></span>
               </NuxtLink>
@@ -123,7 +148,9 @@
               <NuxtLink
                 to="/services"
                 :class="[
-                  isScrolled || isScrolledY || isHeroWhite ? 'text-black' : 'text-white',
+                  isScrolled || isScrolledY || isHeroWhite
+                    ? 'text-black'
+                    : 'text-white',
                   'relative inline-block group',
                 ]"
                 @click="toggleNavbar"
@@ -131,8 +158,16 @@
                 Services
                 <span
                   :class="[
-                    isScrolled || isScrolledY || isHeroWhite ? 'bg-black' : 'bg-white',
-                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                    {
+                      'bg-black': isScrolled || isScrolledY || isHeroWhite,
+                      'bg-white': !isScrolled && !isScrolledY && !isHeroWhite,
+                      'scale-x-100': $route.path === '/services',
+                      'scale-x-0': $route.path !== '/services',
+                    },
+                    'absolute bottom-0 left-0 w-full h-[2px] transform origin-bottom-right transition-transform duration-200 ease-out',
+                    $route.path !== '/services'
+                      ? 'group-hover:scale-x-100 group-hover:origin-bottom-left'
+                      : '',
                   ]"
                 ></span>
               </NuxtLink>
@@ -141,16 +176,26 @@
               <NuxtLink
                 to="/about"
                 :class="[
-                  isScrolled || isScrolledY || isHeroWhite ? 'text-black' : 'text-white',
+                  isScrolled || isScrolledY || isHeroWhite
+                    ? 'text-black'
+                    : 'text-white',
                   'relative inline-block group',
                 ]"
                 @click="toggleNavbar"
               >
                 About
-                <span
+               <span
                   :class="[
-                    isScrolled || isScrolledY || isHeroWhite ? 'bg-black' : 'bg-white',
-                    'absolute bottom-0 left-0 w-full h-[2px] transform scale-x-0 origin-bottom-right transition-transform duration-200 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left',
+                    {
+                      'bg-black': isScrolled || isScrolledY || isHeroWhite,
+                      'bg-white': !isScrolled && !isScrolledY && !isHeroWhite,
+                      'scale-x-100': $route.path === '/about',
+                      'scale-x-0': $route.path !== '/about',
+                    },
+                    'absolute bottom-0 left-0 w-full h-[2px] transform origin-bottom-right transition-transform duration-200 ease-out',
+                    $route.path !== '/abouts'
+                      ? 'group-hover:scale-x-100 group-hover:origin-bottom-left'
+                      : '',
                   ]"
                 ></span>
               </NuxtLink>
@@ -160,7 +205,9 @@
               id="contact-mobile"
               @click="toggleNavbar"
             >
-              <NuxtLink to="/contact" class="block w-full">Get in Touch</NuxtLink>
+              <NuxtLink to="/contact" class="block w-full"
+                >Get in Touch</NuxtLink
+              >
             </li>
           </ul>
         </div>
@@ -221,7 +268,6 @@ export default {
 </script>
 
 <style scoped>
-
 nav {
   font-family: "Montreal Book", serif;
   transition: background-color 0.3s ease;
