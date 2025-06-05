@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://rioflorido.nuxt.dev/sitemap.xml
