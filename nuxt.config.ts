@@ -42,7 +42,7 @@ export default defineNuxtConfig({
         },
         {
           name: "google-site-verification",
-          content: "bvqs3WO0uSNy_FXnJUya5cJlnTf7kJC0k_nBafABfJ8",
+          content: "UtM88gymKClCh5B4lJ34QvuGKF89piYZM4DQj6ssHzY",
         },
         { name: "robots", content: "index, follow" },
       ],
