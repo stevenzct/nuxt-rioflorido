@@ -17,7 +17,7 @@ export default defineNuxtConfig({
             "Your Dream Home Starts Here, Experienced Civil Engineers Delivering Complete Construction Solutions",
         },
         { property: "og:image", content: "/thumbnail-logo.png" },
-        { property: "og:url", content: "https://rioflorido.nuxt.dev" },
+        { property: "og:url", content: "https://rvriofloridocon.com" },
         { property: "og:type", content: "website" },
         //twitter
         { name: "twitter:title", content: "RV Rioflorido Construction" },
@@ -80,7 +80,7 @@ export default defineNuxtConfig({
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "RV Rioflorido Construction",
-            url: "https://rioflorido.nuxt.dev",
+            url: "https://rvriofloridocon.com",
             sameAs: ["https://www.facebook.com/profile.php?id=100083308930581"],
             contactPoint: {
               "@type": "ContactPoint",
@@ -107,7 +107,7 @@ export default defineNuxtConfig({
     [
       "@nuxtjs/sitemap",
       {
-        hostname: "https://rioflorido.nuxt.dev",
+        hostname: "https://rvriofloridocon.com",
         gzip: true,
         trailingSlash: true,
       },
@@ -130,7 +130,7 @@ export default defineNuxtConfig({
       emailjsServiceId: process.env.EMAILJS_SERVICE_ID, // public, server-only
       emailjsTemplateId: process.env.EMAILJS_TEMPLATE_ID, // public, server-only
       emailjsUserId: process.env.EMAILJS_USER_ID, // public, server-only
-      siteUrl: "https://rioflorido.nuxt.dev", //site url
+      siteUrl: "https://rvriofloridocon.com", //site url
     },
   },
   nitro: {

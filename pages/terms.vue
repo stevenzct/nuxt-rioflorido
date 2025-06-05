@@ -43,7 +43,7 @@ import AppHeader from "~/components/AppHeader.vue";
 const privacyPolicy = {
   title: "Terms of Service",
   introduction: [
-    'Welcome to RV Rioflorido ("we," "our," or "us"). By accessing or using our website, www.RVRioflorido.com, you agree to comply with these Terms of Service. If you do not agree, please refrain from using our website and services.',
+    'Welcome to RV Rioflorido ("we," "our," or "us"). By accessing or using our website, www.rvriofloridocon.com, you agree to comply with these Terms of Service. If you do not agree, please refrain from using our website and services.',
   ],
   sections: [
     {
