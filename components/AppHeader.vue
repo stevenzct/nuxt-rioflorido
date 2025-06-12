@@ -184,16 +184,22 @@
                 @click="toggleNavbar"
               >
                 About
-               <span
+                <span
                   :class="[
                     {
                       'bg-black': isScrolled || isScrolledY || isHeroWhite,
-                      'bg-white': !isScrolled && !isScrolledY && !isHeroWhite,
                       'scale-x-100': $route.path === '/about',
                       'scale-x-0': $route.path !== '/about',
                     },
+                    // Responsive span colour when NOT SCROLLED and route is active
+                    !isScrolled &&
+                    !isScrolledY &&
+                    !isHeroWhite &&
+                    $route.path === '/about'
+                      ? 'bg-black md:bg-white'
+                      : '',
                     'absolute bottom-0 left-0 w-full h-[2px] transform origin-bottom-right transition-transform duration-200 ease-out',
-                    $route.path !== '/abouts'
+                    $route.path !== '/about'
                       ? 'group-hover:scale-x-100 group-hover:origin-bottom-left'
                       : '',
                   ]"
@@ -297,6 +303,7 @@ nav {
     width: 100%;
     text-align: center;
     height: 60px;
+    margin-top: 16px;
   }
 
   ul {
