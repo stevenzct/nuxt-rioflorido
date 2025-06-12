@@ -9,7 +9,7 @@
         <div class="w-full">
           <div class="max-w-screen-2xl mx-auto px-4 py-8">
             <h1
-              class="text-white text-3xl md:text-7xl lg:text-8xl  font-neue-montreal font-bold"
+              class="text-white text-4xl md:text-7xl lg:text-8xl  font-neue-montreal font-bold"
             >
               Design, Build, Construct
             </h1>
