@@ -100,6 +100,7 @@
 
         <div class="max-w-screen-2xl px-4 mx-auto">
           <swiper
+            :key="project?.id"
             :slidesPerView="3"
             :spaceBetween="32"
             :navigation="{
@@ -114,7 +115,7 @@
             class="mySwiper"
           >
             <!-- swiper slide 1 -->
-            <swiper-slide v-for="p in projectData" :key="p.id">
+            <swiper-slide v-for="p in suggestedProjects" :key="p.id">
               <ProjectCard :project="p" />
             </swiper-slide>
           </swiper>
@@ -172,7 +173,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch, nextTick } from "vue";
+import { computed, ref, onMounted, watch, nextTick } from "vue";
 import BaguetteBox from "baguettebox.js";
 import "baguettebox.js/dist/baguetteBox.min.css";
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -182,7 +183,24 @@ import { Navigation } from "swiper/modules";
 const { project } = defineProps(["project"]);
 const imagesSection = ref(null);
 
-const projectData = ref({});
+const projectData = ref([]);
+
+const suggestedProjects = computed(() => {
+  if (!Array.isArray(projectData.value) || !project?.id) {
+    return [];
+  }
+
+  const currentProjectIndex = projectData.value.findIndex((p) => p.id === project.id);
+
+  if (currentProjectIndex === -1) {
+    return projectData.value.filter((p) => p.id !== project.id);
+  }
+
+  return [
+    ...projectData.value.slice(currentProjectIndex + 1),
+    ...projectData.value.slice(0, currentProjectIndex + 1),
+  ];
+});
 
 // Function to scroll to the gallery section
 const scrollToImages = () => {
@@ -229,7 +247,7 @@ const getProjects = async () =>{
 
   const { data } = await useFetch('/api/projects');
 
-  return projectData.value = data.value
+  projectData.value = Array.isArray(data.value) ? data.value : [];
 
 }
 
