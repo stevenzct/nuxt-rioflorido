@@ -373,7 +373,7 @@
 
               <AdminProjectImageDropzone
                 v-model="projectForm.hero"
-                label="Hero Image"
+                label="Cover Image"
                 :has-error="formErrors.hero"
                 @file-selected="handleSingleImageUpload($event, 'hero')"
                 @clear="clearSingleImage('hero')"
@@ -384,7 +384,7 @@
               class="grid gap-2 text-sm text-red-700 md:grid-cols-2"
             >
               <p v-if="formErrors.image">Card / Thumbnail Image is required.</p>
-              <p v-if="formErrors.hero">Hero Image is required.</p>
+              <p v-if="formErrors.hero">Cover Image is required.</p>
             </div>
 
             <AdminProjectGalleryUploader
@@ -641,7 +641,7 @@ const validateProjectForm = (payload) => {
       label: "Card / Thumbnail Image",
       isValid: Boolean(payload.image.trim()),
     },
-    { key: "hero", label: "Hero Image", isValid: Boolean(payload.hero.trim()) },
+    { key: "hero", label: "Cover Image", isValid: Boolean(payload.hero.trim()) },
     {
       key: "gallery",
       label: "Gallery Images",
