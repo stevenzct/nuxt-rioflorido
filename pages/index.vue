@@ -239,7 +239,7 @@
 
 
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import { Navigation } from 'swiper/modules'
@@ -248,8 +248,13 @@ import ProjectCard from '~/components/ProjectCard.vue'
 // references
 const projectsSection = ref(null)
 
-// fetch projects data
-const { data: projects } = await useFetch('/api/projects')
+// fetch project summaries without blocking route navigation
+const { data: projectSummaries } = await useLazyFetch('/api/projects?summary=1', {
+  default: () => [],
+  key: 'project-summaries',
+})
+
+const projects = computed(() => projectSummaries.value || [])
 
 // scroll to projects section method
 const scrollToProjects = () => {

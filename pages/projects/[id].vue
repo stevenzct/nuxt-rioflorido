@@ -1,20 +1,34 @@
 <template>
   <div>
-    <Head>
-        <Title> Projects | {{ project.address }} </Title>
-        <Meta name="description" :content="project.details"/>
-    </Head>
-    <!-- <AppHeader /> -->
-    <!-- <p v-if="project">ID: {{ project.id }}</p>
-    <p v-if="project">Address: {{ project.address }}</p>
-    <p v-if="project">Client: {{ project.client }}</p>
-    <p v-if="project">Details: {{ project.details }}</p>
-    <img v-if="project" :src="project.image" alt="Project Image">
-    <p v-else>Loading...</p> -->
+    <ProjectDetails v-if="project" :project="project" />
 
-    <ProjectDetails :project="project" />
-    <!-- <AppFooter /> -->
-    <!-- This will render the footer component -->
+    <section
+      v-else-if="pending"
+      class="flex min-h-screen items-center justify-center bg-[#f5f9fc] px-4 pt-24"
+    >
+      <div class="w-full max-w-screen-2xl">
+        <div class="h-[60vh] animate-pulse rounded-lg bg-gray-200"></div>
+        <div class="mt-8 grid gap-4 md:grid-cols-4">
+          <div
+            v-for="item in 4"
+            :key="item"
+            class="h-60 animate-pulse rounded-lg bg-gray-200"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      v-else
+      class="flex min-h-screen items-center justify-center bg-[#f5f9fc] px-4 text-center"
+    >
+      <div>
+        <h1 class="text-3xl font-bold text-gray-950">Project unavailable</h1>
+        <p class="mt-3 text-gray-600">
+          We could not load this project right now.
+        </p>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -24,30 +38,76 @@
 // import AppHeader from "~/components/AppHeader.vue";
 
 const { id } = useRoute().params;
+const projectId = String(id || "");
+const { getProjectDetail, isProjectDetailComplete, prefetchProjectDetail } =
+  useProjectDetailCache();
 
 
 // Fetch the project
-const { data: project } = await useFetch(`/api/projects/${id}`, { key: id });
+const { data: project, pending, error } = useLazyAsyncData(
+  `project-detail-${projectId}`,
+  async () => {
+    const cachedProject = getProjectDetail(projectId);
 
-if (!project.value) {
+    if (isProjectDetailComplete(cachedProject)) {
+      return cachedProject;
+    }
+
+    return await prefetchProjectDetail(projectId);
+  },
+  {
+    default: () => getProjectDetail(projectId),
+    getCachedData: () => {
+      const cachedProject = getProjectDetail(projectId);
+
+      return isProjectDetailComplete(cachedProject) ? cachedProject : null;
+    },
+  }
+);
+
+if (error.value) {
   throw createError({
-    statusCode: 404,
-    statusMessage: "Project not found",
+    statusCode: error.value.statusCode || 404,
+    statusMessage: error.value.statusMessage || "Project not found",
     fatal: true,
   });
 }
-onMounted(() => {
-  // console.log(project.value, "test");
-});
 useSeoMeta({
-  description: project.value.details + " (" + project.value.client + ")",
-  ogDescription: project.value.details + " (" + project.value.client + ")",
-  ogImage: project.value.image || "/default.jpg",
-  twitterDescription: project.value.details + " (" + project.value.client + ")",
-  twitterImage: project.value.image || "/default.jpg",
-  title: project.value.address + " - " + "RV Rioflorido Construction",
-  ogTitle: project.value.address + " - " + "RV Rioflorido Construction",
+  description: () =>
+    project.value
+      ? `${project.value.details || ""} (${project.value.client || ""})`
+      : "Project details from RV Rioflorido Construction",
+  ogDescription: () =>
+    project.value
+      ? `${project.value.details || ""} (${project.value.client || ""})`
+      : "Project details from RV Rioflorido Construction",
+  ogImage: () => project.value?.image || "/default.jpg",
+  twitterDescription: () =>
+    project.value
+      ? `${project.value.details || ""} (${project.value.client || ""})`
+      : "Project details from RV Rioflorido Construction",
+  twitterImage: () => project.value?.image || "/default.jpg",
+  title: () =>
+    project.value?.address
+      ? `${project.value.address} - RV Rioflorido Construction`
+      : "Projects - RV Rioflorido Construction",
+  ogTitle: () =>
+    project.value?.address
+      ? `${project.value.address} - RV Rioflorido Construction`
+      : "Projects - RV Rioflorido Construction",
 });
+
+useHead(() => ({
+  link: project.value?.hero
+    ? [
+        {
+          rel: "preload",
+          as: "image",
+          href: project.value.hero,
+        },
+      ]
+    : [],
+}));
 </script>
 
 <style scoped></style>

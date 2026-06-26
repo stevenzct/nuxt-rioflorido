@@ -69,10 +69,6 @@ export default defineNuxtConfig({
         },
       ],
       script: [
-        {
-          src: "https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js",
-          type: "text/javascript",
-        },
         //JSON-LD Schema Markup
         {
           type: "application/ld+json",
@@ -90,12 +86,6 @@ export default defineNuxtConfig({
               availableLanguage: ["English", "Filipino"],
             },
           }),
-        },
-        //Google reCAPTCHA
-        {
-          src: "https://www.google.com/recaptcha/api.js",
-          async: true,
-          defer: true,
         },
       ],
     },
@@ -120,16 +110,26 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
   },
-  plugins: [
-    // Registering the baguettebox plugin
-    "~/plugins/baguettebox.js",
-  ],
   runtimeConfig: {
     apiBaseUrl: process.env.API_BASE_URL, // This is private, server-only
+    supabaseUrl: process.env.SUPABASE_URL,
+    supabaseRestUrl: process.env.SUPABASE_REST_URL,
+    supabaseAnonKey: process.env.SUPABASE_ANON_KEY,
+    supabaseServiceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY,
+    supabaseStorageBucket: process.env.SUPABASE_STORAGE_BUCKET || "project-images",
+    supabaseProjectGalleryTable:
+      process.env.SUPABASE_PROJECT_GALLERY_TABLE || "projects_gallery",
+    supabaseProjectGalleryImageColumn:
+      process.env.SUPABASE_PROJECT_GALLERY_IMAGE_COLUMN || "image",
+    supabaseProjectGalleryProjectColumn:
+      process.env.SUPABASE_PROJECT_GALLERY_PROJECT_COLUMN || "project_id",
     public: {
       emailjsServiceId: process.env.EMAILJS_SERVICE_ID, // public, server-only
       emailjsTemplateId: process.env.EMAILJS_TEMPLATE_ID, // public, server-only
       emailjsUserId: process.env.EMAILJS_USER_ID, // public, server-only
+      supabaseUrl: process.env.SUPABASE_URL,
+      supabaseAnonKey: process.env.SUPABASE_ANON_KEY,
+      supabaseStorageBucket: process.env.SUPABASE_STORAGE_BUCKET || "project-images",
       siteUrl: "https://rvriofloridocon.com", //site url
     },
   },
@@ -144,8 +144,8 @@ export default defineNuxtConfig({
                 script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://cdn.emailjs.com;
                 style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
                 font-src 'self' https://fonts.gstatic.com data:;
-                img-src 'self' data:;
-                connect-src 'self' https://api.emailjs.com https://www.google.com https://www.gstatic.com;
+                img-src 'self' data: blob: https://fpliklctirtcuvswpuox.supabase.co;
+                connect-src 'self' https://api.emailjs.com https://www.google.com https://www.gstatic.com https://fpliklctirtcuvswpuox.supabase.co;
                 frame-src https://www.google.com https://www.gstatic.com;
                 object-src 'none';
                 base-uri 'self';

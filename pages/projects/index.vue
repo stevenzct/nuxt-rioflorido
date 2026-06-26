@@ -29,8 +29,11 @@
 </template>
 
 <script setup>
-// Fetch the projects
-const { data: projects } = await useFetch('/api/projects');
+// Fetch lightweight project summaries without blocking client-side navigation.
+const { data: projects } = await useLazyFetch('/api/projects?summary=1', {
+  default: () => [],
+  key: 'project-summaries',
+});
 // console.log(projects);
 useHead({
   title: 'Projects | RV Rioflorido',
