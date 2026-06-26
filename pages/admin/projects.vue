@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-[#f5f9fc] text-gray-950">
     <AppHeader :isHeroWhite="true" />
 
-    <main class="mx-auto max-w-screen-2xl px-4 pb-16 pt-28 lg:pt-32">
+    <main class="mx-auto max-w-screen-2xl px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 pb-16 pt-28 lg:pt-32">
       <section class="grid gap-6 lg:grid-cols-[320px_1fr]">
         <aside class="h-fit rounded-lg border border-gray-200 bg-white p-4 shadow-sm lg:sticky lg:top-28">
           <div class="flex items-center justify-between border-b border-gray-200 pb-4">

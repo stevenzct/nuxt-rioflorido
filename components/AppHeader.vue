@@ -8,7 +8,7 @@
       ref="nav"
     >
       <div
-        class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4"
+        class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-4 py-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12"
       >
         <NuxtLink
           to="/"

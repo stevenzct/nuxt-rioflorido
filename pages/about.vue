@@ -7,7 +7,7 @@
         id="container-text"
       >
         <div class="w-full">
-          <div class="max-w-screen-2xl mx-auto px-4 py-8">
+          <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8">
             <h1
               class="tracking-wide text-white text-4xl md:text-7xl font-neue-montreal font-bold leading-[100%] lg:leading-[94%]"
             >
@@ -20,7 +20,7 @@
 
         <div class="w-full">
           <div
-            class="max-w-screen-2xl mx-auto px-4 py-8 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between"
+            class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between"
           >
             <p
               class="font-neue-montreal font-normal text-white pb-2 w-auto md:w-[706px] text-[20px] md:text-[24px]"
@@ -44,7 +44,7 @@
     <!-- about section -->
     <section id="about-section" ref="aboutSection" class="h-auto bg-white">
       <div class="h-full w-full">
-        <div class="max-w-screen-2xl mx-auto px-4 py-16 lg:py-32 w-full">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-16 lg:py-32 w-full">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20">
             <div class="">
               <img

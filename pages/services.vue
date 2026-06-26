@@ -6,7 +6,7 @@
       <div class="h-auto w-full pt-20 md:pt-36" id="container-text">
         <div class="w-full">
           <div
-            class="max-w-screen-2xl mx-auto px-4 py-8 md:pb-32 pb-16 grid grid-cols-1 lg:grid-cols-2 lg:justify-items-end"
+            class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 md:pb-32 pb-16 grid grid-cols-1 lg:grid-cols-2 lg:justify-items-end"
           >
             <div class="pb-8">
               <h1
@@ -63,7 +63,7 @@
     <!-- Add 'gallery' class to enable BaguetteBox -->
     <section id="services-section" ref="servicesSection" class="bg-[#F5F9FC]">
       <div class="h-auto w-full py-16 lg:py-32">
-        <div class="max-w-screen-2xl mx-auto px-4">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
           <h1
             class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900"
           >
@@ -78,7 +78,7 @@
           </p>
         </div>
 
-        <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="gallery max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -104,7 +104,7 @@
           </swiper>
         </div>
 
-        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4">
+        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
           <div class="flex justify-end gap-2">
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center construction-prev"
@@ -153,7 +153,7 @@
         </div>
 
         <!-- design plans signed and seal -->
-        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-32">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 pt-8 lg:pt-32">
           <h1
             class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900"
           >
@@ -166,7 +166,7 @@
           </p>
         </div>
 
-        <div class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 lg:pt-16">
           <div class="gallery max-w-full bg-white rounded-lg">
             <a href="/images/services/design-plans/design1.webp">
               <img
@@ -179,7 +179,7 @@
         </div>
 
         <!-- glass and aluminum works -->
-        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-32">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 pt-8 lg:pt-32">
           <h1
             class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900"
           >
@@ -194,7 +194,7 @@
         </div>
 
         <!-- swiper goes here -->
-        <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="gallery max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -218,7 +218,7 @@
         </div>
 
         <!-- button swiper -->
-        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4">
+        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
           <div class="flex justify-end gap-2">
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center glass-prev"
@@ -267,7 +267,7 @@
         </div>
 
         <!-- windows -->
-        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-32">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 pt-8 lg:pt-32">
           <div class="grid grid-cols-1 lg:grid-cols-2 lg:flex justify-between">
             <div>
               <h1
@@ -299,7 +299,7 @@
 
         <!--image for aluminum series -->
         <div
-          class="max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16 flex justify-center"
+          class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 lg:pt-16 flex justify-center"
         >
           <div class="gallery w-auto rounded-lg">
             <a href="/images/services/aluminum-series/aluminum-series.webp">
@@ -313,7 +313,7 @@
         </div>
 
         <!-- Railings, Fencing and Gate-->
-        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 pt-8 lg:pt-16">
           <h1
             class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900"
           >
@@ -328,7 +328,7 @@
         </div>
 
         <!-- swiper goes here -->
-        <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="gallery max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 lg:pt-16">
       <swiper
         :slidesPerView="1"
         :spaceBetween="20"
@@ -349,7 +349,7 @@
     </div>
 
         <!-- button swiper -->
-        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4">
+        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
           <div class="flex justify-end gap-2">
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center railings-prev"
@@ -398,7 +398,7 @@
         </div>
 
         <!-- cabinets -->
-        <div class="max-w-screen-2xl mx-auto px-4 pt-8 lg:pt-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 pt-8 lg:pt-16">
           <h1
             class="font-neue-montreal font-bold text-4xl md:text-7xl text-gray-900"
           >
@@ -413,7 +413,7 @@
         </div>
 
         <!-- swiper goes here -->
-        <div class="gallery max-w-screen-2xl mx-auto px-4 py-8 lg:pt-16">
+        <div class="gallery max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 lg:pt-16">
           <swiper
             :slidesPerView="1"
             :spaceBetween="20"
@@ -434,7 +434,7 @@
         </div>
 
         <!-- button swiper -->
-        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 lg:hidden">
+        <div class="max-w-screen-2xl mx-auto py-2 lg:py-8 px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 lg:hidden">
           <div class="flex justify-end gap-2">
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center cabinet-prev"

@@ -3,9 +3,9 @@
     <!-- footer -->
     <footer class="h-full md:h-96 bg-[#252324]">
       <div
-        class="grid lg:grid-cols-3 grid-cols-1 justify-between max-w-screen-2xl mx-auto py-8 md:py-0 lg:py-8"
+        class="grid lg:grid-cols-3 grid-cols-1 justify-between max-w-screen-2xl mx-auto px-4 py-8 md:px-6 md:py-0 lg:px-8 lg:py-8 xl:px-10 2xl:px-12"
       >
-        <div class="px-4 bg-[#252324] w-auto py-4">
+        <div class="bg-[#252324] w-auto py-4">
           <!-- image logo -->
           <NuxtLink
             to="/"
@@ -116,7 +116,7 @@
         </div>
 
         <div
-          class="block lg:flex flex-col justify-center items-center px-4 py-auto lg:py-4 bg-[#252324]"
+          class="block lg:flex flex-col justify-center items-center py-auto lg:py-4 bg-[#252324]"
         >
           <div class="text-start">
             <h3>
@@ -188,7 +188,7 @@
         </div>
 
         <div
-          class="block lg:flex justify-start items-end flex-col px-4 py-4 lg:py-0 bg-[#252324]"
+          class="block lg:flex justify-start items-end flex-col py-4 lg:py-0 bg-[#252324]"
         >
           <div class="pb-4 lg:pb-0">
             <NuxtLink to="/contact" class="w-full">
