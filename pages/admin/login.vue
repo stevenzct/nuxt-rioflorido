@@ -108,9 +108,9 @@
           </div>
 
           <div class="mt-4 rounded-lg border border-gray-200 bg-white p-4 text-sm leading-6 text-gray-600">
-            <p class="font-bold text-gray-950">Security setup checklist</p>
+            <p class="font-bold text-gray-950">Security Note</p>
             <p class="mt-2">
-              Keep admin writes behind Supabase RLS policies, restrict allowed Google accounts, and never expose the service role key in browser code.
+              Only authorized admins with valid credentials can access and manage this system.
             </p>
           </div>
         </div>
