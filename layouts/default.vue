@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AppHeader/>
+    <AppHeader :isHeroWhite="usesDarkNavigation" />
 
       <slot />
       
@@ -10,10 +10,11 @@
 </template>
 
 <script setup>
-import { useRoute, useRuntimeConfig, useHead, watch } from '#imports'
+import { computed, useRoute, useRuntimeConfig, useHead, watch } from '#imports'
 
 const route = useRoute()
 const config = useRuntimeConfig()
+const usesDarkNavigation = computed(() => route.path === '/aluminum-series')
 
 const updateHead = () => {
   const canonical = config.public.siteUrl + route.path

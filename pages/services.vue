@@ -2,15 +2,22 @@
   <div>
     <AppHeader :isHeroWhite="true" />
     <!-- hero section  -->
-    <section id="hero-section" class="bg-white">
-      <div class="h-auto w-full pt-20 md:pt-36" id="container-text">
+    <section id="hero-section" class="relative overflow-hidden bg-[#f5f9fc]">
+      <div class="absolute inset-x-0 top-0 h-24 bg-white"></div>
+      <div class="relative h-auto w-full pt-24 md:pt-36 lg:pt-40" id="container-text">
         <div class="w-full">
           <div
-            class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 md:pb-32 pb-16 grid grid-cols-1 lg:grid-cols-2 lg:justify-items-end"
+            class="mx-auto grid max-w-screen-2xl grid-cols-1 gap-10 px-4 pb-16 pt-10 md:px-6 md:pb-24 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-16 lg:px-8 lg:pb-32 xl:px-10 2xl:px-12"
           >
-            <div class="pb-8">
+            <div class="max-w-3xl">
+              <div
+                class="mb-6 inline-flex items-center gap-3 rounded-[4px] border border-gray-200 bg-white px-4 py-3 text-sm font-bold uppercase tracking-wide text-gray-700 shadow-sm"
+              >
+                <span class="material-icons text-[20px] text-gray-950">engineering</span>
+                Professional Construction Services
+              </div>
               <h1
-                class=" text-black text-4xl md:text-7xl pb-4 md:pb-6 font-neue-montreal font-bold leading-[100%] lg:leading-[94%]"
+                class="font-neue-montreal text-4xl font-bold leading-[105%] text-gray-950 md:text-6xl lg:text-7xl lg:leading-[96%]"
               >
                 Build with Confidence, Backed by Professionals
               </h1>
@@ -28,30 +35,32 @@
               </div> -->
               <div>
                 <p
-                  class="font-neue-montreal font-bold text-gray-900 w-auto text-[20px] md:text-[32px]"
+                  class="mt-6 max-w-2xl font-neue-montreal text-[20px] font-normal leading-8 text-gray-700 md:text-[28px] md:leading-10"
                 >
                   Our Team manages Everything: Design, Documentation, Construction, and Finishing Touches—Bringing Clarity and Craft to Every Step.
                 </p>
               </div>
 
-              <div>
-              <NuxtLink to="#services-section">
-                <button
-                  type="button"
-                  id="view-services"
-                  class="text-gray-900 font-neue-montreal font-bold h-[55px] rounded-[4px] text-[16px] md:w-[200px] bg-white border border-gray-400 px-8 my-3 md:my-6 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
-                >
-                  View our Services
-                </button>
-              </NuxtLink>
-            </div>
+              <div class="mt-8 flex">
+                <NuxtLink to="#services-section">
+                  <button
+                    type="button"
+                    id="view-services"
+                    class="inline-flex h-[55px] w-full items-center justify-center rounded-[4px] bg-gray-950 px-8 font-neue-montreal text-[16px] font-bold text-white transition ease-out duration-300 hover:bg-gray-800 sm:w-auto md:w-[200px]"
+                  >
+                    View our Services
+                  </button>
+                </NuxtLink>
+              </div>
             </div>
 
-            <div>
+            <div class="relative">
+              <div class="absolute -left-4 top-8 hidden h-24 w-24 border-l border-t border-gray-300 lg:block"></div>
+              <div class="absolute -bottom-4 -right-4 hidden h-24 w-24 border-b border-r border-gray-300 lg:block"></div>
               <img
-                class="rounded-lg w-full"
+                class="aspect-[4/3] w-full rounded-[4px] object-cover shadow-xl"
                 src="/images/services/image-1.webp"
-                alt=""
+                alt="Construction service project"
               />
             </div>
           </div>

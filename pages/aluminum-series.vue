@@ -1,36 +1,47 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section id="projects-hero" class="h-[300px] lg:h-[494px]">
-      <div class="h-full w-full flex flex-col justify-end">
-        <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 w-full">
-          <div class="text-left">
+    <section id="projects-hero" class="relative min-h-[340px] overflow-hidden lg:min-h-[520px]">
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/45"></div>
+      <div class="relative flex min-h-[340px] w-full flex-col justify-end lg:min-h-[520px]">
+        <div class="mx-auto w-full max-w-screen-2xl px-4 py-10 md:px-6 lg:px-8 lg:py-16 xl:px-10 2xl:px-12">
+          <div class="max-w-4xl text-left">
+            <div
+              class="mb-5 inline-flex items-center gap-3 rounded-[4px] border border-gray-200 bg-white/90 px-4 py-3 font-neue-montreal text-sm font-bold uppercase tracking-wide text-gray-700 shadow-sm backdrop-blur"
+            >
+              <span class="material-icons text-[20px] text-gray-950">window</span>
+              Glass and Aluminum Systems
+            </div>
             <h1
-              class="lg:py-8 text-black text-4xl md:text-7xl lg:text-8xl font-neue-montreal font-bold"
+              class="font-neue-montreal text-4xl font-bold leading-[100%] text-gray-950 md:text-7xl lg:text-8xl"
             >
               Aluminum Series
             </h1>
+            <p class="mt-5 max-w-2xl font-neue-montreal text-lg leading-7 text-gray-700 md:text-2xl md:leading-9">
+              Browse window, door, and screen configurations built for clean finishes, reliable function, and modern construction needs.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Windows Section -->
-    <section class="h-auto">
+    <section class="h-auto bg-[#F5F9FC]">
       <div class="h-full w-full">
-        <div class="max-w-screen-2xl px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 mx-auto py-10 lg:py-16">
+        <div class="mx-auto max-w-screen-2xl px-4 py-10 md:px-6 lg:px-8 lg:py-16 xl:px-10 2xl:px-12">
           <!-- button for small screen, navigation -->
           <div class="w-full">
             <button
               type="button"
               @click="toggleSidebar"
-              class="font-neue-montreal font-bold h-[55px] rounded-[4px] md:hidden text-gray-900 text-[16px] bg-white border border-gray-400 my-4 w-full transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
+              class="my-4 inline-flex h-[55px] w-full items-center justify-center gap-3 rounded-[4px] border border-gray-300 bg-white font-neue-montreal text-[16px] font-bold text-gray-950 shadow-sm transition duration-300 ease-out hover:border-gray-950 hover:bg-gray-950 hover:text-white md:hidden"
             >
+              <span class="material-icons text-[20px]">tune</span>
               Select Series
             </button>
           </div>
 
-          <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="grid gap-8 md:grid-cols-[280px_1fr] lg:grid-cols-[320px_1fr] lg:gap-12">
             <div
               v-if="isSidebarOpen"
               class="md:hidden fixed inset-0 bg-black/50 z-30"
@@ -40,7 +51,7 @@
               <aside
                 id="default-sidebar"
                 ref="sidebar"
-                class="fixed md:sticky top-0 md:top-[100px] left-0 md:left-auto z-40 md:z-20 w-72 lg:w-80 transition-transform duration-300 ease-in-out"
+                class="fixed left-0 top-0 z-40 w-80 max-w-[86vw] transition-transform duration-300 ease-in-out md:sticky md:left-auto md:top-[100px] md:z-20 md:w-full md:max-w-none"
                 :class="{
                   '-translate-x-full md:translate-x-0': !isSidebarOpen,
                   'translate-x-0': isSidebarOpen,
@@ -48,34 +59,39 @@
                 aria-label="Sidebar"
               >
                 <div
-                  class="h-[100vh] lg:h-[90vh] px-3 py-8 overflow-y-auto bg-[#ffffff] dark:bg-gray-800 lg:rounded-md"
+                  class="h-[100vh] overflow-y-auto border-r border-gray-200 bg-white px-4 py-6 shadow-xl md:h-auto md:max-h-[calc(100vh-130px)] md:rounded-[4px] md:border md:shadow-sm"
                 >
                   <div>
-                    <h2
-                      class="ms-5 text-xl py-4 font-semibold whitespace-nowrap dark:text-white"
-                    >
-                      Select Series
-                    </h2>
-                    <hr class="pb-3 w-full" />
+                    <div class="mb-5 flex items-center justify-between gap-4 border-b border-gray-200 pb-5">
+                      <div>
+                        <p class="font-neue-montreal text-xs font-bold uppercase tracking-wide text-gray-500">
+                          Filter catalog
+                        </p>
+                        <h2 class="font-neue-montreal text-xl font-bold text-gray-950">
+                          Select Series
+                        </h2>
+                      </div>
+                      <span class="material-icons flex h-10 w-10 items-center justify-center rounded-[4px] bg-gray-950 text-[21px] text-white">tune</span>
+                    </div>
 
-                    <ul class="space-y-2 font-medium">
+                    <ul class="space-y-3 font-medium">
                       <button class="w-full" @click="resetFilter()">
                         <li>
                           <a
                             href="#"
-                            class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white bg-gray-100 dark:hover:bg-gray-700 group"
+                            class="group flex items-center justify-between rounded-[4px] border border-gray-200 bg-gray-950 px-4 py-3 text-white transition duration-300 ease-out hover:bg-gray-800"
                           >
-                            <span
-                              class="ms-3 font-neue-montreal font-bold text-base tracking-wide"
-                            >
-                              All Series
+                            <span class="flex items-center gap-3">
+                              <span class="material-icons text-[20px]">widgets</span>
+                              <span class="font-neue-montreal text-base font-bold tracking-wide">All Series</span>
                             </span>
+                            <span class="material-icons text-[18px] opacity-80">restart_alt</span>
                           </a>
                         </li>
                       </button>
 
                       <div
-                        v-for="(seriesData, index) in allSeries"
+                        v-for="seriesData in allSeries"
                         :key="seriesData.series.seriesTitle"
                       >
                         <li
@@ -84,12 +100,11 @@
                         >
                           <a
                             href="#"
-                            class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                            class="group flex items-center gap-3 rounded-[4px] border border-gray-200 bg-white px-4 py-3 text-gray-900 transition duration-300 ease-out hover:border-gray-950 hover:shadow-sm"
                             @click="showSeriesData(seriesData)"
                           >
-                            <span
-                              class="ms-3 font-neue-montreal font-bold text-base tracking-wide"
-                            >
+                            <span class="material-icons text-[20px] text-gray-600 group-hover:text-gray-950">{{ getSeriesIcon(seriesData.series.seriesTitle) }}</span>
+                            <span class="font-neue-montreal text-base font-bold tracking-wide">
                               {{ seriesData.series.seriesTitle }}
                             </span>
                           </a>
@@ -101,37 +116,34 @@
                         >
                           <button
                             type="button"
-                            class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                            @click="toggleDropdown(index)"
+                            class="group flex w-full items-center gap-3 rounded-[4px] border border-gray-200 bg-white px-4 py-3 text-base text-gray-900 transition duration-300 ease-out hover:border-gray-950 hover:shadow-sm"
+                            :class="{
+                              'border-gray-950 shadow-sm': seriesData.isDropDownOpen,
+                            }"
+                            @click="toggleDropdown(seriesData)"
                           >
-                            <span
-                              class="font-neue-montreal font-bold text-base tracking-wide flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
-                            >
-                              {{ seriesData.series.seriesTitle }}
+                            <span class="material-icons text-[20px] text-gray-600 group-hover:text-gray-950">{{ getSeriesIcon(seriesData.series.seriesTitle) }}</span>
+                            <span class="flex-1 text-left">
+                              <span class="block font-neue-montreal text-base font-bold tracking-wide text-gray-950">
+                                {{ seriesData.series.seriesTitle }}
+                              </span>
+                              <span class="block font-neue-montreal text-xs font-medium text-gray-500">
+                                {{ seriesData.series.seriesList.length }} options
+                              </span>
                             </span>
-                            <svg
-                              class="w-3 h-3 me-3 transition-transform duration-300 ease-in-out"
+                            <span
+                              class="material-icons text-[22px] text-gray-500 transition-transform duration-300 ease-in-out"
                               :class="{
                                 'rotate-180': seriesData.isDropDownOpen,
                               }"
-                              aria-hidden="true"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 10 6"
                             >
-                              <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="m1 1 4 4 4-4"
-                              ></path>
-                            </svg>
+                              keyboard_arrow_down
+                            </span>
                           </button>
 
                           <ul
                             v-if="seriesData.isDropDownOpen"
-                            class="py-2 space-y-2 transition-all ease-in-out duration-300 transform origin-top"
+                            class="space-y-2 px-2 py-3 transition-all duration-300 ease-in-out transform origin-top"
                             :class="{
                               'opacity-0 translate-y-[-20px]':
                                 !seriesData.isDropDownOpen,
@@ -144,7 +156,7 @@
                               :key="seriesList.id"
                             >
                               <div
-                                class="flex items-start leading-[1] w-full pl-5 p-2 text-gray-700 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                                class="group flex w-full items-start gap-3 rounded-[4px] border border-transparent px-3 py-2.5 leading-[1] text-gray-700 transition duration-300 ease-out hover:border-gray-200 hover:bg-gray-50"
                               >
                                 <input
                                   :id="
@@ -154,14 +166,14 @@
                                   type="checkbox"
                                   :checked="isChecked(seriesList.name)"
                                   @change="toggleFilter(seriesList.name)"
-                                  class="w-4 h-4 text-gray-500 bg-white border-gray-400 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-400 focus:outline-none focus:ring-0 cursor-pointer"
+                                  class="mt-0.5 h-4 w-4 cursor-pointer rounded border-gray-400 bg-white text-gray-950 accent-gray-950 focus:outline-none focus:ring-0"
                                 />
                                 <label
                                   :for="
                                     seriesData.series.seriesTitle +
                                     seriesList.id
                                   "
-                                  class="text-gray-700 font-medium transition duration-75 ms-2 cursor-pointer"
+                                  class="cursor-pointer font-neue-montreal text-sm font-bold leading-snug text-gray-700 transition duration-300 group-hover:text-gray-950"
                                 >
                                   {{ seriesList.name }}
                                 </label>
@@ -177,37 +189,56 @@
             </div>
 
             <!-- Gallery Section -->
-            <div class="lg:col-span-2 gallery">
-              <div v-for="group in groupedNames" :key="group.seriesTitle">
-                <h1
-                  class="font-neue-montreal uppercase font-extrabold text-[24px] md:text-4xl pb-1 leading-[107%] text-gray-900"
-                >
-                  {{ group.seriesTitle }}
-                </h1>
-                <div v-for="name in group.items" :key="name.id">
-                  <h1
-                    class="font-neue-montreal font-bold text-[24px] md:text-4xl pb-1 leading-[107%] text-gray-700"
-                  >
-                    {{ name.name }}
-                  </h1>
-                  <p
-                    class="font-neue-montreal font-normal text-gray-700 w-auto text-[20px] leading-[107%] pb-6 md:text-[24px]"
-                  >
-                    {{ name.subheadline }}
-                  </p>
+            <div class="gallery space-y-12">
+              <div v-for="group in groupedNames" :key="group.seriesTitle" class="space-y-5">
+                <div class="flex items-end justify-between gap-4 border-b border-gray-200 pb-4">
+                  <div>
+                    <p class="font-neue-montreal text-xs font-bold uppercase tracking-wide text-gray-500">
+                      Series group
+                    </p>
+                    <h1
+                      class="font-neue-montreal text-[28px] font-extrabold uppercase leading-[107%] text-gray-950 md:text-5xl"
+                    >
+                      {{ group.seriesTitle }}
+                    </h1>
+                  </div>
+                  <span class="hidden rounded-[4px] bg-white px-3 py-2 font-neue-montreal text-sm font-bold text-gray-600 shadow-sm sm:inline-flex">
+                    {{ group.items.length }} item<span v-if="group.items.length > 1">s</span>
+                  </span>
+                </div>
+
+                <div v-for="name in group.items" :key="name.id" class="rounded-[4px] border border-gray-200 bg-white p-4 shadow-sm md:p-6">
+                  <div class="mb-5 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                    <div>
+                      <h2
+                        class="font-neue-montreal text-[24px] font-bold leading-[107%] text-gray-950 md:text-4xl"
+                      >
+                        {{ name.name }}
+                      </h2>
+                      <p
+                        class="mt-3 max-w-3xl font-neue-montreal text-[18px] font-normal leading-7 text-gray-600 md:text-[22px] md:leading-8"
+                      >
+                        {{ name.subheadline }}
+                      </p>
+                    </div>
+                    <span class="inline-flex w-fit items-center gap-2 rounded-[4px] bg-[#F5F9FC] px-3 py-2 font-neue-montreal text-sm font-bold text-gray-700">
+                      <span class="material-icons text-[18px]">photo_library</span>
+                      {{ name.img.length }} photo<span v-if="name.img.length !== 1">s</span>
+                    </span>
+                  </div>
 
                   <!-- Loop through the images array and display each image -->
-                  <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 pb-12">
+                  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
                     <a
                       v-for="(image, index) in name.img"
                       :key="index + image"
                       :href="image"
-                      class="image-item"
+                      class="image-item group overflow-hidden rounded-[4px] bg-gray-100"
                     >
                       <img
                         :src="image"
                         :alt="`Image ${index + 1} for ${name.name}`"
-                        class="w-full h-60 lg:h-80 object-cover rounded-lg"
+                        class="h-64 w-full rounded-[4px] object-cover transition duration-500 ease-out group-hover:scale-105 lg:h-80"
                       />
                     </a>
                   </div>
@@ -416,6 +447,7 @@ const groupedNames = computed(() => {
 // Reset filter logic
 const resetFilter = () => {
   filterNames.value = [];
+  closeAllDropdowns();
 };
 
 // Toggle filter names
@@ -432,10 +464,29 @@ const isChecked = (name) => {
   return filterNames.value.includes(name);
 };
 
+const getSeriesIcon = (title) => {
+  const normalizedTitle = title.toLowerCase();
+
+  if (normalizedTitle.includes("door")) return "door_sliding";
+  if (normalizedTitle.includes("security") || normalizedTitle.includes("screen")) return "security";
+  if (normalizedTitle.includes("awning")) return "open_in_new";
+  if (normalizedTitle.includes("sliding")) return "view_carousel";
+
+  return "window";
+};
+
+const closeAllDropdowns = () => {
+  allSeries.value.forEach((seriesData) => {
+    seriesData.isDropDownOpen = false;
+  });
+};
+
 // Toggle dropdown visibility
-const toggleDropdown = (index) => {
-  allSeries.value[index].isDropDownOpen =
-    !allSeries.value[index].isDropDownOpen;
+const toggleDropdown = (selectedSeries) => {
+  allSeries.value.forEach((seriesData) => {
+    seriesData.isDropDownOpen =
+      seriesData === selectedSeries ? !seriesData.isDropDownOpen : false;
+  });
 };
 
 // Computed property to filter names
