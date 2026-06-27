@@ -71,7 +71,7 @@
                           Select Series
                         </h2>
                       </div>
-                      <span class="material-icons flex h-10 w-10 items-center justify-center rounded-[4px] bg-gray-950 text-[21px] text-white">tune</span>
+                      <span class="material-icons flex h-10 w-10 items-center justify-center rounded-[4px] bg-gray-950 text-[21px] text-white md:hidden">tune</span>
                     </div>
 
                     <ul class="space-y-3 font-medium">
@@ -223,7 +223,7 @@
                     </div>
                     <span class="inline-flex w-fit items-center gap-2 rounded-[4px] bg-[#F5F9FC] px-3 py-2 font-neue-montreal text-sm font-bold text-gray-700">
                       <span class="material-icons text-[18px]">photo_library</span>
-                      {{ name.img.length }} photo<span v-if="name.img.length !== 1">s</span>
+                      {{ name.img.length }} {{ name.img.length === 1 ? "photo" : "photos" }}
                     </span>
                   </div>
 
@@ -468,7 +468,7 @@ const getSeriesIcon = (title) => {
   const normalizedTitle = title.toLowerCase();
 
   if (normalizedTitle.includes("door")) return "door_sliding";
-  if (normalizedTitle.includes("security") || normalizedTitle.includes("screen")) return "security";
+  if (normalizedTitle.includes("security") || normalizedTitle.includes("screen")) return "grid_on";
   if (normalizedTitle.includes("awning")) return "open_in_new";
   if (normalizedTitle.includes("sliding")) return "view_carousel";
 
