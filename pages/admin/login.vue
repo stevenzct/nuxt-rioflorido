@@ -31,7 +31,7 @@
               <p class="text-sm font-medium text-gray-500">Secure admin login</p>
               <h2 class="mt-2 font-neue-montreal text-3xl font-bold">Sign in</h2>
               <p class="mt-3 text-sm leading-6 text-gray-600">
-                Use Google or email credentials connected to Supabase Auth.
+                Use Google or email credentials connected to database.
               </p>
             </div>
 
@@ -244,7 +244,15 @@ const signInWithEmail = async () => {
     );
 
     if (error) {
-      throw error;
+      const isInvalidCredentials =
+        error?.code === "invalid_credentials" ||
+        String(error?.message || "")
+          .toLowerCase()
+          .includes("invalid login credentials");
+
+      throw isInvalidCredentials
+        ? new Error("Invalid admin credentials.")
+        : error;
     }
 
     setMessage("info", "Checking admin access...");
@@ -253,7 +261,14 @@ const signInWithEmail = async () => {
   } catch (error) {
     await supabase.auth.signOut();
     notifyAdminSignedOut();
-    setMessage("error", error?.message || "Could not sign in. Please try again.");
+    const statusCode =
+      error?.statusCode || error?.status || error?.response?.status;
+    const errorMessage =
+      statusCode === 403
+        ? "Invalid admin credentials."
+        : error?.message || "Could not sign in. Please try again.";
+
+    setMessage("error", errorMessage);
     isLoading.value = false;
   }
 };

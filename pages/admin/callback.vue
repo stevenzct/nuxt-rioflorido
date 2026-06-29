@@ -61,14 +61,29 @@ const verifyAdminSession = async (session) => {
     );
   }
 
-  const admin = await $fetch("/api/admin/me", {
-    headers: {
-      Authorization: `Bearer ${session.access_token}`,
-    },
-  });
+  let admin;
+
+  try {
+    admin = await $fetch("/api/admin/me", {
+      headers: {
+        Authorization: `Bearer ${session.access_token}`,
+      },
+    });
+  } catch (error) {
+    const statusCode =
+      error?.statusCode || error?.status || error?.response?.status;
+
+    if (statusCode === 403) {
+      throw new Error(
+        "This Google account is not authorized for admin access."
+      );
+    }
+
+    throw error;
+  }
 
   if (!admin?.isAdmin) {
-    throw new Error("This Google account is not assigned as an admin.");
+    throw new Error("This Google account is not authorized for admin access.");
   }
 };
 
