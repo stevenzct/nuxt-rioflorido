@@ -9,9 +9,10 @@
     >
       <span class="flex min-w-0 items-center gap-3">
         <span
-          class="material-icons flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-gray-100 text-[18px] text-gray-600"
+          class="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-gray-100 text-gray-600"
+          aria-hidden="true"
         >
-          {{ icon }}
+          <span class="material-icons block text-[18px] leading-none">{{ icon }}</span>
         </span>
         <span class="min-w-0">
           <span class="block truncate font-bold text-gray-950">{{ selectedOption.label }}</span>
