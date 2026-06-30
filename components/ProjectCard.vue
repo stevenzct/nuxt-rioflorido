@@ -5,7 +5,9 @@
         <img
           class="rounded-t-lg w-full h-auto object-cover aspect-[774/718]"
           :src="project.image"
-          alt="project-image-card-rances"
+          :alt="project.address ? `${project.address} project` : 'Project image'"
+          loading="lazy"
+          decoding="async"
         />
       <div class="p-4 md:p-8 pb-12 md:pb-14">
         <div class="inline-flex items-center">
@@ -28,7 +30,15 @@
 
         <div class="flex items-start">
           <p class="my-auto font-neue-montreal font-normal">{{ project.client }}</p>
-          <NuxtLink :to="`/projects/${project.id}`" class="ms-auto">
+          <NuxtLink
+            :to="projectPath"
+            class="ms-auto"
+            prefetch
+            @focus="warmProjectDetail"
+            @pointerenter="warmProjectDetail"
+            @click="warmProjectDetail"
+            @touchstart.passive="warmProjectDetail"
+          >
             <button
               type="button"
               class="font-neue-montreal font-bold rounded-[4px] text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
@@ -44,7 +54,23 @@
 </template>
 
 <script setup>
-const { project } = defineProps(['project']);
+import { computed } from "vue";
+
+const { project } = defineProps(["project"]);
+const { prefetchProjectDetail, setProjectSummary } = useProjectDetailCache();
+
+const projectPath = computed(() => `/projects/${project.id}`);
+
+setProjectSummary(project.id, project);
+
+const warmProjectDetail = () => {
+  if (!project?.id) {
+    return;
+  }
+
+  preloadRouteComponents(projectPath.value);
+  prefetchProjectDetail(project.id);
+};
 </script>
 
 <style scoped></style>

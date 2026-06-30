@@ -7,9 +7,9 @@
         id="container-text"
       >
         <div class="w-full">
-          <div class="max-w-screen-2xl mx-auto px-4 py-8">
+          <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8">
             <h1
-              class="text-white text-3xl md:text-7xl lg:text-8xl  font-neue-montreal font-bold"
+              class="text-white text-4xl md:text-7xl lg:text-8xl  font-neue-montreal font-bold"
             >
               Design, Build, Construct
             </h1>
@@ -20,7 +20,7 @@
 
         <div class="w-full">
           <div
-            class="max-w-screen-2xl mx-auto px-4 py-8 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between"
+            class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between"
           >
             <p
               class="font-neue-montreal font-normal text-white pb-2 w-auto md:w-[706px] text-[20px] md:text-[24px]"
@@ -46,7 +46,7 @@
         class="h-96 md:h-full w-full flex items-center justify-center"
         id="container-intro"
       >
-        <div class="max-w-screen-2xl mx-auto px-4">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
           <h1
             class="font-neue-montreal font-bold leading-[137%] indent-0 md:indent-[200px] text-gray-900 text-start text-[24px] md:text-[48px]"
             id="intro-text"
@@ -61,7 +61,7 @@
     <section id="projects-section" ref="projectsSection"  class="h-auto">
       <div class="h-full w-full py-8 lg:py-16 ">
         <div
-          class="max-w-screen-2xl mx-auto px-4 py-4 pt-10 md:py-16 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between"
+          class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-4 pt-10 md:py-16 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between"
         >
           <h1
             class="font-neue-montreal font-bold leading-[137%] text-4xl md:text-7xl text-gray-900"
@@ -81,7 +81,7 @@
         </div>
 
         <div
-          class="max-w-screen-2xl px-4 mx-auto "
+          class="max-w-screen-2xl px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 mx-auto "
         >
           <swiper
             :slidesPerView="3"
@@ -103,7 +103,7 @@
             </swiper-slide>
           </swiper>
         </div>
-        <div class="max-w-screen-2xl mx-auto py-4 md:py-12 px-4">
+        <div class="max-w-screen-2xl mx-auto py-4 md:py-12 px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
           <div class="flex justify-end gap-2">
             <button
               class="text-black bg-white font-medium rounded-full text-lg p-4 text-center inline-flex items-center prev-project"
@@ -156,7 +156,7 @@
     <!-- about us -->
     <section id="about-us" class="">
       <div class="h-full w-full">
-        <div class="max-w-screen-2xl mx-auto px-4  pt-10 py-16">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 pt-10 py-16">
           <h1
             class="font-neue-montreal font-bold text-4xl md:text-7xl py-4 lg:py-16 text-gray-900 leading-[150%] tracking-wide"
           >
@@ -206,7 +206,7 @@
       <div
         class="h-96 md:h-full w-full flex flex-col justify-center items-start"
       >
-        <div class="max-w-screen-2xl mx-auto px-4  py-16 ">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-16 ">
           <h1
             class="font-neue-montreal font-bold text-4xl md:text-7xl text-start py-0  text-gray-900  tracking-wide"
           >
@@ -239,7 +239,7 @@
 
 
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import { Navigation } from 'swiper/modules'
@@ -248,8 +248,13 @@ import ProjectCard from '~/components/ProjectCard.vue'
 // references
 const projectsSection = ref(null)
 
-// fetch projects data
-const { data: projects } = await useFetch('/api/projects')
+// fetch project summaries without blocking route navigation
+const { data: projectSummaries } = await useLazyFetch('/api/projects?summary=1', {
+  default: () => [],
+  key: 'project-summaries',
+})
+
+const projects = computed(() => projectSummaries.value || [])
 
 // scroll to projects section method
 const scrollToProjects = () => {

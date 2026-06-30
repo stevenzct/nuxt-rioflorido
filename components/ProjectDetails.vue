@@ -65,6 +65,7 @@
             >
               <img
                 loading="lazy"
+                decoding="async"
                 :src="imageObj.image"
                 class="w-full h-60 lg:h-96 object-cover rounded-lg"
                 :alt="'Gallery Image ' + (index + 1)"
@@ -87,7 +88,7 @@
             Our Projects
           </h1>
 
-          <NuxtLink to="/projects">
+          <NuxtLink to="/projects" prefetch>
             <button
               type="button"
               id="explore-projects"
@@ -100,6 +101,7 @@
 
         <div class="max-w-screen-2xl px-4 mx-auto">
           <swiper
+            :key="project?.id"
             :slidesPerView="3"
             :spaceBetween="32"
             :navigation="{
@@ -114,7 +116,7 @@
             class="mySwiper"
           >
             <!-- swiper slide 1 -->
-            <swiper-slide v-for="p in projectData" :key="p.id">
+            <swiper-slide v-for="p in suggestedProjects" :key="p.id">
               <ProjectCard :project="p" />
             </swiper-slide>
           </swiper>
@@ -172,9 +174,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch, nextTick } from "vue";
-import BaguetteBox from "baguettebox.js";
-import "baguettebox.js/dist/baguetteBox.min.css";
+import { computed, ref, onMounted, watch, nextTick } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
@@ -182,7 +182,25 @@ import { Navigation } from "swiper/modules";
 const { project } = defineProps(["project"]);
 const imagesSection = ref(null);
 
-const projectData = ref({});
+const projectData = ref([]);
+const initializedGalleryProjectId = ref("");
+
+const suggestedProjects = computed(() => {
+  if (!Array.isArray(projectData.value) || !project?.id) {
+    return [];
+  }
+
+  const currentProjectIndex = projectData.value.findIndex((p) => p.id === project.id);
+
+  if (currentProjectIndex === -1) {
+    return projectData.value.filter((p) => p.id !== project.id);
+  }
+
+  return [
+    ...projectData.value.slice(currentProjectIndex + 1),
+    ...projectData.value.slice(0, currentProjectIndex),
+  ];
+});
 
 // Function to scroll to the gallery section
 const scrollToImages = () => {
@@ -225,24 +243,29 @@ const breakpoints = {
 };
 
 // Fetch project data
-const getProjects = async () =>{
-
-  const { data } = await useFetch('/api/projects');
-
-  return projectData.value = data.value
-
-}
+const getProjects = async () => {
+  projectData.value = await $fetch("/api/projects?summary=1");
+};
 
 
 
 // Initialize BaguetteBox once the gallery is ready
-const initializeGallery = () => {
-  if (process.client) { // Ensure this only runs in the client-side
-    nextTick(() => {
-      // BaguetteBox depends on the document, which is only available client-side
-      BaguetteBox.run(".gallery");
-    });
+const initializeGallery = async () => {
+  if (!process.client || !project?.id || initializedGalleryProjectId.value === project.id) {
+    return;
   }
+
+  initializedGalleryProjectId.value = project.id;
+
+  const [{ default: BaguetteBox }] = await Promise.all([
+    import("baguettebox.js"),
+    import("baguettebox.js/dist/baguetteBox.min.css"),
+  ]);
+
+  nextTick(() => {
+    // BaguetteBox depends on the document, which is only available client-side.
+    BaguetteBox.run(".gallery");
+  });
 };
 
 // Watch for changes to the gallery (in case project prop updates dynamically)
@@ -258,10 +281,6 @@ watch(
 
 // Also initialize on mount to handle the case when the gallery is loaded at the start
 onMounted(() => {
-  if (process.client && project?.gallery && project.gallery.length > 0) {
-    initializeGallery(); // Initialize gallery after mount
-  }
-
   setTimeout(() => {
     getProjects();
   }, 300);

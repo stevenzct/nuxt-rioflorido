@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rioflorido.nuxt.dev/sitemap.xml
+Sitemap: https://rvriofloridocon.com/sitemap.xml

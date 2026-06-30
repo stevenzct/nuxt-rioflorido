@@ -1,15 +1,21 @@
 <template>
-  <div class="">
+  <div>
     <!-- hero section  -->
-    <section id="hero-section" class="h-screen">
-      <div
-        class="h-full w-full flex flex-col items-end justify-end"
-        id="container-text"
-      >
+    <section id="hero-section" class="relative min-h-screen overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-black/20"></div>
+
+      <div class="relative flex min-h-screen w-full flex-col justify-end">
         <div class="w-full">
-          <div class="max-w-screen-2xl mx-auto px-4 py-8">
+          <div class="mx-auto w-full max-w-screen-2xl px-4 py-8 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div
+              class="mb-6 inline-flex items-center gap-3 rounded-[4px] border border-white/20 bg-white/10 px-4 py-3 font-neue-montreal text-sm font-bold uppercase tracking-wide text-white shadow-sm backdrop-blur"
+            >
+              <span class="material-icons text-[20px]">engineering</span>
+              Engineer-led construction firm
+            </div>
+
             <h1
-              class="tracking-wide text-white text-4xl md:text-7xl font-neue-montreal font-bold leading-[100%] lg:leading-[94%]"
+              class="max-w-6xl font-neue-montreal text-4xl font-bold leading-[100%] tracking-wide text-white md:text-7xl lg:text-8xl lg:leading-[94%]"
             >
               Designed by Engineers, Perfected for you
             </h1>
@@ -20,10 +26,10 @@
 
         <div class="w-full">
           <div
-            class="max-w-screen-2xl mx-auto px-4 py-8 grid lg:grid-cols-2 sm:grid-cols-1 lg:flex justify-between"
+            class="mx-auto grid w-full max-w-screen-2xl gap-6 px-4 py-8 md:px-6 lg:flex lg:items-center lg:justify-between lg:px-8 xl:px-10 2xl:px-12"
           >
             <p
-              class="font-neue-montreal font-normal text-white pb-2 w-auto md:w-[706px] text-[20px] md:text-[24px]"
+              class="max-w-[760px] pb-2 font-neue-montreal text-[20px] font-normal leading-8 text-white/90 md:text-[24px] md:leading-9"
             >
               With a foundation in civil engineering, we construct homes that
               are built to endure and designed to inspire.
@@ -44,7 +50,7 @@
     <!-- about section -->
     <section id="about-section" ref="aboutSection" class="h-auto bg-white">
       <div class="h-full w-full">
-        <div class="max-w-screen-2xl mx-auto px-4 py-16 lg:py-32 w-full">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-16 lg:py-32 w-full">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20">
             <div class="">
               <img

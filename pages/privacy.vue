@@ -56,7 +56,7 @@ const privacyPolicy = {
   title: "Privacy Policy",
   introduction: [
     "At RV Rioflorido, we are committed to protecting your privacy.",
-    "This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website www.RVRioflorido.com and interact with our services. By using our website, you agree to the terms outlined in this policy."
+    "This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website www.rvriofloridocon.com and interact with our services. By using our website, you agree to the terms outlined in this policy."
   ],
   sections: [
     {
