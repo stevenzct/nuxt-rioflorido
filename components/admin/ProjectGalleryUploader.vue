@@ -24,9 +24,10 @@
         @change="handleFileChange"
       />
       <span
-        class="material-icons flex h-14 w-14 items-center justify-center rounded-full bg-white text-[30px] text-gray-500 shadow-sm transition group-hover:text-gray-950"
+        class="flex h-14 w-14 items-center justify-center rounded-full bg-white text-gray-500 shadow-sm transition group-hover:text-gray-950"
+        aria-hidden="true"
       >
-        add_photo_alternate
+        <span class="material-icons block text-[30px] leading-none">add_photo_alternate</span>
       </span>
       <p class="mt-4 text-sm font-bold text-gray-950">Drop gallery photos or browse</p>
       <p class="mt-1 max-w-sm text-xs leading-5 text-gray-500">
