@@ -7,6 +7,7 @@ The app is server-rendered with Nuxt 3. Nuxt/Nitro server routes provide the app
 ## Features
 
 - Responsive public website for projects, services, aluminum products, company information, and contact details
+- GSAP-powered mobile navigation with animated panel expansion and staggered link transitions
 - Supabase-backed project cards, project detail pages, and image galleries
 - Protected project CMS at `/admin/projects`
 - Google OAuth and email/password login through Supabase Auth
@@ -23,7 +24,7 @@ The app is server-rendered with Nuxt 3. Nuxt/Nitro server routes provide the app
 | --- | --- |
 | Application | Nuxt 3, Vue 3, TypeScript/JavaScript |
 | Server | Nitro and H3 server routes |
-| Styling | Tailwind CSS, Flowbite Tailwind plugin, custom PP Neue Montreal fonts |
+| Styling and motion | Tailwind CSS, Flowbite Tailwind plugin, GSAP, custom PP Neue Montreal fonts |
 | Database | Supabase Postgres |
 | Authentication | Supabase Auth: Google OAuth and email/password |
 | Image storage | Supabase Storage |
@@ -90,6 +91,12 @@ Public pages read project data through the local `/api/projects` routes. Admin w
 | `/admin/projects` | Authorized admins | Project CMS |
 
 The root-level `error.vue` is Nuxt's global error boundary and is separate from the `/error` page route.
+
+### Mobile navigation
+
+`components/AppHeader.vue` uses GSAP to animate the mobile menu below the `md` breakpoint. Opening the menu expands and fades in the panel while its links enter with a short stagger. Closing the menu reverses the link motion and collapses the panel before hiding it. The animation also applies when a link is selected or the user clicks outside the header.
+
+The header skips motion when the operating system requests reduced motion, clears GSAP's inline styles after each transition, and resets the mobile state when the viewport returns to desktop width. Route destinations, admin-session links, and desktop navigation behavior remain unchanged.
 
 ## API reference
 
@@ -373,7 +380,8 @@ npm run build
 
 Then manually verify:
 
-- Public navigation and responsive layouts
+- Public navigation and responsive layouts, including mobile menu open, close, link selection, and outside-click behavior
+- Reduced-motion behavior for the mobile menu
 - Project list and project details
 - Admin login and callback
 - Create, update, and delete project flows
@@ -383,6 +391,7 @@ Then manually verify:
 
 ## Important source files
 
+- `components/AppHeader.vue` — responsive navigation, admin-session controls, and GSAP mobile-menu motion
 - `nuxt.config.ts` — runtime configuration, modules, metadata, CSP, and headers
 - `pages/admin/projects.vue` — project CMS and upload orchestration
 - `server/api/projects/index.ts` — project list and create API
