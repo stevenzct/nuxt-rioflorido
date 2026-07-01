@@ -88,6 +88,7 @@
             class="transition ease-in-out delay-150 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-sticky"
             :aria-expanded="isNavbarOpen"
+            :aria-label="isNavbarOpen ? 'Close main menu' : 'Open main menu'"
           >
             <span class="sr-only">Open main menu</span>
             <!-- Hamburger Icon (visible when navbar is closed) -->
@@ -127,6 +128,7 @@
           </button>
         </div>
         <div
+          ref="navbarMenu"
           :class="[
             'items-center justify-between',
             isNavbarOpen ? 'flex' : 'hidden',
@@ -135,6 +137,7 @@
           id="navbar-sticky"
         >
           <ul
+            ref="navbarLinks"
             id="navbar-links"
             class="flex flex-col md:p-0 mt-4 font-neue-montreal font-normal md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
           >
@@ -413,6 +416,7 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
 import { useSupabaseClient } from "~/composables/useSupabaseClient";
 import { notifyAdminSignedOut } from "~/utils/adminAuthEvents";
 
@@ -433,6 +437,7 @@ export default {
       isSigningOut: false,
       isLogoutModalOpen: false,
       adminAuthSubscription: null,
+      navbarTimeline: null,
     };
   },
   computed: {
@@ -452,11 +457,116 @@ export default {
   },
   methods: {
     toggleNavbar() {
-      this.isNavbarOpen = !this.isNavbarOpen;
+      if (this.isNavbarOpen) {
+        this.animateNavbarClose();
+        return;
+      }
+
+      this.isNavbarOpen = true;
+      this.$nextTick(this.animateNavbarOpen);
+    },
+    getMobileNavbarElements() {
+      const menu = this.$refs.navbarMenu;
+      const links = this.$refs.navbarLinks
+        ? Array.from(this.$refs.navbarLinks.children)
+        : [];
+
+      return { menu, links };
+    },
+    shouldAnimateNavbar() {
+      return (
+        window.matchMedia("(max-width: 767px)").matches &&
+        !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      );
+    },
+    clearNavbarAnimationStyles() {
+      const { menu, links } = this.getMobileNavbarElements();
+
+      if (menu) {
+        gsap.set(menu, { clearProps: "height,overflow,opacity,visibility" });
+      }
+
+      if (links.length) {
+        gsap.set(links, { clearProps: "opacity,transform,visibility" });
+      }
+    },
+    animateNavbarOpen() {
+      const { menu, links } = this.getMobileNavbarElements();
+
+      if (!menu || !this.shouldAnimateNavbar()) {
+        this.clearNavbarAnimationStyles();
+        return;
+      }
+
+      this.navbarTimeline?.kill();
+      gsap.killTweensOf([menu, ...links]);
+
+      const expandedHeight = menu.scrollHeight;
+      this.navbarTimeline = gsap
+        .timeline({
+          defaults: { ease: "power3.out" },
+          onComplete: () => {
+            this.clearNavbarAnimationStyles();
+            this.navbarTimeline = null;
+          },
+        })
+        .fromTo(
+          menu,
+          { height: 0, autoAlpha: 0, overflow: "hidden" },
+          { height: expandedHeight, autoAlpha: 1, duration: 0.45 },
+          0,
+        )
+        .fromTo(
+          links,
+          { autoAlpha: 0, y: -14 },
+          { autoAlpha: 1, y: 0, duration: 0.38, stagger: 0.055 },
+          0.08,
+        );
+    },
+    animateNavbarClose() {
+      const { menu, links } = this.getMobileNavbarElements();
+
+      if (!menu || !this.shouldAnimateNavbar()) {
+        this.isNavbarOpen = false;
+        this.clearNavbarAnimationStyles();
+        return;
+      }
+
+      this.navbarTimeline?.kill();
+      gsap.killTweensOf([menu, ...links]);
+
+      this.navbarTimeline = gsap
+        .timeline({
+          defaults: { ease: "power2.inOut" },
+          onComplete: () => {
+            this.isNavbarOpen = false;
+            this.$nextTick(this.clearNavbarAnimationStyles);
+            this.navbarTimeline = null;
+          },
+        })
+        .to(links, {
+          autoAlpha: 0,
+          y: -10,
+          duration: 0.18,
+          stagger: { each: 0.025, from: "end" },
+        })
+        .to(
+          menu,
+          { height: 0, autoAlpha: 0, overflow: "hidden", duration: 0.28 },
+          0.04,
+        );
     },
     closeNavbar(event) {
       if (this.isNavbarOpen && !this.$refs.nav.contains(event.target)) {
+        this.animateNavbarClose();
+      }
+    },
+    handleNavbarResize() {
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        this.navbarTimeline?.kill();
+        this.navbarTimeline = null;
         this.isNavbarOpen = false;
+        this.clearNavbarAnimationStyles();
       }
     },
     handleScroll() {
@@ -540,6 +650,7 @@ export default {
 
     // Close the navbar when clicking outside
     document.addEventListener("click", this.closeNavbar);
+    window.addEventListener("resize", this.handleNavbarResize);
 
     this.loadAdminSession();
   },
@@ -547,6 +658,9 @@ export default {
     // Clean up event listeners
     window.removeEventListener("scroll", this.handleScroll);
     document.removeEventListener("click", this.closeNavbar);
+    window.removeEventListener("resize", this.handleNavbarResize);
+    this.navbarTimeline?.kill();
+    this.clearNavbarAnimationStyles();
     this.adminAuthSubscription?.unsubscribe();
   },
 };
