@@ -37,12 +37,14 @@
             @focus="warmProjectDetail"
             @pointerenter="warmProjectDetail"
             @click="warmProjectDetail"
+            @pointerdown="animateProjectPress"
             @touchstart.passive="warmProjectDetail"
           >
             <button
+              ref="viewProjectButton"
               type="button"
               class="font-neue-montreal font-bold rounded-[4px] text-gray-900 bg-white border border-gray-400 px-8 py-3.5 transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
-              aria-label="View Rance's Residence Project"
+              :aria-label="`View ${project.address || 'project'} details`"
             >
               View Project
             </button>
@@ -54,10 +56,12 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed, onBeforeUnmount, ref } from "vue";
+import { gsap } from "gsap";
 
 const { project } = defineProps(["project"]);
 const { prefetchProjectDetail, setProjectSummary } = useProjectDetailCache();
+const viewProjectButton = ref(null);
 
 const projectPath = computed(() => `/projects/${project.id}`);
 
@@ -71,6 +75,36 @@ const warmProjectDetail = () => {
   preloadRouteComponents(projectPath.value);
   prefetchProjectDetail(project.id);
 };
+
+const animateProjectPress = () => {
+  if (
+    !viewProjectButton.value ||
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  ) {
+    return;
+  }
+
+  gsap.killTweensOf(viewProjectButton.value);
+  gsap
+    .timeline({ defaults: { ease: "power2.out" } })
+    .to(viewProjectButton.value, {
+      scale: 0.96,
+      y: 1,
+      duration: 0.08,
+      overwrite: true,
+    })
+    .to(viewProjectButton.value, {
+      scale: 1,
+      y: 0,
+      duration: 0.16,
+    });
+};
+
+onBeforeUnmount(() => {
+  if (viewProjectButton.value) {
+    gsap.killTweensOf(viewProjectButton.value);
+  }
+});
 </script>
 
 <style scoped></style>

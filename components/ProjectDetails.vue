@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <div ref="projectDetailsRoot">
     <!-- Hero Section -->
     <section
       v-if="project"
+      ref="heroSection"
       id="hero-section"
       class="h-screen bg-white"
       :style="{
@@ -23,6 +24,7 @@
           <div class="max-w-screen-2xl mx-auto px-4 py-8">
             <h1
               v-if="project"
+              ref="heroTitle"
               class="tracking-wide text-white text-4xl md:text-7xl lg:text-8xl font-neue-montreal font-bold leading-[100%] lg:leading-[94%]"
             >
               {{ project.address }}
@@ -36,11 +38,13 @@
           >
             <p
               v-if="project"
+              ref="heroDetails"
               class="font-neue-montreal font-normal text-white pb-2 w-auto md:w-[706px] text-[20px] md:text-[24px]"
             >
               {{ project.details }} ({{ project.client }})
             </p>
             <button
+              ref="scrollButton"
               type="button"
               @click="scrollToImages"
               class="font-neue-montreal font-bold h-[55px] rounded-[4px] text-gray-900 text-[16px] bg-white border border-gray-400 px-8 py-3.5 my-4 md:w-[200px] transition ease-out duration-300 hover:bg-gray-900 hover:text-white"
@@ -174,13 +178,20 @@
 </template>
 
 <script setup>
-import { computed, ref, onMounted, watch, nextTick } from "vue";
+import { computed, ref, onBeforeUnmount, onMounted, watch, nextTick } from "vue";
+import { gsap } from "gsap";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 
 const { project } = defineProps(["project"]);
 const imagesSection = ref(null);
+const projectDetailsRoot = ref(null);
+const heroSection = ref(null);
+const heroTitle = ref(null);
+const heroDetails = ref(null);
+const scrollButton = ref(null);
+let entranceContext;
 
 const projectData = ref([]);
 const initializedGalleryProjectId = ref("");
@@ -210,6 +221,46 @@ const scrollToImages = () => {
       block: "start",
     });
   }
+};
+
+const animateProjectEntrance = async () => {
+  await nextTick();
+
+  entranceContext?.revert();
+
+  if (
+    !projectDetailsRoot.value ||
+    !heroSection.value ||
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  ) {
+    return;
+  }
+
+  entranceContext = gsap.context(() => {
+    gsap
+      .timeline({ defaults: { ease: "power3.out" } })
+      .fromTo(
+        heroSection.value,
+        { autoAlpha: 0.65, scale: 1.025 },
+        {
+          autoAlpha: 1,
+          scale: 1,
+          duration: 0.75,
+          transformOrigin: "center center",
+        }
+      )
+      .fromTo(
+        [heroTitle.value, heroDetails.value, scrollButton.value],
+        { autoAlpha: 0, y: 28 },
+        {
+          autoAlpha: 1,
+          y: 0,
+          duration: 0.65,
+          stagger: 0.1,
+        },
+        "-=0.48"
+      );
+  }, projectDetailsRoot.value);
 };
 
 // Preload images using `useHead` once the gallery is fetched
@@ -281,9 +332,24 @@ watch(
 
 // Also initialize on mount to handle the case when the gallery is loaded at the start
 onMounted(() => {
+  animateProjectEntrance();
+
   setTimeout(() => {
     getProjects();
   }, 300);
+});
+
+watch(
+  () => project?.id,
+  (projectId, previousProjectId) => {
+    if (previousProjectId && projectId !== previousProjectId) {
+      animateProjectEntrance();
+    }
+  }
+);
+
+onBeforeUnmount(() => {
+  entranceContext?.revert();
 });
 </script>
 
